@@ -1,0 +1,10 @@
+query Shops {
+  shops {
+    id
+    name
+    description
+    image {
+      url
+    }
+  }
+}
