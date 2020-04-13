@@ -5,8 +5,11 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    networks:
+      - backend
 
   mongo-express:
+    container_name: craft-mongo-express
     image: mongo-express:latest
     environment:
       - ME_CONFIG_MONGODB_SERVER=mongo
@@ -18,3 +21,42 @@ services:
       - mongo
     ports:
       - "8888:8081"
+    networks:
+      - backend
+
+  back:
+    container_name: craft-back
+    image: "node:12"
+    working_dir: /home/node/app
+    volumes:
+      - ./back:/home/node/app
+    ports:
+      - "1337:1337"
+    command: "yarn dev"
+    depends_on:
+      - "mongo"
+    networks:
+      - backend
+      - frontend
+
+  front:
+    container_name: craft-front
+    image: "node:12"
+    working_dir: /home/node/app
+    volumes:
+      - ./front:/home/node/app
+    environment:
+      - BACKEND_GRAPHQL_ENDPOINT=${BACKEND_GRAPHQL_ENDPOINT}
+      - FRONT_HOST_URL=${FRONT_HOST_URL}
+      - FRONT_HOST_PORT=${FRONT_HOST_PORT}
+    ports:
+      - ${FRONT_HOST_PORT}:${FRONT_HOST_PORT}
+    command: "yarn dev"
+    depends_on:
+      - "back"
+    networks:
+      - frontend
+
+networks:
+  frontend:
+  backend:

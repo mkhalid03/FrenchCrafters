@@ -1,6 +1,11 @@
 
 export default {
   mode: 'universal',
+
+  server: {
+    port: process.env.FRONT_HOST_PORT,
+    host: process.env.FRONT_HOST_URL
+  },
   /*
   ** Headers of the page
   */
@@ -45,9 +50,7 @@ export default {
 
   apollo: {
     clientConfigs: {
-      default: {
-        httpEndpoint: 'http://localhost:1337/graphql'
-      }
+      default: '~/apollo/config.js'
     }
   },
   /*

@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "shops",
+  "collectionName": "products",
   "info": {
-    "name": "Shop"
+    "name": "Product"
   },
   "options": {
     "increments": true,
@@ -14,7 +14,7 @@
       "type": "string"
     },
     "description": {
-      "type": "richtext"
+      "type": "string"
     },
     "image": {
       "collection": "file",
@@ -22,9 +22,12 @@
       "plugin": "upload",
       "required": false
     },
-    "products": {
-      "via": "shop",
-      "collection": "product"
+    "price": {
+      "type": "float"
+    },
+    "shop": {
+      "model": "shop",
+      "via": "products"
     }
   }
 }

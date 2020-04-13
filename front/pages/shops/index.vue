@@ -14,7 +14,7 @@
 
 <script>
   // Import the restaurants query
-  import shopsQuery from '../../apollo/queries/shop/shops.gql'
+  import shopsQuery from '~/apollo/queries/shop/shops.gql'
 
   export default {
     data() {
