@@ -5,6 +5,8 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    volumes:
+      - .db-data:/data/db
     networks:
       - backend
 
@@ -49,6 +51,7 @@ services:
       - BACKEND_GRAPHQL_ENDPOINT=${BACKEND_GRAPHQL_ENDPOINT}
       - FRONT_HOST_URL=${FRONT_HOST_URL}
       - FRONT_HOST_PORT=${FRONT_HOST_PORT}
+      - STRIPE_API_KEY=${STRIPE_API_KEY}
     ports:
       - ${FRONT_HOST_PORT}:${FRONT_HOST_PORT}
     command: "yarn dev"

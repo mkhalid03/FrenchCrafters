@@ -6,7 +6,6 @@
     <client-only>
       <div uk-grid>
         <div class="uk-width-1-3@m">
-
           <div v-for="product in shop.products" class="uk-margin">
             <div class="uk-card uk-card-default">
               <div class="uk-card-media-top">

@@ -6,6 +6,9 @@ export default {
     port: process.env.FRONT_HOST_PORT,
     host: process.env.FRONT_HOST_URL
   },
+  env: {
+    stripeApiKey: process.env.STRIPE_API_KEY
+  },
   /*
   ** Headers of the page
   */
@@ -18,6 +21,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://js.stripe.com/v3' }
     ]
   },
   /*
