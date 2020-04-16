@@ -47,10 +47,8 @@ export const getters = {
     return state.items
   },
   price: state => {
-    return state.items.reduce(
-      (accumulator, item) => accumulator + item.price * item.quantity,
-      0
-    )
+    return Math.round(state.items.reduce(
+      (accumulator, item) => accumulator + item.price * item.quantity, 0) * 100) / 100
   },
   numberOfItems: state => {
     return state.items.reduce(

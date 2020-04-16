@@ -10,8 +10,11 @@ module.exports = {
       city,
     } = ctx.request.body;
 
-  try {
+    try {
+      const cartAmount = Math.round(await strapi.services.order.calculatePrice(products) * 100) / 100
+
       await stripe.charges.create({
+        amount: cartAmount*100,
         currency: 'EUR',
         description: `Order ${new Date()} by ${ctx.state.user.id}`,
         source: token,
@@ -22,13 +25,13 @@ module.exports = {
         await strapi.services.order.create({
           user: ctx.state.user.id,
           address,
-          amount: await strapi.services.order.calculatePrice(products)*100,
+          amount: cartAmount,
           products,
           postalCode,
           city,
         });
 
-        return order;
+        return {};
       } catch (err) {
         console.log(err)
       }
