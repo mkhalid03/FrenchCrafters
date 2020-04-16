@@ -38,6 +38,8 @@
 
                 </div>
 
+                <button type="submit">DONE</button>
+
                 <div class="uk-margin">
                   <button
                     class="uk-button uk-button-primary"
@@ -64,6 +66,7 @@
   import Cart from '~/components/Cart.vue'
   import { Card, createToken } from 'vue-stripe-elements-plus'
   import strapi from '~/utils/strapi'
+  import {mapMutations} from "vuex";
 
   export default {
     components: {
@@ -81,6 +84,12 @@
       }
     },
     methods: {
+      ...mapMutations({
+        setItems: 'cart/reset',
+      }),
+      emptyCart(){
+        this.setItems()
+      },
       async handleSubmit() {
         this.loading = true
         let token
@@ -88,6 +97,7 @@
           const response = await createToken()
           token = response.token.id
         } catch (err) {
+          console.log(err)
           alert('An error occurred.')
           this.loading = false
           return
@@ -95,7 +105,7 @@
         try {
           await strapi.createEntry('orders', {
             amount: this.$store.getters['cart/price'],
-            dishes: this.$store.getters['cart/items'],
+            products: this.$store.getters['cart/items'],
             address: this.address,
             postalCode: this.postalCode,
             city: this.city,

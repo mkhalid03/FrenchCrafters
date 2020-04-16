@@ -1,12 +1,19 @@
 import Cookies from 'js-cookie'
 
-export const state = () => ({
-  items: []
+const defaultState = () => ({
+  items: [],
+  price: 0,
+  numberOfItems: 0
 })
+
+export const state = () => (defaultState())
 
 export const mutations = {
   setItems(state, items) {
     state.items = items
+  },
+  reset(state) {
+    state = defaultState()
   },
   add(state, item) {
     const record = state.items.find(i => i.id === item.id)

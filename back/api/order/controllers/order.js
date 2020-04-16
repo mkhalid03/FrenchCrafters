@@ -1,22 +1,24 @@
 const stripe = require('stripe')(process.env.STRIPE_API_KEY);
 
 module.exports = {
-  create: async ctx => {
+  async create (ctx){
     const {
       address,
       amount,
-      dishes,
+      products,
       postalCode,
       token,
       city,
     } = ctx.request.body;
 
+    console.log(token)
+    console.log(process.env.STRIPE_API_KEY)
+
     // Charge the customer
     try {
-      await stripe.charges.create({
-        // Transform cents to dollars.
+      const charge = await stripe.charges.create({
         amount: amount * 100,
-        currency: 'eur',
+        currency: 'EUR',
         description: `Order ${new Date()} by ${ctx.state.user.id}`,
         source: token,
       });
@@ -27,17 +29,17 @@ module.exports = {
           user: ctx.state.user.id,
           address,
           amount,
-          dishes,
+          products,
           postalCode,
           city,
         });
 
         return order;
       } catch (err) {
-        // Silent
+        console.log(err)
       }
     } catch (err) {
-      // Silent
+      console.log(err)
     }
   },
 };

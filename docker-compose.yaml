@@ -32,6 +32,8 @@ services:
     working_dir: /home/node/app
     volumes:
       - ./back:/home/node/app
+    environment:
+      - STRIPE_API_KEY=${STRIPE_SECRET_API_KEY}
     ports:
       - "1337:1337"
     command: "yarn dev"
@@ -51,7 +53,7 @@ services:
       - BACKEND_GRAPHQL_ENDPOINT=${BACKEND_GRAPHQL_ENDPOINT}
       - FRONT_HOST_URL=${FRONT_HOST_URL}
       - FRONT_HOST_PORT=${FRONT_HOST_PORT}
-      - STRIPE_API_KEY=${STRIPE_API_KEY}
+      - STRIPE_API_KEY=${STRIPE_PUBLISHABLE_API_KEY}
     ports:
       - ${FRONT_HOST_PORT}:${FRONT_HOST_PORT}
     command: "yarn dev"
