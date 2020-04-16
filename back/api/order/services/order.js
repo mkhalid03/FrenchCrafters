@@ -1,8 +1,16 @@
 'use strict';
 
-/**
- * Read the documentation (https://strapi.io/documentation/3.0.0-beta.x/concepts/services.html#core-services)
- * to customize this service
- */
+const calculatePrice = async products => {
+  let prices = []
+  for (const product of products) {
+    const item = await strapi.query('product').findOne({ id: product.id });
+    const quantity = product.quantity
 
-module.exports = {};
+    prices.push(item.price * quantity)
+  }
+  return prices.reduce((a,b) => a+b, 0)
+}
+
+module.exports = {
+  calculatePrice
+};

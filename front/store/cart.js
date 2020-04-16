@@ -14,6 +14,7 @@ export const mutations = {
   },
   reset(state) {
     state = defaultState()
+    Cookies.set('cart', state.items)
   },
   add(state, item) {
     const record = state.items.find(i => i.id === item.id)
@@ -37,10 +38,6 @@ export const mutations = {
       const index = state.items.findIndex(i => i.id === item.id)
       state.items.splice(index, 1)
     }
-    Cookies.set('cart', state.items)
-  },
-  emptyList(state) {
-    state.items = []
     Cookies.set('cart', state.items)
   }
 }
