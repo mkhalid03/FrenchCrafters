@@ -42,12 +42,6 @@
         removeFromCart: 'cart/remove'
       }),
       goToCheckout() {
-        // Redirect to signin page if not logged in.
-        const isConnected = this.$store.getters['auth/username']
-        if (!isConnected) {
-          this.$router.push('/users/signin')
-          return
-        }
         this.$router.push('/orders/checkout')
       }
     },

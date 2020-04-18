@@ -17,8 +17,8 @@
         </ul>
 
         <ul class="uk-navbar-nav" v-else>
-          <li><a href="/users/register">Signup</a></li>
-          <li><a href="/users/signin">Signin</a></li>
+          <li><a href="/register">Signup</a></li>
+          <li><a href="/login">Signin</a></li>
         </ul>
 
       </div>

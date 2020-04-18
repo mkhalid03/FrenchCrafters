@@ -73,6 +73,7 @@
       Card,
       Cart
     },
+    middleware: 'auth',
     data() {
       return {
         address: '',
