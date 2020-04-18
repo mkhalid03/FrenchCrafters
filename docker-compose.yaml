@@ -28,7 +28,7 @@ services:
 
   back:
     container_name: craft-back
-    image: "node:12"
+    image: "node:13"
     working_dir: /home/node/app
     volumes:
       - ./back:/home/node/app
@@ -45,11 +45,12 @@ services:
 
   front:
     container_name: craft-front
-    image: "node:12"
+    image: "node:13"
     working_dir: /home/node/app
     volumes:
       - ./front:/home/node/app
     environment:
+      - BACKEND_ENDPOINT=${BACKEND_ENDPOINT}
       - BACKEND_GRAPHQL_ENDPOINT=${BACKEND_GRAPHQL_ENDPOINT}
       - FRONT_HOST_URL=${FRONT_HOST_URL}
       - FRONT_HOST_PORT=${FRONT_HOST_PORT}

@@ -7,7 +7,8 @@ export default {
     host: process.env.FRONT_HOST_URL
   },
   env: {
-    stripeApiKey: process.env.STRIPE_API_KEY
+    stripeApiKey: process.env.STRIPE_API_KEY,
+    backendUrl: process.env.BACKEND_ENDPOINT,
   },
   /*
   ** Headers of the page
@@ -65,6 +66,11 @@ export default {
         name: 'register',
         path: '/register',
         component: resolve(__dirname, 'pages/users/register.vue')
+      })
+      routes.push({
+        name: 'reset-password',
+        path: '/reset-password/:token',
+        component: resolve(__dirname, 'pages/users/resetPassword.vue')
       })
     }
   },
