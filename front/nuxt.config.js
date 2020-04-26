@@ -1,93 +1,87 @@
-
 export default {
-  mode: 'universal',
+  mode: "universal",
 
   server: {
     port: process.env.FRONT_HOST_PORT,
-    host: process.env.FRONT_HOST_URL
+    host: process.env.FRONT_HOST_URL,
   },
   env: {
     stripeApiKey: process.env.STRIPE_API_KEY,
     backendUrl: process.env.BACKEND_ENDPOINT,
   },
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: process.env.npm_package_name || "",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {
+        hid: "description",
+        name: "description",
+        content: process.env.npm_package_description || "",
+      },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    script: [
-      { src: 'https://js.stripe.com/v3' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [{ src: "https://js.stripe.com/v3" }],
   },
   /*
-  ** Customize the progress-bar color
-  */
-  loading: { color: '#fff' },
+   ** Customize the progress-bar color
+   */
+  loading: { color: "#fff" },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
+   ** Global CSS
+   */
+  css: [],
   /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
+   ** Plugins to load before mounting the App
+   */
+  plugins: [],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    "@nuxtjs/tailwindcss",
   ],
   /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    '@nuxtjs/apollo',
-  ],
+   ** Nuxt.js modules
+   */
+  modules: ["@nuxtjs/apollo"],
 
   router: {
-    extendRoutes (routes, resolve) {
+    extendRoutes(routes, resolve) {
       routes.push({
-        name: 'login',
-        path: '/login',
-        component: resolve(__dirname, 'pages/users/login.vue')
+        name: "login",
+        path: "/login",
+        component: resolve(__dirname, "pages/users/login.vue"),
       })
       routes.push({
-        name: 'register',
-        path: '/register',
-        component: resolve(__dirname, 'pages/users/register.vue')
+        name: "register",
+        path: "/register",
+        component: resolve(__dirname, "pages/users/register.vue"),
       })
       routes.push({
-        name: 'reset-password',
-        path: '/reset-password/:token',
-        component: resolve(__dirname, 'pages/users/resetPassword.vue')
+        name: "reset-password",
+        path: "/reset-password/:token",
+        component: resolve(__dirname, "pages/users/resetPassword.vue"),
       })
-    }
+    },
   },
 
   apollo: {
     clientConfigs: {
-      default: '~/apollo/config.js'
-    }
+      default: "~/apollo/config.js",
+    },
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
-    }
-  }
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
+  },
 }

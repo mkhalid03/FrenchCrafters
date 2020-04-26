@@ -1,4 +1,4 @@
-import cookieparser from 'cookieparser'
+import cookieparser from "cookieparser"
 
 export const actions = {
   nuxtServerInit({ commit }, { req }) {
@@ -10,7 +10,7 @@ export const actions = {
       cart = (parsed.cart && JSON.parse(parsed.cart)) || []
     }
 
-    commit('auth/setUser', user)
-    commit('cart/setItems', cart)
-  }
+    commit("auth/setUser", user)
+    commit("cart/setItems", cart)
+  },
 }
