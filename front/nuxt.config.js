@@ -1,3 +1,5 @@
+import customRoutes from './router'
+
 export default {
   mode: "universal",
 
@@ -52,22 +54,11 @@ export default {
 
   router: {
     extendRoutes(routes, resolve) {
-      routes.push({
-        name: "login",
-        path: "/login",
-        component: resolve(__dirname, "pages/users/login.vue"),
+      const r = customRoutes(__dirname, resolve)
+      r.forEach(route => {
+        routes.push(route)
       })
-      routes.push({
-        name: "register",
-        path: "/register",
-        component: resolve(__dirname, "pages/users/register.vue"),
-      })
-      routes.push({
-        name: "reset-password",
-        path: "/reset-password/:token",
-        component: resolve(__dirname, "pages/users/resetPassword.vue"),
-      })
-    },
+    }
   },
 
   apollo: {
