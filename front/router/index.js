@@ -14,6 +14,11 @@ const customRoutes = (path, resolve) => {
       name: "reset-password",
       path: "/reset-password/:token",
       component: resolve(path, "pages/users/resetPassword.vue"),
+    },
+    {
+      name: "profile",
+      path: "/profile",
+      component: resolve(path, "pages/users/profile.vue"),
     }
   ]
 }

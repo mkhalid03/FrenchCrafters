@@ -14,7 +14,13 @@ export const mutations = {
 }
 
 export const getters = {
-  username: (state) => {
-    return state.user && state.user.username
-  },
+  getUserInfo: (state) => {
+    return {
+      username: state.user.username || null,
+      firstname: state.user.firstname || null,
+      lastname: state.user.lastname || null,
+      profile: state.user.profile || null,
+      title: state.user.title || null,
+    }
+  }
 }
