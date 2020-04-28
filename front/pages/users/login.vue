@@ -53,6 +53,7 @@ import ForgotPassword from "~/components/forms/ForgotPassword"
 
 export default {
   components: { ForgotPassword },
+  middleware: "logged",
   data() {
     return {
       email: "",
@@ -74,7 +75,7 @@ export default {
         this.$router.go(-1)
       } catch (err) {
         this.loading = false
-        alert(err.message || "An error occurred.")
+        alert(JSON.stringify(err.message) || "An error occurred.")
       }
     },
     ...mapMutations({

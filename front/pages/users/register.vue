@@ -56,6 +56,7 @@ export default {
       loading: false,
     }
   },
+  middleware: "logged",
   components: { PasswordVerifySecurity },
   methods: {
     setPassword: function(pass) {

@@ -27,7 +27,6 @@ export default {
   },
   methods: {
     sendResetMail() {
-      console.log(process.env.backendUrl)
       axios
         .post(`${process.env.backendUrl}/auth/forgot-password`, {
           email: this.resetMail,
