@@ -7,10 +7,11 @@
 
 <script>
 export default {
-  computed: {
-    user() {
-      return this.$store.getters["auth/getUserInfo"]
-    },
+  data() {
+    return {
+      user: {},
+      query: "",
+    }
   }
 }
 </script>
