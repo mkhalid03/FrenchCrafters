@@ -36,7 +36,7 @@ export const getters = {
       username: state.user.username || null,
       firstName: state.user.firstname || null,
       lastName: state.user.lastname || null,
-      profile: state.user.profile || null,
+      picture: state.user.picture || null,
       title: state.user.title || null,
     }
   }
