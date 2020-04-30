@@ -19,7 +19,7 @@ const customRoutes = (path, resolve) => {
       name: "profile",
       path: "/profile",
       component: resolve(path, "pages/users/profile.vue"),
-    }
+    },
   ]
 }
 

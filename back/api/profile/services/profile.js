@@ -12,7 +12,7 @@ const update = async (params, data, { files } = {}) => {
   }
 
   return entry;
-}
+};
 
 module.exports = {
   update

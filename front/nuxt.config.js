@@ -1,4 +1,4 @@
-import customRoutes from './router'
+import customRoutes from "./router"
 
 export default {
   mode: "universal",
@@ -55,10 +55,10 @@ export default {
   router: {
     extendRoutes(routes, resolve) {
       const r = customRoutes(__dirname, resolve)
-      r.forEach(route => {
+      r.forEach((route) => {
         routes.push(route)
       })
-    }
+    },
   },
 
   apollo: {

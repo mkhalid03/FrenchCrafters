@@ -11,7 +11,7 @@ module.exports = {
     } = ctx.request.body;
 
     try {
-      const cartAmount = Math.round(await strapi.services.order.calculatePrice(products) * 100) / 100
+      const cartAmount = Math.round(await strapi.services.order.calculatePrice(products) * 100) / 100;
 
       await stripe.charges.create({
         amount: cartAmount*100,
@@ -33,10 +33,10 @@ module.exports = {
 
         return {};
       } catch (err) {
-        console.log(err)
+        console.log(err);
       }
     } catch (err) {
-      console.log(err)
+      console.log(err);
     }
   },
 };
