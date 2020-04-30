@@ -24,7 +24,17 @@ export const actions = {
     )
     commit("setUser", profile)
   },
-  async updateProfile({ commit, state }, { jwt, body }) {
+  async updateProfile({ commit, state }, { jwt, body, userId }) {
+    console.log(body.get("files").size !== 0)
+    if (body.get("files").size !== 0) {
+      body.append("ref", "user")
+      body.append("refId", userId)
+      body.append("field", "picture")
+      body.append("source", "users-permissions")
+      await axios.post(`${process.env.backendUrl}/upload`, body, {
+        headers: { Authorization: "Bearer " + jwt },
+      })
+    }
     const { data: profile } = await axios.post(
       `${process.env.backendUrl}/profile`,
       body,
@@ -48,5 +58,8 @@ export const getters = {
       picture: state.user.picture || null,
       title: state.user.title || null,
     }
+  },
+  getUserId: (state) => {
+    return state.user.id
   },
 }

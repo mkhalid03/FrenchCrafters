@@ -10,11 +10,11 @@ module.exports = {
     });
   },
   async update(ctx) {
-
-    const {firstname, lastname, title, profile} = ctx.request.body;
+    console.log(ctx.request.body)
+    const {firstname, lastname, title} = ctx.request.body;
 
     const { _id } = ctx.state.user;
-    let entity = await strapi.services.profile.update({ id: _id }, {firstname, lastname, title, profile});
+    let entity = await strapi.services.profile.update({ id: _id }, {firstname, lastname, title});
 
     return sanitizeEntity(entity.toJSON ? entity.toJSON() : entity, {
       model: strapi.query('user', 'users-permissions').model,
