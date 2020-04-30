@@ -1,6 +1,5 @@
 export default function ({ store, redirect }) {
-  console.log(store.state)
-  if (store.state.auth.user !== null) {
+  if (store.state.auth.user !== null && store.state.auth.user !== undefined) {
     return redirect("/")
   }
 }
