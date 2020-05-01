@@ -28,6 +28,30 @@
     "shop": {
       "model": "shop",
       "via": "products"
+    },
+    "category": {
+      "model": "category"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "man",
+        "woman",
+        "unisex",
+        "kid",
+        "all"
+      ]
+    },
+    "stock": {
+      "type": "integer",
+      "min": 0,
+      "required": true,
+      "default": 0
+    },
+    "stock_infinite": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
