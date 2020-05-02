@@ -50,20 +50,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/apollo"],
-
+  modules: [],
   router: {
     extendRoutes(routes, resolve) {
       const r = customRoutes(__dirname, resolve)
       r.forEach((route) => {
         routes.push(route)
       })
-    },
-  },
-
-  apollo: {
-    clientConfigs: {
-      default: "~/apollo/config.js",
     },
   },
   /*

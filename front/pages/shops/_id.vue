@@ -45,7 +45,7 @@
 <script>
 import { mapMutations } from "vuex"
 import Cart from "~/components/Cart.vue"
-import shopQuery from "~/apollo/queries/shop/shop"
+import axios from "axios";
 
 export default {
   components: {
@@ -56,14 +56,8 @@ export default {
       shop: Object,
     }
   },
-  apollo: {
-    shop: {
-      prefetch: true,
-      query: shopQuery,
-      variables() {
-        return { id: this.$route.params.id }
-      },
-    },
+  async fetch () {
+    this.shops = await axios.get(`/shops/${this.$route.params.id}`)
   },
   methods: {
     ...mapMutations({

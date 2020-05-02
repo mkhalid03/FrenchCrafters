@@ -1,39 +1,24 @@
 <template>
   <div>
-    <input v-model="query" type="search" placeholder="Search..." />
-
-    <div v-for="shop in filteredList" :key="shop.id">
+    <div v-for="shop in shops" :key="shop.id">
       {{ shop }}
-    </div>
-
-    <div v-if="filteredList.length === 0">
-      <p>No results</p>
     </div>
   </div>
 </template>
 
 <script>
-import shopsQuery from "~/apollo/queries/shop/shops.gql"
+import axios from 'axios'
 
 export default {
   data() {
     return {
-      shops: [],
-      query: "",
+      shops: []
     }
   },
-  apollo: {
-    shops: {
-      prefetch: true,
-      query: shopsQuery,
-    },
+  async fetch () {
+    const { data } = await axios.get(`${process.env.backendUrl}/shops`)
+    this.shops = data
   },
-  computed: {
-    filteredList() {
-      return this.shops.filter((shop) => {
-        return shop.name.toLowerCase().includes(this.query.toLowerCase())
-      })
-    },
-  },
+  fetchOnServer: true
 }
 </script>

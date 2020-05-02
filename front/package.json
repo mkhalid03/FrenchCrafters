@@ -13,9 +13,6 @@
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/apollo": "^4.0.0-rc19",
-    "apollo-cache": "^1.3.4",
-    "apollo-cache-inmemory": "^1.6.5",
     "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "cookieparser": "^0.1.0",
@@ -27,7 +24,7 @@
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
     "js-cookie": "^2.2.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.12.0",
     "prettier": "^2.0.4",
     "strapi-provider-email-gmail-oauth2": "^0.1.6",
     "strapi-sdk-javascript": "^0.3.3",
