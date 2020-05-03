@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SearchBar />
     <p v-if="$fetchState.pending">Fetching shops...</p>
     <p v-else-if="$fetchState.error">Error while fetching posts: {{ $fetchState.error.message }}</p>
     <div v-else>
@@ -11,7 +12,9 @@
 </template>
 
 <script>
+import SearchBar from "~/components/SearchBar";
 export default {
+  components: {SearchBar},
   data() {
     return {
       shops: []
