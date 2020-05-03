@@ -1,5 +1,4 @@
 import Cookies from "js-cookie"
-import axios from "axios"
 
 export const state = () => {}
 
@@ -16,8 +15,8 @@ export const mutations = {
 
 export const actions = {
   async fetchProfile({ commit, state }, { jwt }) {
-    const { data: profile } = await axios.get(
-      `${process.env.backendUrl}/profile/${state.user.id}`,
+    const profile = await this.$axios.$get(
+      `/profile/${state.user.id}`,
       {
         headers: { Authorization: "Bearer " + jwt },
       }
@@ -31,12 +30,12 @@ export const actions = {
       body.append("refId", userId)
       body.append("field", "picture")
       body.append("source", "users-permissions")
-      await axios.post(`${process.env.backendUrl}/upload`, body, {
+      await this.$axios.$post(`/upload`, body, {
         headers: { Authorization: "Bearer " + jwt },
       })
     }
-    const { data: profile } = await axios.post(
-      `${process.env.backendUrl}/profile`,
+    const profile = await this.$axios.$post(
+      '/profile',
       body,
       {
         headers: { Authorization: "Bearer " + jwt },

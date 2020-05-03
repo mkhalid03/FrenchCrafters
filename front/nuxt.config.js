@@ -50,7 +50,13 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    '@nuxtjs/axios',
+  ],
+  axios: {
+    baseURL: process.env.BACKEND_SERVER_ENDPOINT,
+    browserBaseURL: process.env.BACKEND_API_ENDPOINT
+  },
   router: {
     extendRoutes(routes, resolve) {
       const r = customRoutes(__dirname, resolve)
