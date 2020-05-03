@@ -1,43 +1,20 @@
 <template>
   <div>
-    <a class="uk-button uk-button-primary uk-margin" @click="$router.go(-1)"><span uk-icon="arrow-left" /> go back</a>
+    <a @click="$router.go(-1)">go back</a>
 
     <client-only>
-      <div uk-grid>
-        <div class="uk-width-1-3@m">
-          <div v-for="product in shop.products" class="uk-margin">
-            <div class="uk-card uk-card-default">
-              <div class="uk-card-media-top">
-                <img
-                  :src="'http://localhost:1337/' + product.image.url"
-                  alt=""
-                />
-              </div>
-              <div class="uk-card-body">
-                <h3 class="uk-card-title">
-                  {{ product.name }}
-                  <span class="uk-badge">{{ product.price }}€</span>
-                </h3>
-                <p>{{ product.description }}</p>
-              </div>
-              <div class="uk-card-footer">
-                <button
-                  class="uk-button uk-button-primary"
-                  @click="addToCart(product)"
-                >
-                  Add to cart
-                </button>
-              </div>
-            </div>
+      <div v-for="product in shop.products" class="uk-margin">
+          <div>
+            <span>{{ product.name }} {{ product.price }}€</span>
+            <p>{{ product.description }}</p>
           </div>
-        </div>
-
-        // Right card displaying you cart
-        <div class="uk-width-expand@m">
-          // Call a Cart component
-          <Cart />
-        </div>
+          <div class="uk-card-footer">
+            <button @click="addToCart(product)" >
+              Add to cart
+            </button>
+          </div>
       </div>
+      <Cart />
     </client-only>
   </div>
 </template>
@@ -45,7 +22,6 @@
 <script>
 import { mapMutations } from "vuex"
 import Cart from "~/components/Cart.vue"
-import axios from "axios";
 
 export default {
   components: {
@@ -53,11 +29,11 @@ export default {
   },
   data() {
     return {
-      shop: Object,
+      shop: {},
     }
   },
   async fetch () {
-    this.shops = await axios.get(`/shops/${this.$route.params.id}`)
+    this.shop = await this.$axios.$get(`/shops/${this.$route.params.id}`)
   },
   methods: {
     ...mapMutations({
