@@ -3,23 +3,31 @@
     {
       "method": "GET",
       "path": "/search/all",
-      "handler": "search.find",
+      "handler": "search.findAll",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/search/shops",
-      "handler": "search.findShops",
+      "path": "/search/all/:query",
+      "handler": "search.searchAll",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/search/products",
-      "handler": "search.findProducts",
+      "path": "/search/shops/:query",
+      "handler": "search.searchShops",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/search/products/:query",
+      "handler": "search.searchProducts",
       "config": {
         "policies": []
       }
