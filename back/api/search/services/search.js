@@ -7,7 +7,7 @@ const entityWithParams = async (params, entity) => {
     model: strapi.query(entity).model,
   });
 
-  return Object.keys(sanitizedRes).map(i => sanitizedRes[i])
+  return Object.keys(sanitizedRes).map(i => sanitizedRes[i]);
 };
 
 module.exports = {
