@@ -2,8 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/search",
+      "path": "/search/all",
       "handler": "search.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/search/shops",
+      "handler": "search.findShops",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/search/products",
+      "handler": "search.findProducts",
       "config": {
         "policies": []
       }
