@@ -9,24 +9,24 @@
       }
     },
     {
-      "method": "GET",
-      "path": "/search/all/:query",
+      "method": "POST",
+      "path": "/search/all",
       "handler": "search.searchAll",
       "config": {
         "policies": []
       }
     },
     {
-      "method": "GET",
-      "path": "/search/shops/:query",
+      "method": "POST",
+      "path": "/search/shops",
       "handler": "search.searchShops",
       "config": {
         "policies": []
       }
     },
     {
-      "method": "GET",
-      "path": "/search/products/:query",
+      "method": "POST",
+      "path": "/search/products",
       "handler": "search.searchProducts",
       "config": {
         "policies": []

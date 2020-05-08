@@ -10,7 +10,6 @@ module.exports = {
     });
   },
   async update(ctx) {
-    console.log(ctx.request.body);
     const {firstname, lastname, title} = ctx.request.body;
 
     const { _id } = ctx.state.user;

@@ -11,20 +11,20 @@ module.exports = {
     return { shops, products };
   },
   async searchAll(ctx) {
-    const { query } = ctx.params;
+    const { query } = ctx.request.body;
     const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS);
     const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS);
 
     return { shops, products };
   },
   async searchShops(ctx) {
-    const { query } = ctx.params;
+    const { query } = ctx.request.body;
     const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS);
 
     return { shops };
   },
   async searchProducts(ctx) {
-    const { query } = ctx.params;
+    const { query } = ctx.request.body;
     const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS);
 
     return { products };

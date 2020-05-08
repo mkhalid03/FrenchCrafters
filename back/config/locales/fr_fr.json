@@ -1,3 +1,14 @@
 {
-  "welcome": "Bienvenue"
+	"femme": "woman",
+	"femmes": "woman",
+	"fille": "woman",
+	"filles": "woman",
+	"homme": "man",
+	"hommes": "man",
+	"garcon": "man",
+	"garcons": "man",
+	"garçon": "man",
+	"garçons": "man",
+	"enfant": "kid",
+	"enfants": "kid"
 }
