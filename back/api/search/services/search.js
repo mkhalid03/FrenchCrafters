@@ -8,39 +8,57 @@ i18n.configure({
   directory: path.join(__dirname + '../../../../config/locales')
 });
 
-const entityWithQuery = async (query, entity, columns) => {
-  return strapi.query(entity).model.find( getParamsFromQuery(query, columns) )
+const entityWithQuery = async (query, entity, columns, categories, limit, skip) => {
+  return strapi.query(entity).model
+    .find( getParamsFromQuery(query, columns, categories) )
+    .limit(parseInt(limit))
+    .skip(parseInt(skip))
+    .populate(entity === "product" ? 'category' : null);
 };
 
 const randomQueryOutput = async (entity, size) => {
   return strapi.query(entity).model.aggregate([ { $sample: { size } } ])
 }
 
-const getParamsFromQuery = (query, columns) => {
+const getParamsFromQuery = (query, columns, categories = []) => {
 
   const queryArray = query.split(' ');
   const contentFilter = []
   const targetFilter = []
+  const categoriesFilter = []
 
   columns.forEach(column => {
-    if(column !== "target"){
-      queryArray.forEach(q => {
-        contentFilter.push({[column]: { "$regex": q, "$options": "i" } })
-      })
-    } else {
-      queryArray.forEach(q => {
-        if(q in translation){
-          targetFilter.push({target: { "$regex": __({phrase: q, locale: 'fr_fr'}), "$options": "i" } })
-        }
-      })
+    switch (column) {
+      case 'target':
+        queryArray.forEach(q => {
+          if (q in translation) {
+            targetFilter.push({target: {"$regex": __({phrase: q, locale: 'fr_fr'}), "$options": "i"}})
+          }
+        })
+        break;
+      case 'category':
+        categories.forEach(category => {
+          categoriesFilter.push({"category.uid": category})
+        })
+        break;
+      default:
+        queryArray.forEach(q => {
+          if (q !== "") {
+            contentFilter.push({[column]: {"$regex": q, "$options": "i"}})
+          }
+        })
     }
   })
 
-  if(targetFilter.length === 0) {
-    return { $and: [{ $or: contentFilter }]}
-  }
+  const filters = []
 
-  return { $and: [{ $or: contentFilter }, { $or: targetFilter }]}
+  if(targetFilter.length !== 0) filters.push({$or: targetFilter})
+  if(contentFilter.length !== 0) filters.push({$or: contentFilter})
+  if(categoriesFilter.length !== 0) filters.push({$or: categoriesFilter})
+
+  console.log(JSON.stringify(filters))
+
+  return filters.length !== 0 ? { $and: filters } : {}
 }
 
 module.exports = {

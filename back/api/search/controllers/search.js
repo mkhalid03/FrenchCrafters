@@ -1,7 +1,7 @@
 const { sanitizeEntity } = require('strapi-utils');
 
 const SHOP_COLUMNS = ["description", "name"]
-const PRODUCT_COLUMNS = ["description", "name", "target"]
+const PRODUCT_COLUMNS = ["description", "name", "category", "target"]
 
 module.exports = {
   async findAll() {
@@ -11,21 +11,21 @@ module.exports = {
     return { shops, products };
   },
   async searchAll(ctx) {
-    const { query } = ctx.request.body;
-    const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS);
-    const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS);
+    const { query, limit, skip, categories } = ctx.request.body;
+    const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS, categories, limit, skip);
+    const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS, categories, limit, skip);
 
     return { shops, products };
   },
   async searchShops(ctx) {
-    const { query } = ctx.request.body;
-    const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS);
+    const { query, limit, skip, categories } = ctx.request.body;
+    const shops = await strapi.services.search.entityWithQuery(query, 'shop', SHOP_COLUMNS, categories, limit, skip);
 
     return { shops };
   },
   async searchProducts(ctx) {
-    const { query } = ctx.request.body;
-    const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS);
+    const { query, limit, skip, categories } = ctx.request.body;
+    const products = await strapi.services.search.entityWithQuery(query, 'product', PRODUCT_COLUMNS, categories, limit, skip);
 
     return { products };
   },
