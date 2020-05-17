@@ -10,7 +10,7 @@ i18n.configure({
 
 const entityWithQuery = async (query, entity, columns, categories, limit, skip) => {
   return strapi.query(entity).model
-    .find( getParamsFromQuery(query, columns, categories) )
+    .find( await getParamsFromQuery(query, columns, categories) )
     .limit(parseInt(limit))
     .skip(parseInt(skip))
     .populate(entity === "product" ? 'category' : null);
@@ -20,14 +20,14 @@ const randomQueryOutput = async (entity, size) => {
   return strapi.query(entity).model.aggregate([ { $sample: { size } } ])
 }
 
-const getParamsFromQuery = (query, columns, categories = []) => {
+const getParamsFromQuery = async (query, columns, categories = []) => {
 
-  const queryArray = query.split(' ');
+  const queryArray = query ? query.split(' ') : [];
   const contentFilter = []
   const targetFilter = []
   const categoriesFilter = []
 
-  columns.forEach(column => {
+  for (const column of columns) {
     switch (column) {
       case 'target':
         queryArray.forEach(q => {
@@ -37,9 +37,10 @@ const getParamsFromQuery = (query, columns, categories = []) => {
         })
         break;
       case 'category':
-        categories.forEach(category => {
-          categoriesFilter.push({"category.uid": category})
-        })
+        for (const category of categories) {
+          const c = await strapi.query("category").model.find({uid: category})
+          categoriesFilter.push({"category": c})
+        }
         break;
       default:
         queryArray.forEach(q => {
@@ -48,7 +49,7 @@ const getParamsFromQuery = (query, columns, categories = []) => {
           }
         })
     }
-  })
+  }
 
   const filters = []
 
