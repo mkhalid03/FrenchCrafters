@@ -30,7 +30,8 @@
       "via": "products"
     },
     "category": {
-      "model": "category"
+      "model": "category",
+      "via": "products"
     },
     "target": {
       "type": "enumeration",

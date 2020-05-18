@@ -15,6 +15,10 @@
     },
     "uid": {
       "type": "uid"
+    },
+    "products": {
+      "via": "category",
+      "collection": "product"
     }
   }
 }
