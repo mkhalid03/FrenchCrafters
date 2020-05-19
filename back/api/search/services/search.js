@@ -17,7 +17,22 @@ const entityWithQuery = async (query, entity, columns, categories, limit, skip) 
 };
 
 const randomQueryOutput = async (entity, size) => {
-  return strapi.query(entity).model.aggregate([ { $sample: { size } } ])
+  return strapi.query(entity).model
+    .find()
+    .populate('image')
+    .then(res => {
+    const tmp = res.slice(res);
+    const ret = [];
+
+    for (let i = 0; i < size; i++) {
+      const index = Math.floor(Math.random() * tmp.length);
+      const removed = tmp.splice(index, 1);
+      ret.push(removed[0]);
+    }
+    return ret.filter(function (el) {
+      return el != null;
+    });
+  })
 }
 
 const getParamsFromQuery = async (query, columns, categories = []) => {
