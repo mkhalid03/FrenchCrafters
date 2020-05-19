@@ -38,8 +38,7 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
         break;
       case 'category':
         for (const category of categories) {
-          const c = await strapi.query("category").model.find({uid: category})
-          categoriesFilter.push({"category": c})
+          categoriesFilter.push({"category": category})
         }
         break;
       default:
