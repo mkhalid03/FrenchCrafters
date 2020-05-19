@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SearchBar from "~/components/SearchBar";
+import SearchBar from "~/components/nav/SearchBar";
 export default {
   components: {SearchBar},
   data() {

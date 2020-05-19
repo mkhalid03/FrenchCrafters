@@ -13,9 +13,12 @@
 
       {{username}}
 
-      <ul v-if="username">
-        <li><a href="#" @click="logout">Logout</a></li>
-      </ul>
+      <div v-if="username">
+        <ul >
+          <li><a href="#" @click="logout">Logout</a></li>
+        </ul>
+      </div>
+
 
       <ul v-else>
         <li><a href="/register">Signup</a></li>
@@ -28,8 +31,10 @@
 
 <script>
 import { mapMutations } from "vuex"
+import Nav from "~/components/nav/Nav";
 
 export default {
+  components: {Nav},
   computed: {
     username() {
       return this.$store.getters["auth/getUserInfo"].username
@@ -39,6 +44,9 @@ export default {
     ...mapMutations({
       logout: "auth/logout",
     }),
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    }
   },
 }
 </script>

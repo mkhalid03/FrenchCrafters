@@ -37,8 +37,10 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
         })
         break;
       case 'category':
-        for (const category of categories) {
-          categoriesFilter.push({"category": category})
+        if(categories !== null){
+          for (const category of categories) {
+            categoriesFilter.push({"category": category})
+          }
         }
         break;
       default:
@@ -56,7 +58,7 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
   if(contentFilter.length !== 0) filters.push({$or: contentFilter})
   if(categoriesFilter.length !== 0) filters.push({$or: categoriesFilter})
 
-  console.log(JSON.stringify(filters))
+  //console.log(JSON.stringify(filters))
 
   return filters.length !== 0 ? { $and: filters } : {}
 }
