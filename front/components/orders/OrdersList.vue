@@ -2,21 +2,23 @@
   <el-table
     :data="orders"
     :default-sort = "{prop: 'date', order: 'descending'}"
-    style="width: 100%">
+    style="width: 100%"
+    empty-text="Empty"
+  >
     <el-table-column
       prop="date"
       label="Date"
       sortable
-      width="180">
-    </el-table-column>
-    <el-table-column
-      prop="name"
-      label="Nom"
-      width="180">
+    >
     </el-table-column>
     <el-table-column
       prop="address"
       label="Adresse"
+    >
+    </el-table-column>
+    <el-table-column
+      prop="price"
+      label="Prix"
       :formatter="formatter">
     </el-table-column>
   </el-table>
@@ -24,26 +26,9 @@
 
 <script>
   export default {
-    data() {
-      return {
-        orders: [{
-          date: '2016-05-03',
-          name: 'Tom',
-          address: 'No. 189, Grove St, Los Angeles'
-        }, {
-          date: '2016-05-02',
-          name: 'Tom',
-          address: 'No. 189, Grove St, Los Angeles'
-        }, {
-          date: '2016-05-04',
-          name: 'Tom',
-          address: 'No. 189, Grove St, Los Angeles'
-        }, {
-          date: '2016-05-01',
-          name: 'Tom',
-          address: 'No. 189, Grove St, Los Angeles'
-        }]
-      }
+    name: "OrdersList",
+    props: {
+      orders: []
     },
     methods: {
       formatter(row, column) {

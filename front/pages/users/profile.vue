@@ -23,11 +23,14 @@
         Update info
       </button>
     </form>
+    <OrdersList />
   </div>
 </template>
 
 <script>
+import OrdersList from "~/components/orders/OrdersList";
 export default {
+  components: {OrdersList},
   data: function(){
     return {
       firstname: null,
@@ -37,14 +40,19 @@ export default {
   },
   created() {
     if(process.browser){
-      this.$store.dispatch('auth/fetchProfile', {jwt: localStorage.getItem("jwt").replace(/"/ig, "")})
+      const jwt = localStorage.getItem("jwt").replace(/"/ig, "")
+      this.$store.dispatch('auth/fetchProfile', {jwt})
+      this.$store.dispatch('user/fetchOrders', {jwt})
     }
   },
   middleware: "auth",
   computed: {
-    user() {
+    user: function() {
       return this.$store.getters["auth/getUserInfo"]
     },
+    orders: function() {
+      return this.$store.getters["user/getOrders"]
+    }
   },
   methods: {
     updateInfo: function(){

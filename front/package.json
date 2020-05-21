@@ -26,6 +26,7 @@
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
     "js-cookie": "^2.2.1",
+    "lodash": "^4.17.15",
     "nuxt": "^2.12.2",
     "prettier": "^2.0.4",
     "strapi-provider-email-gmail-oauth2": "^0.1.6",
