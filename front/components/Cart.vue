@@ -1,12 +1,6 @@
 <template>
-  <div
-    class="uk-card uk-card-default uk-card-body uk-margin"
-    uk-sticky="offset: 20; bottom: true"
-  >
     <div v-if="price > 0">
-      <table
-        class="uk-table uk-table-striped uk-table-small uk-table-responsive"
-      >
+      <table>
         <thead>
           <tr>
             <th>Name</th>
@@ -19,36 +13,33 @@
             <td class="uk-width-1-2">
               {{ dish.name }}
             </td>
-            <td class="uk-table-shrink">{{ dish.price }}€</td>
-            <td class="uk-table-shrink">
+            <td>{{ dish.price }}€</td>
+            <td>
               {{ dish.quantity }}
             </td>
             <td>
-              <a class="uk-margin-left"
-                ><span class="uk-badge" @click="addToCart(dish)">+</span></a
-              >
-              <a
-                ><span
+              <a>
+                <span class="uk-badge" @click="addToCart(dish)">+</span>
+              </a>
+              <a>
+                <span
                   class="uk-badge"
                   style="background: #f0506e;"
                   @click="removeFromCart(dish)"
-                  >-</span
-                ></a
-              >
+                  >-</span>
+              </a>
             </td>
           </tr>
         </tbody>
       </table>
 
       <button
-        class="uk-button uk-button-primary"
         name="button"
         @click="goToCheckout"
       >
         Process to checkout ({{ price }}€)
       </button>
     </div>
-  </div>
 </template>
 
 <script>

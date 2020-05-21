@@ -13,26 +13,42 @@ const entityWithQuery = async (query, entity, columns, categories, limit, skip) 
     .find( await getParamsFromQuery(query, columns, categories) )
     .limit(parseInt(limit))
     .skip(parseInt(skip))
-    .populate(entity === "product" ? 'category' : null);
+    .populate(entity === "product" ? 'category' : null)
+    .populate(entity === "product" ? 'shop' : null)
+    .then(res => {
+      const tmp = res.slice(res);
+      const ret = [];
+
+      for (let i = 0; i < res.length; i++) {
+        const index = Math.floor(Math.random() * tmp.length);
+        const removed = tmp.splice(index, 1);
+        ret.push(removed[0]);
+      }
+      return ret.filter(function (el) {
+        return el != null;
+      });
+    })
 };
 
 const randomQueryOutput = async (entity, size) => {
   return strapi.query(entity).model
     .find()
     .populate('image')
+    .populate(entity === "product" ? 'category' : null)
+    .populate(entity === "product" ? 'shop' : null)
     .then(res => {
-    const tmp = res.slice(res);
-    const ret = [];
+      const tmp = res.slice(res);
+      const ret = [];
 
-    for (let i = 0; i < size; i++) {
-      const index = Math.floor(Math.random() * tmp.length);
-      const removed = tmp.splice(index, 1);
-      ret.push(removed[0]);
-    }
-    return ret.filter(function (el) {
-      return el != null;
-    });
-  })
+      for (let i = 0; i < size; i++) {
+        const index = Math.floor(Math.random() * tmp.length);
+        const removed = tmp.splice(index, 1);
+        ret.push(removed[0]);
+      }
+      return ret.filter(function (el) {
+        return el != null;
+      });
+    })
 }
 
 const getParamsFromQuery = async (query, columns, categories = []) => {

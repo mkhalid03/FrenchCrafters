@@ -16,7 +16,7 @@
         </div>
         Products :
         <div v-for="product in results.products" :key="product.id">
-          {{ product }}
+          <ProductCard :product="product" />
         </div>
       </div>
     </div>
@@ -26,8 +26,10 @@
 <script>
 import SearchBar from "~/components/nav/SearchBar";
 import SearchResultsLoading from "../../components/loading/SearchResultsLoading";
+import ProductCard from "../../components/products/ProductCard";
+
 export default {
-  components: {SearchResultsLoading, SearchBar},
+  components: {ProductCard, SearchResultsLoading, SearchBar},
   data() {
     return {
       results: {

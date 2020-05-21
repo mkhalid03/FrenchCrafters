@@ -4,8 +4,8 @@
       <router-link tag="a" to="/" exact>
         Logo
       </router-link>
-      <router-link tag="a" to="/shops" exact>
-        Shops
+      <router-link tag="a" to="/search" exact>
+        Search
       </router-link>
       <router-link tag="a" to="/profile" exact>
         Profile
