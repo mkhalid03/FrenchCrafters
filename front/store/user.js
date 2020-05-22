@@ -1,6 +1,6 @@
-import Cookies from "js-cookie"
-
-export const state = () => {}
+export const state = () => ({
+  orders: []
+})
 
 export const mutations = {
   setOrders(state, orders) {
@@ -11,7 +11,7 @@ export const mutations = {
 export const actions = {
   async fetchOrders({ commit, state }, { jwt }) {
     const orders = await this.$axios.$get(
-      `/user/orders`,
+      `/profile/me/orders`,
       {
         headers: { Authorization: "Bearer " + jwt },
       }

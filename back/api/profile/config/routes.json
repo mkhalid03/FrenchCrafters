@@ -1,17 +1,25 @@
 {
   "routes": [
     {
-      "method": "POST",
-      "path": "/profile",
-      "handler": "profile.update",
+      "method": "GET",
+      "path": "/profile/me/orders",
+      "handler": "profile.findOrders",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/profile/:id",
+      "path": "/profile/me",
       "handler": "profile.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/profile/update",
+      "handler": "profile.update",
       "config": {
         "policies": []
       }

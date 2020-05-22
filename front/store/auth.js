@@ -16,7 +16,7 @@ export const mutations = {
 export const actions = {
   async fetchProfile({ commit, state }, { jwt }) {
     const profile = await this.$axios.$get(
-      `/profile/${state.user.id}`,
+      `/profile/me`,
       {
         headers: { Authorization: "Bearer " + jwt },
       }
@@ -35,7 +35,7 @@ export const actions = {
       })
     }
     const profile = await this.$axios.$post(
-      '/profile',
+      '/profile/update',
       body,
       {
         headers: { Authorization: "Bearer " + jwt },

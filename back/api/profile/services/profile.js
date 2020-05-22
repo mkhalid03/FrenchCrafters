@@ -14,6 +14,20 @@ const update = async (params, data, { files } = {}) => {
   return entry;
 };
 
+const getUserIdByToken = async ctx => {
+  let userId = null
+  if (ctx.request && ctx.request.header && ctx.request.header.authorization) {
+    try {
+      const { id } = await strapi.plugins['users-permissions'].services.jwt.getToken(ctx)
+      userId = id
+    } catch (err) {
+      throw strapi.errors["unauthorized"]("Unauthorized to fetch this account");
+    }
+  }
+  return userId
+};
+
 module.exports = {
+  getUserIdByToken,
   update
 };

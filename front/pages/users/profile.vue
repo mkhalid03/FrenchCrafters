@@ -49,9 +49,6 @@ export default {
   computed: {
     user: function() {
       return this.$store.getters["auth/getUserInfo"]
-    },
-    orders: function() {
-      return this.$store.getters["user/getOrders"]
     }
   },
   methods: {
