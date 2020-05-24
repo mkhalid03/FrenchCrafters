@@ -18,8 +18,7 @@
     },
     "products": {
       "via": "category",
-      "collection": "product",
-      "private": true
+      "collection": "product"
     }
   }
 }

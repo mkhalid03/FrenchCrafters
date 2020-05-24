@@ -25,6 +25,11 @@
     "products": {
       "via": "shop",
       "collection": "product"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shop.tags"
     }
   }
 }

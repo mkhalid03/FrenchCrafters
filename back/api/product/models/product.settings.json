@@ -44,18 +44,17 @@
       ],
       "private": true
     },
-    "stock": {
-      "type": "integer",
-      "min": 0,
+    "sizes": {
+      "type": "component",
+      "repeatable": true,
       "required": true,
-      "default": 0,
-      "private": true
+      "component": "product.sizes-list"
     },
-    "stock_infinite": {
+    "visible": {
       "type": "boolean",
-      "default": true,
-      "required": true,
-      "private": true
+      "default": false,
+      "private": true,
+      "required": true
     }
   }
 }

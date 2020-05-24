@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_sizes_sizes_lists",
+  "info": {
+    "name": "size",
+    "icon": "ruler-vertical"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "infinite": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_shop_tags",
+  "info": {
+    "name": "tag",
+    "icon": "tags"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    }
+  }
+}
