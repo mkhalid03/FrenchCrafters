@@ -4,8 +4,8 @@ export const state = () => {}
 
 export const mutations = {
   setUser(state, user) {
-    state.user = user
-    Cookies.set("user", user)
+    state.user = cleanUser(user)
+    Cookies.set("user", cleanUser(user))
   },
   logout(state) {
     state.user = null
@@ -61,4 +61,23 @@ export const getters = {
   getUserId: (state) => {
     return state.user.id
   },
+}
+
+export const cleanUser = user => {
+  if(user !== null)
+    return {
+      username: user.username,
+      firstName: user.firstname,
+      lastName: user.lastname,
+      picture: cleanPicture(user.picture),
+      title: user.title,
+    }
+}
+
+export const cleanPicture = picture => {
+  if(picture !== null)
+    return {
+      url: picture.url,
+      name: picture.name || null
+    }
 }

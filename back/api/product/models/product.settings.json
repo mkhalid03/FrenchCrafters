@@ -41,18 +41,21 @@
         "unisex",
         "kid",
         "all"
-      ]
+      ],
+      "private": true
     },
     "stock": {
       "type": "integer",
       "min": 0,
       "required": true,
-      "default": 0
+      "default": 0,
+      "private": true
     },
     "stock_infinite": {
       "type": "boolean",
       "default": true,
-      "required": true
+      "required": true,
+      "private": true
     }
   }
 }

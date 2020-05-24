@@ -1,6 +1,5 @@
 <template>
   <div>
-    {{JSON.stringify(data)}}
     <el-table
       :data="data"
       stripe
@@ -14,7 +13,8 @@
             <div v-for="product in props.row.products">
               <span>{{product.name}}</span>
               <span>{{product.description}}</span>
-              <span>Prix unitaire : {{product.price}}</span>
+              <span>Quantity : {{product.quantity}}</span>
+              <span>Prix : {{product.quantity}} x {{product.price}} €</span>
             </div>
         </template>
       </el-table-column>

@@ -24,7 +24,8 @@
     },
     "provider": {
       "type": "string",
-      "configurable": false
+      "configurable": false,
+      "private": true
     },
     "password": {
       "type": "password",
@@ -45,17 +46,20 @@
     "blocked": {
       "type": "boolean",
       "default": false,
-      "configurable": false
+      "configurable": false,
+      "private": true
     },
     "role": {
       "model": "role",
       "via": "users",
       "plugin": "users-permissions",
-      "configurable": false
+      "configurable": false,
+      "private": true
     },
     "orders": {
       "collection": "order",
-      "via": "user"
+      "via": "user",
+      "private": true
     },
     "firstname": {
       "type": "string"
