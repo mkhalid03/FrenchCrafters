@@ -1,4 +1,5 @@
 import Cookies from "js-cookie"
+import { cleanUser } from "~/helpers";
 
 export const state = () => {}
 
@@ -61,23 +62,4 @@ export const getters = {
   getUserId: (state) => {
     return state.user.id
   },
-}
-
-export const cleanUser = user => {
-  if(user !== null)
-    return {
-      username: user.username,
-      firstName: user.firstname,
-      lastName: user.lastname,
-      picture: cleanPicture(user.picture),
-      title: user.title,
-    }
-}
-
-export const cleanPicture = picture => {
-  if(picture !== null)
-    return {
-      url: picture.url,
-      name: picture.name || null
-    }
 }

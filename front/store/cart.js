@@ -1,4 +1,5 @@
 import Cookies from "js-cookie"
+import {cleanProductArray} from "~/helpers";
 
 const defaultState = () => ({
   items: [],
@@ -14,7 +15,7 @@ export const mutations = {
   },
   reset(state) {
     state = defaultState()
-    Cookies.set("cart", state.items)
+    Cookies.set("cart", cleanProductArray(state.items))
   },
   add(state, item) {
     const record = state.items.find((i) => i.id === item.id)
@@ -27,7 +28,7 @@ export const mutations = {
     } else {
       record.quantity++
     }
-    Cookies.set("cart", state.items)
+    Cookies.set("cart", cleanProductArray(state.items))
   },
   remove(state, item) {
     const record = state.items.find((i) => i.id === item.id)
@@ -38,7 +39,7 @@ export const mutations = {
       const index = state.items.findIndex((i) => i.id === item.id)
       state.items.splice(index, 1)
     }
-    Cookies.set("cart", state.items)
+    Cookies.set("cart", cleanProductArray(state.items))
   },
 }
 
