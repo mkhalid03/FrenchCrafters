@@ -49,7 +49,7 @@
     name: "OrdersList",
     methods: {
       formatDate: function (data) {
-        return dayjs(data.createdAt).format('YYYY-MM-DD')
+        return dayjs(data.createdAt).format('DD-MM-YYYY HH:mm:ss')
       },
       formatAddress: function (data) {
         return `${data.address} ${data.postalCode} ${data.city}`

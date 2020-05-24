@@ -15,7 +15,7 @@
 
       <div v-if="username">
         <ul >
-          <li><a href="#" @click="logout">Logout</a></li>
+          <li><a @click="logout">Logout</a></li>
         </ul>
       </div>
 
@@ -44,9 +44,6 @@ export default {
     ...mapMutations({
       logout: "auth/logout",
     }),
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-    }
   },
 }
 </script>

@@ -1,14 +1,14 @@
 <template>
   <div>
     <div>
-      <a @click="$router.go(-1)">go back</a>
+      <ElButton @click="$router.go(-1)">go back</ElButton>
       <span>{{ product.name }} {{ product.price }}€</span>
       <p>{{ product.description }}</p>
     </div>
     <div>
-      <button @click="addToCart(product)" >
+      <ElButton @click="addToCart(product)" >
         Add to cart
-      </button>
+      </ElButton>
       <Cart />
     </div>
   </div>

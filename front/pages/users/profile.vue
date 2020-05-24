@@ -40,9 +40,13 @@ export default {
   },
   created() {
     if(process.browser){
-      const jwt = localStorage.getItem("jwt").replace(/"/ig, "")
-      this.$store.dispatch('auth/fetchProfile', {jwt})
-      this.$store.dispatch('user/fetchOrders', {jwt})
+      try {
+        const jwt = localStorage.getItem("jwt").replace(/"/ig, "")
+        this.$store.dispatch('auth/fetchProfile', {jwt})
+        this.$store.dispatch('user/fetchOrders', {jwt})
+      } catch {
+        this.$store.commit('auth/logout')
+      }
     }
   },
   middleware: "auth",

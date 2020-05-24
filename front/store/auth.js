@@ -10,7 +10,8 @@ export const mutations = {
   },
   logout(state) {
     state.user = null
-    Cookies.set("user", null)
+    Cookies.remove("user")
+    Cookies.remove("jwt")
   },
 }
 

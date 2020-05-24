@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a @click="$router.go(-1)">go back</a>
+    <ElButton @click="$router.go(-1)">go back</ElButton>
 
     <client-only>
       <div v-for="product in shop.products" class="uk-margin">

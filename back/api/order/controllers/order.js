@@ -22,7 +22,7 @@ module.exports = {
 
       // Register the order in the database
       try {
-        await strapi.services.order.create({
+        const payment = await strapi.services.order.create({
           user: ctx.state.user.id,
           address,
           amount: cartAmount,
