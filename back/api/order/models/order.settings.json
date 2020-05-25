@@ -26,9 +26,9 @@
       "type": "float"
     },
     "user": {
-      "via": "orders",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "orders"
     }
   }
 }

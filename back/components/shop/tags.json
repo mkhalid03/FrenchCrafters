@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "tag": {
+    "name": {
       "type": "string"
     }
   }

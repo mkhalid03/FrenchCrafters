@@ -14,8 +14,8 @@ export const mutations = {
     state.items = items
   },
   reset(state) {
-    state = defaultState()
-    Cookies.set("cart", cleanProductArray(state.items))
+    state.items = []
+    Cookies.remove("cart")
   },
   add(state, item) {
     const record = state.items.find((i) => i.id === item.id)

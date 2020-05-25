@@ -23,13 +23,20 @@
       "required": false
     },
     "products": {
-      "via": "shop",
-      "collection": "product"
+      "collection": "product",
+      "via": "shop"
     },
     "tags": {
       "type": "component",
       "repeatable": true,
       "component": "shop.tags"
+    },
+    "user": {
+      "columnName": "owner",
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "shops",
+      "private": true
     }
   }
 }

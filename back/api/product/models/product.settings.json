@@ -26,8 +26,8 @@
       "type": "float"
     },
     "shop": {
-      "model": "shop",
-      "via": "products"
+      "via": "products",
+      "model": "shop"
     },
     "category": {
       "model": "category",

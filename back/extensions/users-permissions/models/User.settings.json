@@ -57,9 +57,8 @@
       "private": true
     },
     "orders": {
-      "collection": "order",
       "via": "user",
-      "private": true
+      "collection": "order"
     },
     "firstname": {
       "type": "string"
@@ -75,6 +74,11 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "shops": {
+      "via": "user",
+      "collection": "shop",
+      "private": true
     }
   }
 }
