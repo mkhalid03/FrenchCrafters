@@ -54,6 +54,7 @@ export default {
    */
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
   axios: {
     baseURL: process.env.BACKEND_SERVER_ENDPOINT,
@@ -67,13 +68,16 @@ export default {
       })
     },
   },
+  styleResources: {
+    scss: [
+      '@storefront-ui/vue/styles.scss',
+    ]
+  },
   /*
    ** Build configuration
    */
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    transpile: [/^@storefront-ui/],
     extend(config, ctx) {},
   },
 }
