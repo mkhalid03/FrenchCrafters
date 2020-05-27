@@ -14,6 +14,11 @@ const update = async (params, data, { files } = {}) => {
   return entry;
 };
 
+const getUserByToken = async ctx => {
+  const userId = await getUserIdByToken(ctx)
+  return strapi.query('user', 'users-permissions').findOne({ id: userId })
+};
+
 const getUserIdByToken = async ctx => {
   let userId = null
   if (ctx.request && ctx.request.header && ctx.request.header.authorization) {
@@ -29,5 +34,6 @@ const getUserIdByToken = async ctx => {
 
 module.exports = {
   getUserIdByToken,
+  getUserByToken,
   update
 };

@@ -1,47 +1,32 @@
-const stripe = require('stripe')(process.env.STRIPE_API_KEY);
-
 module.exports = {
   async create (ctx){
     const {
       address,
-      amount,
       products,
       postalCode,
-      token,
       city,
     } = ctx.request.body;
 
+    const user = await strapi.services.profile.getUserByToken(ctx);
+
     try {
-      const cartAmount = Math.round(await strapi.services.order.calculatePrice(products) * 100) / 100;
-
-      if(Math.round(amount*100)/100 !== Math.round(cartAmount*100)/100){
-        ctx.response.status = 400
-        return {error: "Something went wrong during payment"}
-      }
-
-      const payment = await stripe.charges.create({
-        amount: Math.round(cartAmount*100),
-        currency: 'EUR',
-        description: `Order ${new Date()} by ${ctx.state.user.id}`,
-        source: token,
-      });
+      const payment = await strapi.services.payment.stripePayment(ctx, user)
+      console.log(payment)
 
       // Register the order in the database
       try {
-        await strapi.services.order.create({
-          user: ctx.state.user.id,
+        const order = await strapi.services.order.create({
+          user: user,
           address,
-          amount: cartAmount,
+          amount: payment.amount,
           products,
           postalCode,
           city,
         });
 
-        console.log(payment)
+        strapi.services.payment.createPaymentForOrder(payment, order)
 
-        //strapi.services.bill.create('product', 10 )
-
-        return {};
+        //return {};
       } catch (err) {
         console.log(err);
       }

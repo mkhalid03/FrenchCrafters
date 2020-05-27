@@ -29,6 +29,10 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "orders"
+    },
+    "payments": {
+      "via": "order",
+      "collection": "payment"
     }
   }
 }

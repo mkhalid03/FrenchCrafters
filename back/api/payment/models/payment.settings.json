@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "payments",
+  "info": {
+    "name": "Payment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "integer"
+    },
+    "billing_details": {
+      "type": "json"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "outcome": {
+      "type": "json"
+    },
+    "details": {
+      "type": "json"
+    },
+    "receipt": {
+      "type": "string"
+    },
+    "refunds": {
+      "type": "json"
+    },
+    "source": {
+      "type": "json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "order": {
+      "model": "order",
+      "via": "payments"
+    }
+  }
+}

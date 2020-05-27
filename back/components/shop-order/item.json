@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_shop_order_items",
+  "info": {
+    "name": "item",
+    "icon": "concierge-bell"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}

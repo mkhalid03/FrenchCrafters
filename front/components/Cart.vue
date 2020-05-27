@@ -5,28 +5,27 @@
           <tr>
             <th>Name</th>
             <th>Price (unit)</th>
+            <th>Size</th>
             <th>Quantity</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="dish in selectedDishes">
-            <td class="uk-width-1-2">
-              {{ dish.name }}
-            </td>
+            <td>{{ dish.name }}</td>
             <td>{{ dish.price }}€</td>
-            <td>
-              {{ dish.quantity }}
-            </td>
+            <td v-if="dish.sizes">{{ dish.size ? dish.size.name : ""}}</td>
+            <td>{{ dish.quantity }}</td>
             <td>
               <a>
-                <span class="uk-badge" @click="addToCart(dish)">+</span>
+                <span @click="addToCart(dish)">+</span>
               </a>
               <a>
                 <span
-                  class="uk-badge"
                   style="background: #f0506e;"
                   @click="removeFromCart(dish)"
-                  >-</span>
+                >
+                  -
+                </span>
               </a>
             </td>
           </tr>
