@@ -43,6 +43,11 @@
     "order": {
       "model": "order",
       "via": "payments"
+    },
+    "transactionId": {
+      "type": "string",
+      "private": true,
+      "required": true
     }
   }
 }

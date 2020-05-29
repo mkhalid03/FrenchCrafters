@@ -43,6 +43,10 @@
       "required": true,
       "min": 0,
       "max": 100
+    },
+    "shop_orders": {
+      "via": "shop",
+      "collection": "shop-order"
     }
   }
 }

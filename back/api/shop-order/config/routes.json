@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/shop-orders",
+      "handler": "shop-order.create",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

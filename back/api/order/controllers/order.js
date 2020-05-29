@@ -11,9 +11,7 @@ module.exports = {
 
     try {
       const payment = await strapi.services.payment.stripePayment(ctx, user);
-      console.log(payment);
 
-      // Register the order in the database
       try {
         const order = await strapi.services.order.create({
           user: user,
@@ -24,7 +22,8 @@ module.exports = {
           city,
         });
 
-        strapi.services.payment.createPaymentForOrder(payment, order);
+        strapi.services['payment'].createPaymentForOrder(payment, order);
+        strapi.services['shop-order'].createShopOrderForOrder(products, address, order);
 
         //return {};
       } catch (err) {

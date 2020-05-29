@@ -33,6 +33,10 @@
     "payments": {
       "via": "order",
       "collection": "payment"
+    },
+    "shop_orders": {
+      "via": "order",
+      "collection": "shop-order"
     }
   }
 }

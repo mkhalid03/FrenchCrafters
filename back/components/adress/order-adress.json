@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_adress_order_adresses",
+  "info": {
+    "name": "StandardAddress",
+    "icon": "city"
+  },
+  "options": {},
+  "attributes": {
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "line1": {
+      "type": "string"
+    },
+    "line2": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

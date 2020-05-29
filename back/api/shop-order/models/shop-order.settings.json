@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "shop_orders",
+  "info": {
+    "name": "ShopOrder"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shop-order.item"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.order-adress"
+    },
+    "order": {
+      "model": "order",
+      "via": "shop_orders"
+    },
+    "shop": {
+      "model": "shop",
+      "via": "shop_orders"
+    }
+  }
+}

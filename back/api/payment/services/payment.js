@@ -25,10 +25,12 @@ const stripePayment = async (ctx, user) => {
 };
 
 const createPaymentForOrder = async (payment, order) => {
-  payment.order = order;
+  payment.order = order.id;
   payment.details = payment.payment_method_details;
   payment.receipt = payment.receipt_url;
-  return strapi.query('payment').model.create(payment);
+  payment.transactionId = payment.id
+  delete payment.id
+  strapi.services.payment.create(payment);
 };
 
 module.exports = {
