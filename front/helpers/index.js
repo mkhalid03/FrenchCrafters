@@ -31,6 +31,7 @@ export const cleanProduct = product => {
       category: cleanCategory(product.category),
       price: product.price,
       quantity: product.quantity,
+      sizes: product.sizes,
       shop: cleanShop(product.shop)
     }
   }
