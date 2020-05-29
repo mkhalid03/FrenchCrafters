@@ -1,7 +1,7 @@
 const { sanitizeEntity } = require('strapi-utils');
 
-const SHOP_COLUMNS = ["description", "name"]
-const PRODUCT_COLUMNS = ["description", "name", "category", "target"]
+const SHOP_COLUMNS = ['description', 'name'];
+const PRODUCT_COLUMNS = ['description', 'name', 'category', 'target'];
 
 module.exports = {
   async findAll() {

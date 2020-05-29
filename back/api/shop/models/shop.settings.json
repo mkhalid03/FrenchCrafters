@@ -35,8 +35,14 @@
       "columnName": "owner",
       "plugin": "users-permissions",
       "model": "user",
-      "via": "shops",
-      "private": true
+      "via": "shops"
+    },
+    "taxe": {
+      "private": true,
+      "type": "integer",
+      "required": true,
+      "min": 0,
+      "max": 100
     }
   }
 }

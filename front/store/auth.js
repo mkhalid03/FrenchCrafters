@@ -1,5 +1,5 @@
 import Cookies from "js-cookie"
-import { cleanUser } from "~/helpers";
+import { cleanUser } from "~/helpers"
 
 export const state = () => {}
 
@@ -17,12 +17,9 @@ export const mutations = {
 
 export const actions = {
   async fetchProfile({ commit, state }, { jwt }) {
-    const profile = await this.$axios.$get(
-      `/profile/me`,
-      {
-        headers: { Authorization: "Bearer " + jwt },
-      }
-    )
+    const profile = await this.$axios.$get(`/profile/me`, {
+      headers: { Authorization: "Bearer " + jwt },
+    })
     commit("setUser", profile)
   },
   async updateProfile({ commit, state }, { jwt, body, userId }) {
@@ -36,13 +33,9 @@ export const actions = {
         headers: { Authorization: "Bearer " + jwt },
       })
     }
-    const profile = await this.$axios.$post(
-      '/profile/update',
-      body,
-      {
-        headers: { Authorization: "Bearer " + jwt },
-      }
-    )
+    const profile = await this.$axios.$post("/profile/update", body, {
+      headers: { Authorization: "Bearer " + jwt },
+    })
     commit("setUser", profile)
   },
 }

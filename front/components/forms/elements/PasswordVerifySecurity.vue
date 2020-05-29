@@ -2,52 +2,58 @@
   <div>
     <div>
       <label>New Password</label>
-      <input v-model="password1" @change="passChange" type="password">
+      <input v-model="password1" type="password" @change="passChange">
       <client-only>
-        <Password @score="setScore" v-model="password1" :strength-meter-only="true"/>
+        <Password
+          v-model="password1"
+          :strength-meter-only="true"
+          @score="setScore"
+        />
       </client-only>
     </div>
 
     <div>
       <label>Repeat Password</label>
-      <input v-model="password2" @change="passChange" type="password">
+      <input v-model="password2" type="password" @change="passChange">
     </div>
-
   </div>
 </template>
 
 <script>
-  import Password from 'vue-password-strength-meter'
+import Password from "vue-password-strength-meter"
 
-  export default {
-    data: () => ({
-      password1: null,
-      password2: null,
-      score: 0
-    }),
-    components: { Password },
-    methods: {
-      setScore: function(score){
-        this.score = score
-      },
-      passChange: function(){
-        if(this.score >= 3){
-          console.log(this.password1, this.password2, this.password1 === this.password2)
-          if(this.password1 === this.password2){
-            this.$emit('passwordChange', this.password1)
-            console.log("good")
-          } else {
-            // TODO: Return msg not same pass
-            this.$emit('passwordChange', null)
-            console.log("not equal!!")
-          }
+export default {
+  components: { Password },
+  data: () => ({
+    password1: null,
+    password2: null,
+    score: 0,
+  }),
+  methods: {
+    setScore: function (score) {
+      this.score = score
+    },
+    passChange: function () {
+      if (this.score >= 3) {
+        console.log(
+          this.password1,
+          this.password2,
+          this.password1 === this.password2
+        )
+        if (this.password1 === this.password2) {
+          this.$emit("passwordChange", this.password1)
+          console.log("good")
+        } else {
+          // TODO: Return msg not same pass
+          this.$emit("passwordChange", null)
+          console.log("not equal!!")
         }
-        else {
-          // TODO: Return msg better pass
-          this.$emit('passwordChange', null)
-          console.log("STRONGER!!")
-        }
+      } else {
+        // TODO: Return msg better pass
+        this.$emit("passwordChange", null)
+        console.log("STRONGER!!")
       }
-    }
-  }
+    },
+  },
+}
 </script>

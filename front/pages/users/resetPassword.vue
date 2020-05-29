@@ -20,7 +20,7 @@
 
 <script>
 import axios from "axios"
-import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity";
+import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
 
 export default {
   components: { PasswordVerifySecurity },
@@ -31,7 +31,7 @@ export default {
     }
   },
   methods: {
-    setPassword: function(pass){
+    setPassword: function (pass) {
       this.password = pass
     },
     async handleSubmit() {

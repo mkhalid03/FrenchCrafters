@@ -4,8 +4,8 @@
       <div class="uk-margin">
         <label for="username">Username</label>
         <input
-          v-model="username"
           id="username"
+          v-model="username"
           type="text"
           placeholder="Name"
         />
@@ -24,10 +24,7 @@
       <PasswordVerifySecurity @passwordChange="setPassword" />
 
       <div>
-        <button
-          :disabled="loading"
-          type="submit"
-        >
+        <button :disabled="loading" type="submit">
           Submit
         </button>
       </div>
@@ -45,9 +42,10 @@
 <script>
 import { mapMutations } from "vuex"
 import strapi from "~/utils/strapi"
-import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity";
+import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
 
 export default {
+  components: { PasswordVerifySecurity },
   data() {
     return {
       email: "",
@@ -57,9 +55,8 @@ export default {
     }
   },
   middleware: "logged",
-  components: { PasswordVerifySecurity },
   methods: {
-    setPassword: function(pass) {
+    setPassword: function (pass) {
       this.password = pass
     },
     async handleSubmit() {

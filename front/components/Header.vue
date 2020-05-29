@@ -11,30 +11,28 @@
         Profile
       </router-link>
 
-      {{username}}
+      {{ username }}
 
       <div v-if="username">
-        <ul >
+        <ul>
           <li><a @click="logout">Logout</a></li>
         </ul>
       </div>
-
 
       <ul v-else>
         <li><a href="/register">Signup</a></li>
         <li><a href="/login">Signin</a></li>
       </ul>
-
     </client-only>
   </div>
 </template>
 
 <script>
 import { mapMutations } from "vuex"
-import Nav from "~/components/nav/Nav";
+import Nav from "~/components/nav/Nav"
 
 export default {
-  components: {Nav},
+  components: { Nav },
   computed: {
     username() {
       return this.$store.getters["auth/getUserInfo"].username

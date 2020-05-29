@@ -10,8 +10,8 @@ module.exports = {
     const user = await strapi.services.profile.getUserByToken(ctx);
 
     try {
-      const payment = await strapi.services.payment.stripePayment(ctx, user)
-      console.log(payment)
+      const payment = await strapi.services.payment.stripePayment(ctx, user);
+      console.log(payment);
 
       // Register the order in the database
       try {
@@ -24,7 +24,7 @@ module.exports = {
           city,
         });
 
-        strapi.services.payment.createPaymentForOrder(payment, order)
+        strapi.services.payment.createPaymentForOrder(payment, order);
 
         //return {};
       } catch (err) {

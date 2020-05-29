@@ -3,7 +3,7 @@
     <div v-if="!isSent">
       <form @submit.stop.prevent="sendResetMail">
         <label for="resetMail">Your account email :</label>
-        <input id="resetMail" v-model="resetMail" type="email" />
+        <input id="resetMail" v-model="resetMail" type="email" >
         <button type="submit">
           Reset my password
         </button>

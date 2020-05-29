@@ -77,8 +77,7 @@
     },
     "shops": {
       "via": "user",
-      "collection": "shop",
-      "private": true
+      "collection": "shop"
     }
   }
 }

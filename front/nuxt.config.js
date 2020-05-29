@@ -39,9 +39,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '@/plugins/element-ui'
-  ],
+  plugins: ["@/plugins/element-ui"],
   /*
    ** Nuxt.js dev-modules
    */
@@ -52,13 +50,10 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    '@nuxtjs/axios',
-    '@nuxtjs/style-resources'
-  ],
+  modules: ["@nuxtjs/axios", "@nuxtjs/style-resources"],
   axios: {
     baseURL: process.env.BACKEND_SERVER_ENDPOINT,
-    browserBaseURL: process.env.BACKEND_API_ENDPOINT
+    browserBaseURL: process.env.BACKEND_API_ENDPOINT,
   },
   router: {
     extendRoutes(routes, resolve) {
@@ -69,9 +64,7 @@ export default {
     },
   },
   styleResources: {
-    scss: [
-      '@storefront-ui/vue/styles.scss',
-    ]
+    scss: ["@storefront-ui/vue/styles.scss"],
   },
   /*
    ** Build configuration

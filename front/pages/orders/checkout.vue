@@ -126,7 +126,7 @@ export default {
           token,
         })
         alert("Your order have been successfully submitted.")
-        this.$store.commit('cart/reset')
+        this.$store.commit("cart/reset")
         this.$router.push("/")
       } catch (err) {
         this.loading = false

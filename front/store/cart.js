@@ -1,5 +1,5 @@
 import Cookies from "js-cookie"
-import {cleanProductArray} from "~/helpers";
+import { cleanProductArray } from "~/helpers"
 
 const defaultState = () => ({
   items: [],
@@ -18,8 +18,9 @@ export const mutations = {
     Cookies.remove("cart")
   },
   add(state, item) {
-    console.log(item)
-    const record = state.items.find((i) => i.id === item.id && i.size === item.size)
+    const record = state.items.find(
+      (i) => i.id === item.id && i.size === item.size
+    )
 
     if (!record) {
       state.items.push({

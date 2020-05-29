@@ -17,7 +17,7 @@
 
         <div class="uk-margin">
           <label>Password</label>
-          <input v-model="password" type="password">
+          <input v-model="password" type="password" />
         </div>
 
         <div>

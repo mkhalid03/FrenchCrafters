@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  export default {
-    name: 'SeeProductLoading'
-  }
+export default {
+  name: "SeeProductLoading",
+}
 </script>

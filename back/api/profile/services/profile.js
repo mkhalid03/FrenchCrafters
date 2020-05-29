@@ -15,21 +15,21 @@ const update = async (params, data, { files } = {}) => {
 };
 
 const getUserByToken = async ctx => {
-  const userId = await getUserIdByToken(ctx)
-  return strapi.query('user', 'users-permissions').findOne({ id: userId })
+  const userId = await getUserIdByToken(ctx);
+  return strapi.query('user', 'users-permissions').findOne({ id: userId });
 };
 
 const getUserIdByToken = async ctx => {
-  let userId = null
+  let userId = null;
   if (ctx.request && ctx.request.header && ctx.request.header.authorization) {
     try {
-      const { id } = await strapi.plugins['users-permissions'].services.jwt.getToken(ctx)
-      userId = id
+      const { id } = await strapi.plugins['users-permissions'].services.jwt.getToken(ctx);
+      userId = id;
     } catch (err) {
-      throw strapi.errors["unauthorized"]("Unauthorized to fetch this account");
+      throw strapi.errors['unauthorized']('Unauthorized to fetch this account');
     }
   }
-  return userId
+  return userId;
 };
 
 module.exports = {
