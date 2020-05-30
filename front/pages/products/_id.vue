@@ -14,7 +14,7 @@
       <p>{{ product.description }}</p>
       <ElSelect
         v-if="product.sizes.length"
-        v-model="size"
+        v-model="selectedSize"
         placeholder="Select Size"
         value-key="id"
       >
@@ -38,7 +38,7 @@
       </ElSelect>
     </div>
     <div>
-      <ElButton @click="() => addToCart(product, size)">
+      <ElButton @click="() => addToCart(product, selectedSize)">
         Add to cart
       </ElButton>
       <Cart />
@@ -62,7 +62,7 @@ export default {
   data() {
     return {
       product: {},
-      size: null,
+      selectedSize: null,
     }
   },
   methods: {
@@ -70,9 +70,9 @@ export default {
       add: "cart/add",
       removeFromCart: "cart/remove",
     }),
-    addToCart: function (product, v) {
-      if (product.sizes.length && this.size === null) return
-      product.size = v
+    addToCart: function (product) {
+      if (product.sizes.length && this.selectedSize === null) return
+      product.selectedSize = this.selectedSize
       this.add(product)
     },
   },

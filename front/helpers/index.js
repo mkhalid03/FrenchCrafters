@@ -28,9 +28,11 @@ export const cleanProduct = (product) => {
     return {
       id: product.id,
       name: product.name,
+      description: product.description,
       category: cleanCategory(product.category),
       price: product.price,
       quantity: product.quantity,
+      selectedSize: product.selectedSize,
       sizes: product.sizes,
       shop: cleanShop(product.shop),
     }

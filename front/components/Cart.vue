@@ -5,26 +5,26 @@
         <tr>
           <th>Name</th>
           <th>Price (unit)</th>
-          <th v-if="selectedDishes.some((e) => e.sizes.length !== 0)">
+          <th v-if="selectedProducts.some((e) => e.sizes && e.sizes.length !== 0)">
             Size
           </th>
           <th>Quantity</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(dish, i) in selectedDishes" :key="i">
-          <td>{{ dish.name }}</td>
-          <td>{{ dish.price }}€</td>
-          <td v-if="dish.sizes">
-            {{ dish.size ? dish.size.name : "" }}
+        <tr v-for="(product, i) in selectedProducts" :key="i">
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}€</td>
+          <td v-if="product.sizes">
+            {{ product.selectedSize ? product.selectedSize.name : "" }}
           </td>
-          <td>{{ dish.quantity }}</td>
+          <td>{{ product.quantity }}</td>
           <td>
             <a>
-              <span @click="addToCart(dish)">+</span>
+              <span @click="addToCart(product)">+</span>
             </a>
             <a>
-              <span style="background: #f0506e;" @click="removeFromCart(dish)">
+              <span style="background: #f0506e;" @click="removeFromCart(product)">
                 -
               </span>
             </a>
@@ -56,7 +56,7 @@ export default {
     id() {
       return this.$route.params.id
     },
-    selectedDishes() {
+    selectedProducts() {
       return this.$store.getters["cart/items"]
     },
     price() {

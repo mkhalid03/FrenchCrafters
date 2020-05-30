@@ -19,7 +19,7 @@ export const mutations = {
   },
   add(state, item) {
     const record = state.items.find(
-      (i) => i.id === item.id && i.size === item.size
+      (i) => i.id === item.id && i.selectedSize === item.selectedSize
     )
 
     if (!record) {
@@ -30,6 +30,8 @@ export const mutations = {
     } else {
       record.quantity++
     }
+    console.log(state.items)
+    console.log(cleanProductArray(state.items))
     Cookies.set("cart", cleanProductArray(state.items))
   },
   remove(state, item) {

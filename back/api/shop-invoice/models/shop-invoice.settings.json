@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "shop_invoices",
+  "info": {
+    "name": "ShopInvoice"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "fullAmount": {
+      "type": "float"
+    },
+    "taxesAmount": {
+      "type": "float"
+    },
+    "tva": {
+      "type": "float"
+    },
+    "shopTaxesPercent": {
+      "type": "integer"
+    }
+  }
+}

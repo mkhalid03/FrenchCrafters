@@ -4,7 +4,7 @@
     <div v-if="$fetchState.pending">
       <SearchResultsLoading />
     </div>
-    <div v-else-if="$fetchState.error">
+    <div v-else-if= "$fetchState.error">
       {{ $fetchState.error.message }}
     </div>
     <div v-else>
