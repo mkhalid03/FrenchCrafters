@@ -6,7 +6,7 @@ const createShopInvoiceForOrder = async (products, order) => {
   const productsByShop = groupBy(products, n => n.shop.id)
   for (const shopId of Object.keys(productsByShop)) {
     const products = productsByShop[shopId]
-    const shopProductsAmount = await strapi.services['order'].calculatePrice(products);
+    const shopProductsAmount = await strapi.services['product'].calculatePrice(products);
     const shop = await strapi.query('shop').findOne({id: shopId})
     const shopTaxesPercent = shop.tax
     const fullAmount = shopProductsAmount

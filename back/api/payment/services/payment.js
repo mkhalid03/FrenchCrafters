@@ -2,18 +2,12 @@
 const dayjs = require('dayjs');
 const stripe = require('stripe')(process.env.STRIPE_API_KEY);
 
-const stripePayment = async (ctx, user) => {
-  const {
-    amount,
-    products,
-    token,
-  } = ctx.request.body;
+const stripePayment = async (ctx, amount, products, user, token) => {
 
-  const cartAmount = Math.round(await strapi.services.order.calculatePrice(products) * 100) / 100;
-
+  const cartAmount = Math.round(await strapi.services['product'].calculatePrice(products) * 100) / 100;
+  console.log(cartAmount)
   if(Math.round(amount*100)/100 !== Math.round(cartAmount*100)/100){
-    ctx.response.status = 400;
-    return {error: 'Something went wrong during payment'};
+      return ctx.response.notAcceptable('One or many products are no longer available')
   }
 
   return await stripe.charges.create({
