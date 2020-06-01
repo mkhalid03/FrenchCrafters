@@ -2,8 +2,8 @@ export const cleanUser = (user) => {
   if (user !== null) {
     return {
       username: user.username,
-      firstName: user.firstname,
-      lastName: user.lastname,
+      firstname: user.firstname,
+      lastname: user.lastname,
       picture: cleanPicture(user.picture),
       title: user.title,
     }

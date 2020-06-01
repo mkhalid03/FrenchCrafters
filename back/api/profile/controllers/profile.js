@@ -5,9 +5,11 @@ module.exports = {
     const userId = await strapi.services.profile.getUserIdByToken(ctx);
     let entity = await strapi.query('user', 'users-permissions').findOne({ id: userId });
 
-    return sanitizeEntity(entity.toJSON ? entity.toJSON() : entity, {
+    const satinizedUser =  sanitizeEntity(entity.toJSON ? entity.toJSON() : entity, {
       model: strapi.query('user', 'users-permissions').model,
     });
+    delete satinizedUser.orders
+    return satinizedUser
   },
 
   async update(ctx) {
