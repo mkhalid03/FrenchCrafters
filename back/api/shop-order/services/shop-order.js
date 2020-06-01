@@ -4,7 +4,6 @@ const groupBy = require('lodash/groupBy');
 const createShopOrderForOrder = async (products, address, order) => {
   const productsByShop = groupBy(products, n => n.shop.id)
   Object.keys(productsByShop).forEach((shopId) => {
-    console.log(shopId)
     const items = []
     const products = productsByShop[shopId]
     products.forEach(product => {
@@ -22,7 +21,7 @@ const createShopOrderForOrder = async (products, address, order) => {
       products: items,
       shop: shopId,
       order: order.id,
-      //address: []
+      // address: []
     });
   })
 };

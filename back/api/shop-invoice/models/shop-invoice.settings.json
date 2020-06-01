@@ -13,7 +13,7 @@
     "fullAmount": {
       "type": "float"
     },
-    "taxesAmount": {
+    "withoutTaxesAmount": {
       "type": "float"
     },
     "tva": {
@@ -21,6 +21,10 @@
     },
     "shopTaxesPercent": {
       "type": "integer"
+    },
+    "order": {
+      "model": "order",
+      "via": "shop_invoices"
     }
   }
 }

@@ -37,6 +37,10 @@
     "shop_orders": {
       "via": "order",
       "collection": "shop-order"
+    },
+    "shop_invoices": {
+      "via": "order",
+      "collection": "shop-invoice"
     }
   }
 }

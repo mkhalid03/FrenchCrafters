@@ -37,16 +37,16 @@
       "model": "user",
       "via": "shops"
     },
-    "taxe": {
+    "tax": {
       "private": true,
       "type": "integer",
-      "required": true,
+      "required": false,
       "min": 0,
       "max": 100
     },
     "shop_orders": {
-      "via": "shop",
-      "collection": "shop-order"
+      "collection": "shop-order",
+      "via": "shop"
     }
   }
 }
