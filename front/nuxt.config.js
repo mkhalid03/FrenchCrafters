@@ -26,7 +26,7 @@ export default {
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-    script: [{ src: "https://js.stripe.com/v3" }],
+    script: [],
   },
   /*
    ** Customize the progress-bar color

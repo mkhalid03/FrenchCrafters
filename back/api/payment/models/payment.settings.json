@@ -48,6 +48,9 @@
       "type": "string",
       "private": true,
       "required": true
+    },
+    "userInfo": {
+      "type": "json"
     }
   }
 }

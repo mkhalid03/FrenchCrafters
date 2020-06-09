@@ -4,7 +4,7 @@
     <div>{{ product.name }}</div>
     <div>{{ product.description }}</div>
     <div>Seller : {{ product.shop.name }}</div>
-    <div>Seen in Category :{{ product.category.title }}</div>
+    <div>Seen in Category : {{ product.category.title }}</div>
     <ElButton @click="seeProduct(product.id)">
       See more
     </ElButton>

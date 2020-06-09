@@ -21,9 +21,6 @@
     },
     "postalCode": {
       "type": "string"
-    },
-    "state": {
-      "type": "string"
     }
   }
 }

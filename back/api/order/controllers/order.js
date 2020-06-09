@@ -2,7 +2,6 @@ module.exports = {
   async create (ctx){
     const {
       address,
-      amount,
       city,
       postalCode,
       products : bodyProducts,
@@ -13,7 +12,7 @@ module.exports = {
 
     try {
       const products = await strapi.services['product'].getRealProducts(ctx, bodyProducts);
-      const payment = await strapi.services['payment'].stripePayment(ctx, amount, products, user, token);
+      const payment = await strapi.services['payment'].stripePayment(ctx, products, token, user);
 
       try {
         const order = await strapi.services['order'].create({
@@ -31,6 +30,7 @@ module.exports = {
 
         return ctx.response.statusCode = 201;
       } catch (err) {
+        console.log('invoices creation', err);
         throw err
       }
     } catch (err) {
