@@ -6,9 +6,14 @@ const customRoutes = (path, resolve) => {
       component: resolve(path, "pages/users/login.vue"),
     },
     {
+      name: "shop-register",
+      path: "/register/shop",
+      component: resolve(path, "pages/users/shopRegister.vue"),
+    },
+    {
       name: "register",
       path: "/register",
-      component: resolve(path, "pages/users/register.vue"),
+      component: resolve(path, "pages/users/userRegister.vue"),
     },
     {
       name: "reset-password",

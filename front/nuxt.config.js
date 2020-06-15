@@ -10,6 +10,7 @@ export default {
   env: {
     stripeApiKey: process.env.STRIPE_API_KEY,
     backendUrl: process.env.BACKEND_API_ENDPOINT,
+    siretApiUrl: process.env.SIRET_API_ENDPOINT
   },
   /*
    ** Headers of the page
