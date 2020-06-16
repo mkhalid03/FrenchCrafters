@@ -21,7 +21,7 @@ const createShopOrderForOrder = async (products, address, order) => {
       products: items,
       shop: shopId,
       order: order.id,
-      // address: []
+      address
     });
   })
 };

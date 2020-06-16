@@ -78,7 +78,6 @@ export default {
             url:`${process.env.siretApiUrl}/${this.form.siret}`,
             baseURL: null,
           }).then(res => {
-            console.log(res)
             this.company = res.data.etablissement
           })
         } catch {

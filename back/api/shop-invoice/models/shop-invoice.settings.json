@@ -23,8 +23,8 @@
       "type": "integer"
     },
     "order": {
-      "model": "order",
-      "via": "shop_invoices"
+      "via": "shop_invoices",
+      "model": "order"
     }
   }
 }

@@ -41,8 +41,8 @@
       "type": "string"
     },
     "order": {
-      "model": "order",
-      "via": "payments"
+      "via": "payments",
+      "model": "order"
     },
     "transactionId": {
       "type": "string",

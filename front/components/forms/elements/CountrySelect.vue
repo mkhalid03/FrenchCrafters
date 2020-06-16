@@ -103,7 +103,7 @@
     <el-option value="HU" label="Hungary">Hungary</el-option>
     <el-option value="IS" label="Iceland">Iceland</el-option>
     <el-option value="IN" label="India">India</el-option>
-    <el-option value="ID" label=Indonesia"">Indonesia</el-option>
+    <el-option value="ID" label="Indonesia">Indonesia</el-option>
     <el-option value="IR" label="Iran, Islamic Republic of">Iran, Islamic Republic of</el-option>
     <el-option value="IQ" label="Iraq">Iraq</el-option>
     <el-option value="IE" label="Ireland">Ireland</el-option>

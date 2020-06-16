@@ -21,8 +21,8 @@
       "component": "adress.order-adress"
     },
     "order": {
-      "model": "order",
-      "via": "shop_orders"
+      "via": "shop_orders",
+      "model": "order"
     },
     "shop": {
       "via": "shop_orders",

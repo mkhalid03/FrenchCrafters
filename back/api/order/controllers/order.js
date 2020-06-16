@@ -1,7 +1,6 @@
 module.exports = {
   async create (ctx){
     const {
-      address,
       city,
       postalCode,
       products : bodyProducts,
@@ -13,6 +12,14 @@ module.exports = {
     try {
       const products = await strapi.services['product'].getRealProducts(ctx, bodyProducts);
       const payment = await strapi.services['payment'].stripePayment(ctx, products, token, user);
+
+      const address = {
+        city: payment.billing_details.address.city,
+        country: payment.billing_details.address.country,
+        line1: payment.billing_details.address.line1,
+        line2: payment.billing_details.address.line2,
+        postalCode: payment.billing_details.address.postal_code,
+      }
 
       try {
         const order = await strapi.services['order'].create({

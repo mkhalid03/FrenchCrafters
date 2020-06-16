@@ -10,15 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "address": {
-      "type": "string"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "city": {
-      "type": "string"
-    },
     "products": {
       "type": "json"
     },
@@ -31,16 +22,21 @@
       "via": "orders"
     },
     "payments": {
-      "via": "order",
-      "collection": "payment"
+      "collection": "payment",
+      "via": "order"
     },
     "shop_orders": {
-      "via": "order",
-      "collection": "shop-order"
+      "collection": "shop-order",
+      "via": "order"
     },
     "shop_invoices": {
-      "via": "order",
-      "collection": "shop-invoice"
+      "collection": "shop-invoice",
+      "via": "order"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "adress.order-adress"
     }
   }
 }
