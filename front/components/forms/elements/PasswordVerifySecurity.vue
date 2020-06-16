@@ -2,7 +2,12 @@
   <div>
     <div>
       <label>New Password</label>
-      <input v-model="password1" type="password" @change="passChange">
+      <el-input
+        v-model="password1"
+        type="password"
+        @change="passChange"
+        placeholder="••••••••••"
+      />
       <client-only>
         <Password
           v-model="password1"
@@ -14,7 +19,12 @@
 
     <div>
       <label>Repeat Password</label>
-      <input v-model="password2" type="password" @change="passChange">
+      <el-input
+        v-model="password2"
+        type="password"
+        @change="passChange"
+        placeholder="••••••••••"
+      />
     </div>
   </div>
 </template>

@@ -1,6 +1,11 @@
 <template>
   <div>
-    {{JSON.stringify(this.company)}}
+    <div v-if="company.denomination_usuelle">
+      <span>{{company.denomination_usuelle}}</span>
+    </div>
+    <div v-if="company.geo_adresse">
+      <span>{{company.geo_adresse}}</span>
+    </div>
   </div>
 </template>
 

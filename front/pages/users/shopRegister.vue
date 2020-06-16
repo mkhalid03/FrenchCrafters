@@ -3,7 +3,7 @@
     <form @submit.stop.prevent="handleSubmit">
       <div>
         <label for="email">Email</label>
-        <input
+        <el-input
           id="email"
           v-model="form.email"
           type="email"
@@ -19,7 +19,7 @@
           id="siret"
           v-model="form.siret"
           type="text"
-          placeholder="XXX XXX XXX"
+          placeholder="XXXXXXXXXXXXXX"
         />
         <el-button @click="checkCompany">Check my company</el-button>
       </div>
@@ -27,7 +27,7 @@
       <div v-if="company">
         Is this your Company ?
         <CompanyInfo :company="company"/>
-        <el-checkbox v-model="checked">Yes, this is my company !</el-checkbox>
+        <el-checkbox v-model="form.checked">Yes, this is my company !</el-checkbox>
       </div>
 
       <div>
@@ -48,8 +48,6 @@
 
 <script>
 import axios from "axios"
-import { mapMutations } from "vuex"
-import strapi from "~/utils/strapi"
 import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
 import CompanyInfo from "../../components/company/CompanyInfo";
 
@@ -61,7 +59,7 @@ export default {
         email: "",
         password: "",
         siret: "",
-        checkCompany: false
+        checked: false
       },
       company: null,
       loading: false,
@@ -75,10 +73,13 @@ export default {
     checkCompany: async function () {
       if(this.form.siret){
         try {
-          this.company = await axios({
+          axios({
             method:'get',
             url:`${process.env.siretApiUrl}/${this.form.siret}`,
             baseURL: null,
+          }).then(res => {
+            console.log(res)
+            this.company = res.data.etablissement
           })
         } catch {
           console.log('Oops')
@@ -88,6 +89,7 @@ export default {
     async handleSubmit() {
       try {
         this.loading = true
+        //TODO: call to back to create shop and user
       } catch (err) {
         this.loading = false
         alert(err.message || "An error occurred.")
