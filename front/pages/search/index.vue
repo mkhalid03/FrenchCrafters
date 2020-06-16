@@ -14,7 +14,7 @@
       <div v-else>
         Shops :
         <div v-for="shop in results.shops" :key="shop.id">
-          {{ shop }}
+          <ShopCard :shop="shop" />
         </div>
         Products :
         <div v-for="product in results.products" :key="product.id">
@@ -27,11 +27,12 @@
 
 <script>
 import SearchBar from "~/components/nav/SearchBar"
-import SearchResultsLoading from "../../components/loading/SearchResultsLoading"
-import ProductCard from "../../components/products/ProductCard"
+import SearchResultsLoading from "~/components/loading/SearchResultsLoading"
+import ProductCard from "~/components/products/ProductCard"
+import ShopCard from "~/components/shop/ShopCard"
 
 export default {
-  components: { ProductCard, SearchResultsLoading, SearchBar },
+  components: { ProductCard, SearchResultsLoading, SearchBar, ShopCard },
   async fetch() {
     this.results = await this.$axios.$get(`/search/all`)
   },

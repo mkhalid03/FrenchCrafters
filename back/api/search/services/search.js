@@ -1,11 +1,11 @@
 'use strict';
-const i18n = require('i18n'), path = require('path'), translation = require('../../../config/locales/fr_fr.json');
+const i18n = require('i18n'), path = require('path'), genders = require('../../../config/translations/fr_fr.json');
 
 i18n.configure({
-  locales:['fr_fr'],
+  locales:['genders'],
   register: global,
   updateFiles: false,
-  directory: path.join(__dirname + '../../../../config/locales')
+  directory: path.join(__dirname + '../../../../config/translations')
 });
 
 const entityWithQuery = async (query, entity, columns, categories, limit, skip) => {
@@ -32,7 +32,7 @@ const entityWithQuery = async (query, entity, columns, categories, limit, skip) 
 
 const randomQueryOutput = async (entity, size) => {
   return strapi.query(entity).model
-    .find()
+    .find({'visible': true})
     .populate('image')
     .populate(entity === 'product' ? 'category' : null)
     .populate(entity === 'product' ? 'shop' : null)
@@ -62,7 +62,7 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
     switch (column) {
       case 'target':
         queryArray.forEach(q => {
-          if (q in translation) {
+          if (q in genders) {
             targetFilter.push({target: {'$regex': __({phrase: q, locale: 'fr_fr'}), '$options': 'i'}});
           }
         });
@@ -88,8 +88,7 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
   if(targetFilter.length !== 0) filters.push({$or: targetFilter});
   if(contentFilter.length !== 0) filters.push({$or: contentFilter});
   if(categoriesFilter.length !== 0) filters.push({$or: categoriesFilter});
-
-  //console.log(JSON.stringify(filters))
+  filters.push({'visible': true})
 
   return filters.length !== 0 ? { $and: filters } : {};
 };

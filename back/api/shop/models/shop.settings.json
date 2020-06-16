@@ -47,6 +47,11 @@
     "shop_orders": {
       "collection": "shop-order",
       "via": "shop"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false,
+      "private": true
     }
   }
 }
