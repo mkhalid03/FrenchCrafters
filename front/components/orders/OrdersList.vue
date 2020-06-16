@@ -54,7 +54,8 @@ export default {
       return dayjs(data.createdAt).format("DD-MM-YYYY HH:mm:ss")
     },
     formatAddress: function (data) {
-      return `${data.address} ${data.postalCode} ${data.city}`
+      const { city, line1, line2, country, postalCode} = data.address
+      return `${line1 || ""} ${line2 || ""} ${postalCode || ""} ${city || ""}, ${country || ""}`
     },
     formatPrice: function (data) {
       return `${data.amount} €`
