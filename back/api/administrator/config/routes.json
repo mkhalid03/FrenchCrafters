@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/admin",
+      "handler": "administrator.create",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
