@@ -15,6 +15,11 @@ const getRealProducts = async (ctx, productsArray) => {
     return res
 };
 
+const allProductAvailable = async products => {
+  //TODO: check availability
+  return true
+};
+
 const calculatePrice = async products => {
   let prices = [];
   for (const product of products) {
@@ -26,5 +31,6 @@ const calculatePrice = async products => {
 
 module.exports = {
   calculatePrice,
-  getRealProducts
+  getRealProducts,
+  allProductAvailable
 };

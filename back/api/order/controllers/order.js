@@ -11,6 +11,11 @@ module.exports = {
 
     try {
       const products = await strapi.services['product'].getRealProducts(ctx, bodyProducts);
+
+      if(!await strapi.services['product'].allProductAvailable(products)){
+        throw strapi.errors['resourceGone']('Missing in stock');
+      }
+
       const payment = await strapi.services['payment'].stripePayment(ctx, products, token, user);
 
       const address = {
