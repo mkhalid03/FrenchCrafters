@@ -11,9 +11,21 @@ module.exports = {
       blocked: true
     }
 
-    strapi.admin.controllers.admin.create(ctx)
+    try {
+      await strapi.plugins['users-permissions'].services.user.add({
+        username: email,
+        email,
+        password
+      })
 
-    //TODO : create user
-    //TODO : create a shop with user as owner
+      await strapi.admin.controllers.admin.create(ctx)
+      const newAdmin = await strapi.query('administrator', 'admin').findOne({ email });
+      await strapi.services['shop'].initializeShopWithOwner(newAdmin)
+
+      ctx.response.statusCode = 201;
+      return ctx;
+    } catch {
+      throw strapi.errors['conflict']('something went wrong during creation.');
+    }
   }
 };

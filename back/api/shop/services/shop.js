@@ -1,8 +1,13 @@
 'use strict';
 
-/**
- * Read the documentation (https://strapi.io/documentation/3.0.0-beta.x/concepts/services.html#core-services)
- * to customize this service
- */
+const initializeShopWithOwner = async owner => {
+  return await strapi.services['shop'].create({
+    name: "New Shop",
+    description: "Description of my new shop.",
+    owner: owner.id,
+  })
+}
 
-module.exports = {};
+module.exports = {
+  initializeShopWithOwner
+};

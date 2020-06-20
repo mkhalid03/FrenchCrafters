@@ -35,7 +35,8 @@ module.exports = {
         strapi.services['shop-order'].createShopOrderForOrder(products, address, order);
         strapi.services['shop-invoice'].createShopInvoiceForOrder(products, order);
 
-        return ctx.response.statusCode = 201;
+        ctx.response.statusCode = 201;
+        return ctx;
       } catch (err) {
         console.log('invoices creation', err);
         throw err

@@ -31,27 +31,23 @@
       "repeatable": true,
       "component": "shop.tags"
     },
-    "user": {
-      "columnName": "owner",
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "shops"
-    },
     "tax": {
       "private": true,
       "type": "integer",
       "required": false,
       "min": 0,
-      "max": 100
+      "max": 100,
+      "default": 10
     },
     "shop_orders": {
       "collection": "shop-order",
       "via": "shop"
     },
-    "visible": {
-      "type": "boolean",
-      "default": false,
-      "private": true
+    "owner": {
+      "type": "string",
+      "private": true,
+      "required": true,
+      "unique": true
     }
   }
 }
