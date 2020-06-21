@@ -31,11 +31,8 @@ const entityWithQuery = async (query, entity, columns, categories, limit, skip) 
 };
 
 const randomQueryOutput = async (entity, size) => {
-  return strapi.query(entity).model
+  return await strapi.services[entity]
     .find({'visible': true})
-    .populate('image')
-    .populate(entity === 'product' ? 'category' : null)
-    .populate(entity === 'product' ? 'shop' : null)
     .then(res => {
       const tmp = res.slice(res);
       const ret = [];

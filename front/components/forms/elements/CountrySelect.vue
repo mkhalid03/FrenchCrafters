@@ -215,7 +215,7 @@
     <el-option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</el-option>
     <el-option value="SZ" label="Swaziland">Swaziland</el-option>
     <el-option value="SE" label="Sweden">Sweden</el-option>
-    <el-option value="CH" label=Switzerland"">Switzerland</el-option>
+    <el-option value="CH" label="Switzerland">Switzerland</el-option>
     <el-option value="SY" label="Syrian Arab Republic">Syrian Arab Republic</el-option>
     <el-option value="TW" label="Taiwan, Province of China">Taiwan, Province of China</el-option>
     <el-option value="TJ" label="Tajikistan">Tajikistan</el-option>

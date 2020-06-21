@@ -48,6 +48,11 @@
       "private": true,
       "required": true,
       "unique": true
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false,
+      "private": true
     }
   }
 }

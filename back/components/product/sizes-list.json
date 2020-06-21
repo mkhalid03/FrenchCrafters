@@ -14,7 +14,8 @@
       "type": "integer"
     },
     "infinite": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }

@@ -10,11 +10,10 @@ module.exports = {
     const user = await strapi.services.profile.getUserByToken(ctx);
 
     try {
-      const products = await strapi.services['product'].getRealProducts(ctx, bodyProducts);
+      const products = await strapi.services['product'].getRealProducts(bodyProducts);
 
-      if(!await strapi.services['product'].allProductAvailable(products)){
-        throw strapi.errors['resourceGone']('Missing in stock');
-      }
+      await strapi.services['product'].allProductAvailable(products)
+      await strapi.services['product'].actualizeStock(products)
 
       const payment = await strapi.services['payment'].stripePayment(ctx, products, token, user);
 
