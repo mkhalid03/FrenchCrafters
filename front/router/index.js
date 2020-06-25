@@ -11,7 +11,7 @@ const customRoutes = (path, resolve) => {
       component: resolve(path, "pages/users/shopRegister.vue"),
     },
     {
-      name: "register",
+      name: "user-register",
       path: "/register",
       component: resolve(path, "pages/users/userRegister.vue"),
     },

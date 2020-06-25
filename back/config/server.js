@@ -1,5 +1,6 @@
 module.exports = ({ env }) => ({
-  url: `https://0.0.0.0:1337`,
+  host: env('BACK_HOST_URL', '0.0.0.0'),
+  port: env.int('BACK_HOST_PORT', 1337),
   proxy: {
     enabled: false
   },

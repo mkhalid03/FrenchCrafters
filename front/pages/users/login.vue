@@ -29,7 +29,7 @@
         <div class="uk-margin">
           <p>
             No account yet?
-            <router-link :to="{ name: 'users-register' }">
+            <router-link :to="{ name: 'user-register' }">
               Register
             </router-link>
           </p>

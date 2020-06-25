@@ -3,6 +3,9 @@ services:
   mongo:
     container_name: craft-mongo
     image: mongo:latest
+    environment:
+      - BACK_HOST_URL={BACK_HOST_URL}
+      - BACK_HOST_PORT={BACK_HOST_PORT}
     ports:
       - "27017:27017"
     volumes:
