@@ -2,7 +2,7 @@ version: "3"
 services:
   mongo:
     container_name: craft-mongo
-    image: mongo:latest
+    image: mongo:4.2.8
     environment:
       - BACK_HOST_URL={BACK_HOST_URL}
       - BACK_HOST_PORT={BACK_HOST_PORT}
