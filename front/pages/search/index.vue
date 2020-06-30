@@ -75,6 +75,15 @@ export default {
             this.results = res
             this.loading = false
           })
+      } else if (opt.category !== null) {
+        this.$axios
+          .$post(`/search/products`, {
+            query: opt.query,
+          })
+          .then((res) => {
+            this.results = res
+            this.loading = false
+          })
       } else {
         this.$axios
           .$post(`/search/all`, {
