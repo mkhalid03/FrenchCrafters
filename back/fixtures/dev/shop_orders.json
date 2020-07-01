@@ -1,0 +1,131 @@
+[
+  {
+    "_id": {
+      "$oid": "5efc86d0158958004384890e"
+    },
+    "products": [
+      {
+        "_id": {
+          "$oid": "5efc86d01589580043848915"
+        },
+        "kind": "ComponentShopOrderItem",
+        "ref": {
+          "$oid": "5efc86d01589580043848912"
+        }
+      }
+    ],
+    "address": [
+      {
+        "_id": {
+          "$oid": "5efc86d0158958004384891a"
+        },
+        "kind": "ComponentAdressOrderAdress",
+        "ref": {
+          "$oid": "5efc86d01589580043848917"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.688Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.797Z"
+    },
+    "__v": 2,
+    "order": {
+      "$oid": "5efc86d0158958004384890b"
+    },
+    "shop": {
+      "$oid": "5efb453c3452590024d2203b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efc86d0158958004384890f"
+    },
+    "products": [
+      {
+        "_id": {
+          "$oid": "5efc86d01589580043848914"
+        },
+        "kind": "ComponentShopOrderItem",
+        "ref": {
+          "$oid": "5efc86d01589580043848911"
+        }
+      }
+    ],
+    "address": [
+      {
+        "_id": {
+          "$oid": "5efc86d01589580043848919"
+        },
+        "kind": "ComponentAdressOrderAdress",
+        "ref": {
+          "$oid": "5efc86d01589580043848916"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.688Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.800Z"
+    },
+    "__v": 2,
+    "order": {
+      "$oid": "5efc86d0158958004384890b"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efc8db1158958004384892e"
+    },
+    "products": [
+      {
+        "_id": {
+          "$oid": "5efc8db11589580043848934"
+        },
+        "kind": "ComponentShopOrderItem",
+        "ref": {
+          "$oid": "5efc8db11589580043848930"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc8db11589580043848933"
+        },
+        "kind": "ComponentShopOrderItem",
+        "ref": {
+          "$oid": "5efc8db11589580043848931"
+        }
+      }
+    ],
+    "address": [
+      {
+        "_id": {
+          "$oid": "5efc8db11589580043848936"
+        },
+        "kind": "ComponentAdressOrderAdress",
+        "ref": {
+          "$oid": "5efc8db11589580043848935"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-07-01T13:20:49.447Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:49.531Z"
+    },
+    "__v": 2,
+    "order": {
+      "$oid": "5efc8db1158958004384892b"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  }
+]

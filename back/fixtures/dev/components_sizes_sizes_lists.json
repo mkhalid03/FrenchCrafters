@@ -1,0 +1,452 @@
+[
+  {
+    "_id": {
+      "$oid": "5efb505e2f61290092ba4271"
+    },
+    "infinite": false,
+    "name": "36 - 39",
+    "stock": 10,
+    "createdAt": {
+      "$date": "2020-06-30T14:46:54.334Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T15:52:18.355Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb505e2f61290092ba4273"
+    },
+    "infinite": false,
+    "name": "43 - 45",
+    "stock": 10,
+    "createdAt": {
+      "$date": "2020-06-30T14:46:54.334Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T15:52:18.357Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb505e2f61290092ba4272"
+    },
+    "infinite": false,
+    "name": "40 - 42",
+    "stock": 10,
+    "createdAt": {
+      "$date": "2020-06-30T14:46:54.334Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T15:52:18.356Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631b2f61290092ba42a1"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 0,
+    "createdAt": {
+      "$date": "2020-06-30T16:06:51.786Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:08:30.989Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631b2f61290092ba42a2"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 0,
+    "createdAt": {
+      "$date": "2020-06-30T16:06:51.786Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:08:30.990Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631b2f61290092ba42a3"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 3,
+    "createdAt": {
+      "$date": "2020-06-30T16:06:51.786Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:08:30.991Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631b2f61290092ba42a4"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:06:51.786Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:08:30.991Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb68fb2f61290092ba42cb"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 3,
+    "createdAt": {
+      "$date": "2020-06-30T16:31:55.851Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:49.539Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb68fb2f61290092ba42cc"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 4,
+    "createdAt": {
+      "$date": "2020-06-30T16:31:55.851Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:49.540Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb68fb2f61290092ba42cd"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:31:55.851Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:49.540Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb68fb2f61290092ba42ce"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 0,
+    "createdAt": {
+      "$date": "2020-06-30T16:31:55.851Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:49.542Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb698a2f61290092ba42dc"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:34:18.286Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:47.084Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb698a2f61290092ba42dd"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 2,
+    "createdAt": {
+      "$date": "2020-06-30T16:34:18.286Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:47.085Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb698a2f61290092ba42de"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 6,
+    "createdAt": {
+      "$date": "2020-06-30T16:34:18.286Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:47.086Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb698a2f61290092ba42df"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:34:18.286Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:47.088Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d5f2f61290092ba42ed"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d5f2f61290092ba42ee"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 0,
+    "createdAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d5f2f61290092ba42ef"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 7,
+    "createdAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d5f2f61290092ba42f0"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:39.993Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce15895800438488fd"
+    },
+    "infinite": false,
+    "name": "37 - 39",
+    "stock": 7,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce15895800438488fe"
+    },
+    "infinite": false,
+    "name": "40 - 42",
+    "stock": 10,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce15895800438488ff"
+    },
+    "infinite": false,
+    "name": "43 - 45",
+    "stock": 4,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.758Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce1589580043848903"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 2,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce1589580043848904"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 3,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce1589580043848905"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 4,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86ce1589580043848906"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 1,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.817Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8daf1589580043848923"
+    },
+    "infinite": false,
+    "name": "S",
+    "stock": 4,
+    "createdAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8daf1589580043848924"
+    },
+    "infinite": false,
+    "name": "M",
+    "stock": 12,
+    "createdAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8daf1589580043848925"
+    },
+    "infinite": false,
+    "name": "L",
+    "stock": 2,
+    "createdAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8daf1589580043848926"
+    },
+    "infinite": false,
+    "name": "XL",
+    "stock": 0,
+    "createdAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:47.776Z"
+    },
+    "__v": 0
+  }
+]

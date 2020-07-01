@@ -11,9 +11,9 @@
           <p>{{ product.description }}</p>
         </div>
         <div class="uk-card-footer">
-          <button @click="addToCart(product)">
-            Add to cart
-          </button>
+          <ElButton @click="seeProduct(product.id)">
+            See more
+          </ElButton>
         </div>
       </div>
       <Cart />
@@ -38,10 +38,9 @@ export default {
     }
   },
   methods: {
-    ...mapMutations({
-      addToCart: "cart/add",
-      removeFromCart: "cart/remove",
-    }),
+    seeProduct: function (productId) {
+      this.$router.push(`/products/${productId}`)
+    },
   },
 }
 </script>

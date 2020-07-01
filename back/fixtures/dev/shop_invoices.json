@@ -1,0 +1,59 @@
+[
+  {
+    "_id": {
+      "$oid": "5efc86d01589580043848913"
+    },
+    "fullAmount": 18,
+    "withoutTaxesAmount": 12.6,
+    "tva": 20,
+    "shopTaxesPercent": 10,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.727Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.745Z"
+    },
+    "__v": 0,
+    "order": {
+      "$oid": "5efc86d0158958004384890b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efc86d01589580043848918"
+    },
+    "fullAmount": 99,
+    "withoutTaxesAmount": 69.3,
+    "tva": 20,
+    "shopTaxesPercent": 10,
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.778Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.789Z"
+    },
+    "__v": 0,
+    "order": {
+      "$oid": "5efc86d0158958004384890b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efc8db11589580043848932"
+    },
+    "fullAmount": 117,
+    "withoutTaxesAmount": 81.89,
+    "tva": 20,
+    "shopTaxesPercent": 10,
+    "createdAt": {
+      "$date": "2020-07-01T13:20:49.496Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:49.507Z"
+    },
+    "__v": 0,
+    "order": {
+      "$oid": "5efc8db1158958004384892b"
+    }
+  }
+]

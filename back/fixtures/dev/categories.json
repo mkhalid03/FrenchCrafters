@@ -1,0 +1,86 @@
+[
+  {
+    "_id": {
+      "$oid": "5efb4f552f61290092ba426a"
+    },
+    "uid": "chaussettes",
+    "title": "Chaussettes",
+    "createdAt": {
+      "$date": "2020-06-30T14:42:29.937Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:42:29.937Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4f642f61290092ba426b"
+    },
+    "uid": "chemise",
+    "title": "Chemise",
+    "createdAt": {
+      "$date": "2020-06-30T14:42:44.350Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:42:44.350Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4f812f61290092ba426c"
+    },
+    "uid": "sweatshirt",
+    "title": "Sweat-shirt",
+    "createdAt": {
+      "$date": "2020-06-30T14:43:13.308Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:31:01.183Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4f8c2f61290092ba426d"
+    },
+    "uid": "accessoires",
+    "title": "Accessoires",
+    "createdAt": {
+      "$date": "2020-06-30T14:43:24.596Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:43:24.596Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4f962f61290092ba426e"
+    },
+    "uid": "casquettes",
+    "title": "Casquettes",
+    "createdAt": {
+      "$date": "2020-06-30T14:43:34.327Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:43:34.327Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4fa72f61290092ba426f"
+    },
+    "uid": "teeshirt",
+    "title": "Tee-shirt",
+    "createdAt": {
+      "$date": "2020-06-30T14:43:51.506Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:43:51.506Z"
+    },
+    "__v": 0
+  }
+]

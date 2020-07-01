@@ -72,7 +72,7 @@ export default {
         const response = await strapi.login(this.email, this.password)
         this.loading = false
         this.setUser(response.user)
-        this.$router.go(-1)
+        this.$router.go('home')
       } catch (err) {
         this.loading = false
         alert(JSON.stringify(err.message) || "An error occurred.")

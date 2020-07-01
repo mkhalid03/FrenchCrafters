@@ -1,0 +1,18 @@
+[
+  {
+    "_id": {
+      "$oid": "5ef0c954e48027002393030d"
+    },
+    "blocked": false,
+    "username": "root",
+    "password": "$2a$10$9PZt9F8A8R4AczU.o6/TWe5sBIgJ8y8gtt5f7EkJ0shZIAPN.xurS",
+    "email": "root@root.root",
+    "createdAt": {
+      "$date": "2020-06-22T15:08:04.536Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T15:08:04.536Z"
+    },
+    "__v": 0
+  }
+]

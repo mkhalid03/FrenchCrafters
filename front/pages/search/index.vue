@@ -79,6 +79,7 @@ export default {
         this.$axios
           .$post(`/search/products`, {
             query: opt.query,
+            categories: [opt.category],
           })
           .then((res) => {
             this.results = res

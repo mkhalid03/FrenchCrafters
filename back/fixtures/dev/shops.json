@@ -1,0 +1,104 @@
+[
+  {
+    "_id": {
+      "$oid": "5efb453c3452590024d2203b"
+    },
+    "tax": 10,
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb70062f61290092ba4304"
+      }
+    ],
+    "name": "La Chaussette Française",
+    "description": "Archiduchesse, c’est une histoire de pieds, de couleurs et de bonne humeur qui dure depuis 2009 ! Imaginée autour d’un modèle unique de chaussettes décliné en couleurs originales, Archiduchesse trace vite son empreinte : celle d’une marque fun et décalée. Homme, femme ou enfant, chacun trouve chaussettes à ses pieds et affirme sa personnalité jusqu’au bout des orteils ! Mais Archiduchesse a aussi des valeurs… toutes les chaussettes sont 100 % Made in France, tissées à partir de coton certifié Oeko-tex®, et vendues à prix sympa. Les pieds apprécient, et en redemandent ! Archiduchesse élargit vite sa gamme de chaussettes et s’aventure désormais sur de nouveaux terrains.",
+    "owner": "5efb4c3f2f61290092ba4256",
+    "tags": [
+      {
+        "_id": {
+          "$oid": "5efb700e2f61290092ba4308"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb453c3452590024d2203c"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb700e2f61290092ba4307"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb453c3452590024d2203d"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb700e2f61290092ba4306"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb453c3452590024d2203e"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T13:59:24.823Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:02:06.663Z"
+    },
+    "__v": 1
+  },
+  {
+    "_id": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    },
+    "tax": 10,
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb4e4a2f61290092ba425f"
+      }
+    ],
+    "description": "Créée en 2013 à Bordeaux, la marque de prêt-à-porter French Disorder s’impose rapidement avec un essentiel du vestiaire urbain, le sweat en molleton. Pensé dans un esprit casual chic, il est travaillé avec une qualité de coton incomparable, décliné dans une large gamme de couleurs et twisté par des prints et broderies qui font écho à nos envies du moment.\n\nPorté par le succès de ses sweats, French Disorder étoffe son vestiaire au fil des saisons pour insuffler aux silhouettes urbaines la juste dose de casual chic, so frenchy !\n\nTous les vêtements et accessoires de la collection sont fabriqués en Europe et sérigraphiés ou brodés avec la plus grande attention dans l’atelier de Bordeaux pour vous proposer des vêtements look good & feel good que vous aimerez et porterez très longtemps.\n\nDistribué dans un premier temps sur son E-shop, French Disorder est désormais présent dans plus 300 points de ventes multi marques et grands magasins en France et à l’étranger.",
+    "owner": "5efb4d0a2f61290092ba4257",
+    "tags": [
+      {
+        "_id": {
+          "$oid": "5efb4efb2f61290092ba4269"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb4e4a2f61290092ba4259"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb4efb2f61290092ba4268"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb4e4a2f61290092ba425a"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb4efb2f61290092ba4267"
+        },
+        "kind": "ComponentShopTags",
+        "ref": {
+          "$oid": "5efb4e4a2f61290092ba425b"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:38:02.250Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:40:59.673Z"
+    },
+    "__v": 1,
+    "name": "French Disorder"
+  }
+]

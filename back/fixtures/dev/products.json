@@ -1,0 +1,536 @@
+[
+  {
+    "_id": {
+      "$oid": "5efb505e2f61290092ba4270"
+    },
+    "target": "unisex",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb505e2f61290092ba4277"
+      },
+      {
+        "$oid": "5efb5fb22f61290092ba4288"
+      }
+    ],
+    "price": 18,
+    "name": "Coffret Talon Pointe",
+    "description": "Craquez pour ce coffret spécial Fête des Pères, composé de 2 paires de chaussettes courtes en taille 42/46 !  Chaussettes courtes fabriquées en France en coton indien certifié Oeko-Tex pour une paire de chaussettes résistante et labellisée Origine France Garantie. Remaillage fin et solide avec une hauteur au dessus de la cheville.",
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efb5fb22f61290092ba4287"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb505e2f61290092ba4271"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb5fb22f61290092ba4286"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb505e2f61290092ba4272"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb5fb22f61290092ba4285"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb505e2f61290092ba4273"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:46:54.331Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:02:06.662Z"
+    },
+    "__v": 1,
+    "category": {
+      "$oid": "5efb4f552f61290092ba426a"
+    },
+    "shop": {
+      "$oid": "5efb453c3452590024d2203b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb51672f61290092ba4279"
+    },
+    "target": "woman",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb51892f61290092ba4283"
+      },
+      {
+        "$oid": "5efb5fbc2f61290092ba428d"
+      }
+    ],
+    "name": "Coffret Archi-Zen",
+    "description": "Craquez pour ce coffret spécial Fête des Mères, composé de 2 paires de chaussettes courtes en lurex en taille 36/41  Chaussettes fabriquées en France en coton indien certifié Oeko-Tex, et labellisées Origine France Garantie. Chaussettes en lurex brillant, avec une hauteur courte.",
+    "price": 18,
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848902"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce15895800438488fd"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848901"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce15895800438488fe"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848900"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce15895800438488ff"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:51:19.446Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.770Z"
+    },
+    "__v": 2,
+    "category": {
+      "$oid": "5efb4f552f61290092ba426a"
+    },
+    "shop": {
+      "$oid": "5efb453c3452590024d2203b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb61832f61290092ba428f"
+    },
+    "target": "man",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb61922f61290092ba429c"
+      },
+      {
+        "$oid": "5efb61922f61290092ba429e"
+      }
+    ],
+    "name": " SWEAT EGOISTE (TRICOTIN)",
+    "description": "Incontournable dans le vestiaire masculin French Disorder depuis plusieurs saisons, le sweat à manches raglan cumule tous les bons codes du sportswear urbain.   Avec sa coupe droite il convient à toutes les morphologies et il s’adapte aussi bien aux tenues workwear que casual. Conçu dans un molleton premium ultra doux, vous n’allez plus vouloir vous en séparer !",
+    "price": 99,
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efc86ce158958004384890a"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce1589580043848903"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848909"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce1589580043848904"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848908"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce1589580043848905"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc86ce1589580043848907"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc86ce1589580043848906"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:00:03.543Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:26.828Z"
+    },
+    "__v": 2,
+    "category": {
+      "$oid": "5efb4f812f61290092ba426c"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb631b2f61290092ba42a0"
+    },
+    "target": "man",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb631c2f61290092ba42a9"
+      },
+      {
+        "$oid": "5efb631c2f61290092ba42ab"
+      }
+    ],
+    "price": 95,
+    "name": " SWEAT PLAY",
+    "description": "Avec son col rond, ses manches montées, sa coupe regular et son molleton premium tout doux, le sweat DYLAN convient à toutes les silhouettes. La broderie PLAY est délicatement réalisée par notre atelier brodeur partenaire au Portugal.",
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efb637f2f61290092ba42b0"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a1"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb637f2f61290092ba42af"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a2"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb637f2f61290092ba42ae"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a3"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb637f2f61290092ba42ad"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a4"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:06:51.784Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:31:01.193Z"
+    },
+    "__v": 1,
+    "category": {
+      "$oid": "5efb4f812f61290092ba426c"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb63b92f61290092ba42b1"
+    },
+    "target": "man",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb63c42f61290092ba42be"
+      },
+      {
+        "$oid": "5efb64992f61290092ba42c8"
+      }
+    ],
+    "name": "TSHIRT MEC PLUS ULTRA",
+    "description": "Tshirt MEC PLUS ULTRA. Le classique tee col rond, avec sa maille souple 100% coton premium et sa coupe regular, s’adapte à toutes les morphologies. Petite astuce, on aime bien retourner les manches d’un ou deux ourlets pour un look encore plus dégaine.",
+    "price": 39,
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efc8daf158958004384892a"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc8daf1589580043848923"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc8daf1589580043848929"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc8daf1589580043848924"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc8daf1589580043848928"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc8daf1589580043848925"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efc8daf1589580043848927"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efc8daf1589580043848926"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:09:29.604Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:47.787Z"
+    },
+    "__v": 3,
+    "category": {
+      "$oid": "5efb4fa72f61290092ba426f"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb68fb2f61290092ba42ca"
+    },
+    "target": "woman",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb69082f61290092ba42d7"
+      },
+      {
+        "$oid": "5efb69082f61290092ba42d9"
+      }
+    ],
+    "name": " TSHIRT STRIP POCOEUR",
+    "description": "Le classique t-shirt col rond, en maille 100% coton premium, avec sa coupe droite, ni trop loose ni trop ajustée, convient à toutes les silhouettes. Petite astuce, on aime bien retourner les manches d’un ou deux revers pour un look encore plus dégaine.",
+    "price": 39,
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efb6d692f61290092ba4300"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42cb"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d692f61290092ba42ff"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42cc"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d692f61290092ba42fe"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42cd"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d692f61290092ba42fd"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42ce"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:31:55.849Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:49.557Z"
+    },
+    "__v": 1,
+    "category": {
+      "$oid": "5efb4fa72f61290092ba426f"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb698a2f61290092ba42db"
+    },
+    "target": "woman",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb6b2c2f61290092ba42e8"
+      },
+      {
+        "$oid": "5efb6b2c2f61290092ba42ea"
+      }
+    ],
+    "name": " TSHIRT SHINE SMILE",
+    "description": "Le classique t-shirt col rond, en maille 100% coton premium, avec sa coupe droite, ni trop loose ni trop ajustée, convient à toutes les silhouettes. Petite astuce, on aime bien retourner les manches d’un ou deux revers pour un look encore plus dégaine.",
+    "price": 39,
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efb6d672f61290092ba42fc"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42dc"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d672f61290092ba42fb"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42dd"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d672f61290092ba42fa"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42de"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d672f61290092ba42f9"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42df"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:34:18.283Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:47.103Z"
+    },
+    "__v": 1,
+    "category": {
+      "$oid": "5efb4fa72f61290092ba426f"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d5f2f61290092ba42ec"
+    },
+    "target": "woman",
+    "visible": true,
+    "image": [
+      {
+        "$oid": "5efb6d602f61290092ba42f5"
+      },
+      {
+        "$oid": "5efb6d602f61290092ba42f7"
+      }
+    ],
+    "price": 39,
+    "name": " TSHIRT CROQUE MONSIEUR",
+    "description": "Le classique t-shirt col rond, en maille 100% coton premium, avec sa coupe droite, ni trop loose ni trop ajustée, convient à toutes les silhouettes. Petite astuce, on aime bien retourner les manches d’un ou deux revers pour un look encore plus dégaine.",
+    "sizes": [
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f4"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42ed"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f3"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42ee"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f2"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42ef"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f1"
+        },
+        "kind": "ComponentProductSizesList",
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42f0"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:50:39.989Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:40.358Z"
+    },
+    "__v": 1,
+    "category": {
+      "$oid": "5efb4fa72f61290092ba426f"
+    },
+    "shop": {
+      "$oid": "5efb4e4a2f61290092ba4258"
+    }
+  }
+]

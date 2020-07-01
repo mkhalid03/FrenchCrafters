@@ -53,13 +53,13 @@ export default {
   },
   methods: {
     ...mapMutations({
-      setItems: "cart/reset",
+      resetItems: "cart/reset",
     }),
     setCountry(country) {
       this.form.country = country
     },
     emptyCart() {
-      this.setItems()
+      this.resetItems()
     },
     includeStripe( URL, callback ){
       let documentTag = document, tag = 'script',
@@ -106,6 +106,8 @@ export default {
         name: this.form.fullName,
       }).then(res => {
         this.manageStatus(res);
+        this.emptyCart()
+        $nuxt.$router.push('/')
         this.loading = false
       }).catch((err) => {
         this.loading = false
@@ -116,35 +118,6 @@ export default {
       console.log(res)
     }
   }
-    // async handleSubmit() {
-    //   this.loading = true
-    //   let token
-    //   try {
-    //     const response = await createToken()
-    //     token = response.token.id
-    //   } catch (err) {
-    //     console.log(err)
-    //     alert("An error occurred.")
-    //     this.loading = false
-    //     return
-    //   }
-    //   try {
-    //     await strapi.createEntry("orders", {
-    //       amount: this.$store.getters["cart/price"],
-    //       products: this.$store.getters["cart/items"],
-    //       address: this.address,
-    //       postalCode: this.postalCode,
-    //       city: this.city,
-    //       token,
-    //     })
-    //     alert("Your order have been successfully submitted.")
-    //     this.$store.commit("cart/reset")
-    //     this.$router.push("/")
-    //   } catch (err) {
-    //     this.loading = false
-    //     alert("An error occurred.")
-    //   }
-    // },
 }
 </script>
 

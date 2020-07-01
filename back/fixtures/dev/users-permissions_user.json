@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "5ef48c5071f292010404092f"
+    },
+    "confirmed": true,
+    "blocked": false,
+    "email": "liege.arthur60@gmail.com",
+    "password": "$2a$10$/nVwPc3e4.ZbdD431mAiMeuZbyWe9C7I7qVDpbKj67wZmEScvD/tW",
+    "username": "arthur",
+    "provider": "local",
+    "createdAt": {
+      "$date": "2020-06-25T11:36:48.892Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-25T11:36:48.901Z"
+    },
+    "__v": 0,
+    "role": {
+      "$oid": "5ef0c0cdc8e3470313deabf5"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efb4d0a2f61290092ba4257"
+    },
+    "confirmed": true,
+    "blocked": false,
+    "email": "example2@example.com",
+    "password": "$2a$10$sng3Cw/31DfEUTunVhQggOkeD8xxqocqUMnWt2iMM8L4TCWBUAGqa",
+    "username": "Example2",
+    "provider": "local",
+    "createdAt": {
+      "$date": "2020-06-30T14:32:42.070Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:16:46.644Z"
+    },
+    "__v": 0,
+    "role": {
+      "$oid": "5ef0c0cdc8e3470313deabf5"
+    },
+    "firstname": "example2 first name",
+    "lastname": "example2 lastname",
+    "title": "example2 title"
+  }
+]

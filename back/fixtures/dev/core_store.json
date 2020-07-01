@@ -1,0 +1,342 @@
+[
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe1"
+    },
+    "key": "plugin_upload_settings",
+    "environment": "development",
+    "tag": "",
+    "value": "{\"sizeOptimization\":true,\"responsiveDimensions\":true}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.689Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.689Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe2"
+    },
+    "key": "plugin_users-permissions_grant",
+    "environment": "",
+    "tag": "",
+    "value": "{\"email\":{\"enabled\":true,\"icon\":\"envelope\"},\"discord\":{\"enabled\":false,\"icon\":\"discord\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/discord/callback\",\"scope\":[\"identify\",\"email\"]},\"facebook\":{\"enabled\":false,\"icon\":\"facebook-square\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/facebook/callback\",\"scope\":[\"email\"]},\"google\":{\"enabled\":false,\"icon\":\"google\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/google/callback\",\"scope\":[\"email\"]},\"github\":{\"enabled\":false,\"icon\":\"github\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/github/callback\",\"scope\":[\"user\",\"user:email\"]},\"microsoft\":{\"enabled\":false,\"icon\":\"windows\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/microsoft/callback\",\"scope\":[\"user.read\"]},\"twitter\":{\"enabled\":false,\"icon\":\"twitter\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitter/callback\"},\"instagram\":{\"enabled\":false,\"icon\":\"instagram\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/instagram/callback\"},\"vk\":{\"enabled\":false,\"icon\":\"vk\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/vk/callback\",\"scope\":[\"email\"]},\"twitch\":{\"enabled\":false,\"icon\":\"twitch\",\"key\":\"\",\"secret\":\"\",\"callback\":\"/auth/twitch/callback\",\"scope\":[\"user:read:email\"]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.689Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.689Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe3"
+    },
+    "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.role",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"plugins::users-permissions.role\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"permissions\":{\"edit\":{\"label\":\"Permissions\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"type\"},\"list\":{\"label\":\"Permissions\",\"searchable\":false,\"sortable\":false}},\"users\":{\"edit\":{\"label\":\"Users\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"username\"},\"list\":{\"label\":\"Users\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"description\",\"type\"],\"editRelations\":[\"permissions\",\"users\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"description\",\"size\":6}],[{\"name\":\"type\",\"size\":6}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.718Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.718Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe4"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::shop-invoice.shop-invoice",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::shop-invoice.shop-invoice\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"fullAmount\":{\"edit\":{\"label\":\"FullAmount\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"FullAmount\",\"searchable\":true,\"sortable\":true}},\"withoutTaxesAmount\":{\"edit\":{\"label\":\"WithoutTaxesAmount\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"WithoutTaxesAmount\",\"searchable\":true,\"sortable\":true}},\"tva\":{\"edit\":{\"label\":\"Tva\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Tva\",\"searchable\":true,\"sortable\":true}},\"shopTaxesPercent\":{\"edit\":{\"label\":\"ShopTaxesPercent\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"ShopTaxesPercent\",\"searchable\":true,\"sortable\":true}},\"order\":{\"edit\":{\"label\":\"Order\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Order\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"fullAmount\",\"withoutTaxesAmount\",\"tva\"],\"editRelations\":[\"order\"],\"edit\":[[{\"name\":\"fullAmount\",\"size\":4},{\"name\":\"withoutTaxesAmount\",\"size\":4},{\"name\":\"tva\",\"size\":4}],[{\"name\":\"shopTaxesPercent\",\"size\":4}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe5"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::shop-order.shop-order",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::shop-order.shop-order\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"products\":{\"edit\":{\"label\":\"Products\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Products\",\"searchable\":false,\"sortable\":false}},\"address\":{\"edit\":{\"label\":\"Address\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Address\",\"searchable\":false,\"sortable\":false}},\"order\":{\"edit\":{\"label\":\"Order\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Order\",\"searchable\":false,\"sortable\":false}},\"shop\":{\"edit\":{\"label\":\"Shop\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Shop\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"createdAt\",\"updatedAt\"],\"editRelations\":[\"order\",\"shop\"],\"edit\":[[{\"name\":\"products\",\"size\":12}],[{\"name\":\"address\",\"size\":12}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe6"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::category.category",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::category.category\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"uid\":{\"edit\":{\"label\":\"Uid\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Uid\",\"searchable\":true,\"sortable\":true}},\"products\":{\"edit\":{\"label\":\"Products\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Products\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"title\",\"uid\",\"createdAt\"],\"editRelations\":[\"products\"],\"edit\":[[{\"name\":\"title\",\"size\":6},{\"name\":\"uid\",\"size\":6}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.723Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe7"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::payment.payment",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::payment.payment\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"amount\":{\"edit\":{\"label\":\"Amount\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Amount\",\"searchable\":true,\"sortable\":true}},\"billing_details\":{\"edit\":{\"label\":\"Billing_details\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Billing_details\",\"searchable\":false,\"sortable\":false}},\"currency\":{\"edit\":{\"label\":\"Currency\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Currency\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"outcome\":{\"edit\":{\"label\":\"Outcome\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Outcome\",\"searchable\":false,\"sortable\":false}},\"details\":{\"edit\":{\"label\":\"Details\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Details\",\"searchable\":false,\"sortable\":false}},\"receipt\":{\"edit\":{\"label\":\"Receipt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Receipt\",\"searchable\":true,\"sortable\":true}},\"refunds\":{\"edit\":{\"label\":\"Refunds\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Refunds\",\"searchable\":false,\"sortable\":false}},\"source\":{\"edit\":{\"label\":\"Source\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Source\",\"searchable\":false,\"sortable\":false}},\"status\":{\"edit\":{\"label\":\"Status\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Status\",\"searchable\":true,\"sortable\":true}},\"order\":{\"edit\":{\"label\":\"Order\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Order\",\"searchable\":false,\"sortable\":false}},\"transactionId\":{\"edit\":{\"label\":\"TransactionId\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"TransactionId\",\"searchable\":true,\"sortable\":true}},\"userInfo\":{\"edit\":{\"label\":\"UserInfo\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"UserInfo\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"amount\",\"currency\",\"description\"],\"editRelations\":[\"order\"],\"edit\":[[{\"name\":\"amount\",\"size\":4}],[{\"name\":\"billing_details\",\"size\":12}],[{\"name\":\"currency\",\"size\":6},{\"name\":\"description\",\"size\":6}],[{\"name\":\"outcome\",\"size\":12}],[{\"name\":\"details\",\"size\":12}],[{\"name\":\"receipt\",\"size\":6}],[{\"name\":\"refunds\",\"size\":12}],[{\"name\":\"source\",\"size\":12}],[{\"name\":\"status\",\"size\":6},{\"name\":\"transactionId\",\"size\":6}],[{\"name\":\"userInfo\",\"size\":12}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe8"
+    },
+    "key": "plugin_content_manager_configuration_content_types::plugins::upload.file",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"plugins::upload.file\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"alternativeText\":{\"edit\":{\"label\":\"AlternativeText\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"AlternativeText\",\"searchable\":true,\"sortable\":true}},\"caption\":{\"edit\":{\"label\":\"Caption\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Caption\",\"searchable\":true,\"sortable\":true}},\"width\":{\"edit\":{\"label\":\"Width\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Width\",\"searchable\":true,\"sortable\":true}},\"height\":{\"edit\":{\"label\":\"Height\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Height\",\"searchable\":true,\"sortable\":true}},\"formats\":{\"edit\":{\"label\":\"Formats\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Formats\",\"searchable\":false,\"sortable\":false}},\"hash\":{\"edit\":{\"label\":\"Hash\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Hash\",\"searchable\":true,\"sortable\":true}},\"ext\":{\"edit\":{\"label\":\"Ext\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Ext\",\"searchable\":true,\"sortable\":true}},\"mime\":{\"edit\":{\"label\":\"Mime\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Mime\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"url\":{\"edit\":{\"label\":\"Url\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Url\",\"searchable\":true,\"sortable\":true}},\"previewUrl\":{\"edit\":{\"label\":\"PreviewUrl\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"PreviewUrl\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"provider_metadata\":{\"edit\":{\"label\":\"Provider_metadata\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Provider_metadata\",\"searchable\":false,\"sortable\":false}},\"related\":{\"edit\":{\"label\":\"Related\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Related\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"alternativeText\",\"caption\"],\"editRelations\":[\"related\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"alternativeText\",\"size\":6}],[{\"name\":\"caption\",\"size\":6},{\"name\":\"width\",\"size\":4}],[{\"name\":\"height\",\"size\":4}],[{\"name\":\"formats\",\"size\":12}],[{\"name\":\"hash\",\"size\":6},{\"name\":\"ext\",\"size\":6}],[{\"name\":\"mime\",\"size\":6},{\"name\":\"size\",\"size\":4}],[{\"name\":\"url\",\"size\":6},{\"name\":\"previewUrl\",\"size\":6}],[{\"name\":\"provider\",\"size\":6}],[{\"name\":\"provider_metadata\",\"size\":12}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabe9"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::shop.shop",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::shop.shop\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":false,\"sortable\":false}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"products\":{\"edit\":{\"label\":\"Products\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Products\",\"searchable\":false,\"sortable\":false}},\"tags\":{\"edit\":{\"label\":\"Tags\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Tags\",\"searchable\":false,\"sortable\":false}},\"tax\":{\"edit\":{\"label\":\"Tax\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Tax\",\"searchable\":true,\"sortable\":true}},\"shop_orders\":{\"edit\":{\"label\":\"Shop_orders\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Shop_orders\",\"searchable\":false,\"sortable\":false}},\"owner\":{\"edit\":{\"label\":\"Owner\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Owner\",\"searchable\":true,\"sortable\":true}},\"visible\":{\"edit\":{\"label\":\"Visible\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Visible\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"image\",\"tax\"],\"editRelations\":[\"products\",\"shop_orders\"],\"edit\":[[{\"name\":\"name\",\"size\":6}],[{\"name\":\"description\",\"size\":12}],[{\"name\":\"image\",\"size\":6}],[{\"name\":\"tags\",\"size\":12}],[{\"name\":\"tax\",\"size\":4},{\"name\":\"owner\",\"size\":6}],[{\"name\":\"visible\",\"size\":4}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.729Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabeb"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::product.product",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::product.product\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"description\":{\"edit\":{\"label\":\"Description\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Description\",\"searchable\":true,\"sortable\":true}},\"image\":{\"edit\":{\"label\":\"Image\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Image\",\"searchable\":false,\"sortable\":false}},\"price\":{\"edit\":{\"label\":\"Price\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Price\",\"searchable\":true,\"sortable\":true}},\"shop\":{\"edit\":{\"label\":\"Shop\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Shop\",\"searchable\":false,\"sortable\":false}},\"category\":{\"edit\":{\"label\":\"Category\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"title\"},\"list\":{\"label\":\"Category\",\"searchable\":false,\"sortable\":false}},\"target\":{\"edit\":{\"label\":\"Target\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Target\",\"searchable\":true,\"sortable\":true}},\"sizes\":{\"edit\":{\"label\":\"Sizes\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Sizes\",\"searchable\":false,\"sortable\":false}},\"visible\":{\"edit\":{\"label\":\"Visible\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Visible\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"description\",\"image\"],\"editRelations\":[\"shop\",\"category\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"description\",\"size\":6}],[{\"name\":\"image\",\"size\":6},{\"name\":\"price\",\"size\":4}],[{\"name\":\"target\",\"size\":6}],[{\"name\":\"sizes\",\"size\":12}],[{\"name\":\"visible\",\"size\":4}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.737Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.737Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabea"
+    },
+    "key": "plugin_content_manager_configuration_content_types::strapi::administrator",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"strapi::administrator\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"username\",\"email\",\"blocked\"],\"editRelations\":[],\"edit\":[[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"blocked\",\"size\":4}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.737Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.737Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabec"
+    },
+    "key": "plugin_content_manager_configuration_content_types::application::order.order",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"application::order.order\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"products\":{\"edit\":{\"label\":\"Products\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Products\",\"searchable\":false,\"sortable\":false}},\"amount\":{\"edit\":{\"label\":\"Amount\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Amount\",\"searchable\":true,\"sortable\":true}},\"user\":{\"edit\":{\"label\":\"User\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"username\"},\"list\":{\"label\":\"User\",\"searchable\":false,\"sortable\":false}},\"payments\":{\"edit\":{\"label\":\"Payments\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"currency\"},\"list\":{\"label\":\"Payments\",\"searchable\":false,\"sortable\":false}},\"shop_orders\":{\"edit\":{\"label\":\"Shop_orders\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Shop_orders\",\"searchable\":false,\"sortable\":false}},\"shop_invoices\":{\"edit\":{\"label\":\"Shop_invoices\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Shop_invoices\",\"searchable\":false,\"sortable\":false}},\"address\":{\"edit\":{\"label\":\"Address\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Address\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"amount\",\"createdAt\",\"updatedAt\"],\"editRelations\":[\"user\",\"payments\",\"shop_orders\",\"shop_invoices\"],\"edit\":[[{\"name\":\"products\",\"size\":12}],[{\"name\":\"amount\",\"size\":4}],[{\"name\":\"address\",\"size\":12}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.743Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.743Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabed"
+    },
+    "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.permission",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"plugins::users-permissions.permission\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"type\":{\"edit\":{\"label\":\"Type\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Type\",\"searchable\":true,\"sortable\":true}},\"controller\":{\"edit\":{\"label\":\"Controller\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Controller\",\"searchable\":true,\"sortable\":true}},\"action\":{\"edit\":{\"label\":\"Action\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Action\",\"searchable\":true,\"sortable\":true}},\"enabled\":{\"edit\":{\"label\":\"Enabled\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Enabled\",\"searchable\":true,\"sortable\":true}},\"policy\":{\"edit\":{\"label\":\"Policy\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Policy\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"type\",\"controller\",\"action\"],\"editRelations\":[\"role\"],\"edit\":[[{\"name\":\"type\",\"size\":6},{\"name\":\"controller\",\"size\":6}],[{\"name\":\"action\",\"size\":6},{\"name\":\"enabled\",\"size\":4}],[{\"name\":\"policy\",\"size\":6}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.743Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.743Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabee"
+    },
+    "key": "plugin_content_manager_configuration_content_types::plugins::users-permissions.user",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"plugins::users-permissions.user\",\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":true,\"sortable\":true}},\"username\":{\"edit\":{\"label\":\"Username\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Username\",\"searchable\":true,\"sortable\":true}},\"email\":{\"edit\":{\"label\":\"Email\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Email\",\"searchable\":true,\"sortable\":true}},\"provider\":{\"edit\":{\"label\":\"Provider\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"Provider\",\"searchable\":true,\"sortable\":true}},\"password\":{\"edit\":{\"label\":\"Password\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Password\",\"searchable\":true,\"sortable\":true}},\"resetPasswordToken\":{\"edit\":{\"label\":\"ResetPasswordToken\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"ResetPasswordToken\",\"searchable\":true,\"sortable\":true}},\"confirmed\":{\"edit\":{\"label\":\"Confirmed\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Confirmed\",\"searchable\":true,\"sortable\":true}},\"blocked\":{\"edit\":{\"label\":\"Blocked\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Blocked\",\"searchable\":true,\"sortable\":true}},\"role\":{\"edit\":{\"label\":\"Role\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"name\"},\"list\":{\"label\":\"Role\",\"searchable\":false,\"sortable\":false}},\"orders\":{\"edit\":{\"label\":\"Orders\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true,\"mainField\":\"id\"},\"list\":{\"label\":\"Orders\",\"searchable\":false,\"sortable\":false}},\"firstname\":{\"edit\":{\"label\":\"Firstname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Firstname\",\"searchable\":true,\"sortable\":true}},\"lastname\":{\"edit\":{\"label\":\"Lastname\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Lastname\",\"searchable\":true,\"sortable\":true}},\"title\":{\"edit\":{\"label\":\"Title\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Title\",\"searchable\":true,\"sortable\":true}},\"picture\":{\"edit\":{\"label\":\"Picture\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Picture\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"username\",\"email\",\"confirmed\"],\"editRelations\":[\"role\",\"orders\"],\"edit\":[[{\"name\":\"username\",\"size\":6},{\"name\":\"email\",\"size\":6}],[{\"name\":\"password\",\"size\":6},{\"name\":\"confirmed\",\"size\":4}],[{\"name\":\"blocked\",\"size\":4},{\"name\":\"firstname\",\"size\":6}],[{\"name\":\"lastname\",\"size\":6},{\"name\":\"title\",\"size\":6}],[{\"name\":\"picture\",\"size\":6}]]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.748Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.748Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabef"
+    },
+    "key": "plugin_users-permissions_email",
+    "environment": "",
+    "tag": "",
+    "value": "{\"reset_password\":{\"display\":\"Email.template.reset_password\",\"icon\":\"sync\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Reset password\",\"message\":\"<p>We heard that you lost your password. Sorry about that!</p>\\n\\n<p>But don’t worry! You can use the following link to reset your password:</p>\\n\\n<p><%= URL %>?code=<%= TOKEN %></p>\\n\\n<p>Thanks.</p>\"}},\"email_confirmation\":{\"display\":\"Email.template.email_confirmation\",\"icon\":\"check-square\",\"options\":{\"from\":{\"name\":\"Administration Panel\",\"email\":\"no-reply@strapi.io\"},\"response_email\":\"\",\"object\":\"Account confirmation\",\"message\":\"<p>Thank you for registering!</p>\\n\\n<p>You have to confirm your email address. Please click on the link below.</p>\\n\\n<p><%= URL %>?confirmation=<%= CODE %></p>\\n\\n<p>Thanks.</p>\"}}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.790Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.790Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf0"
+    },
+    "key": "plugin_content_manager_configuration_components::product.sizes-list",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"product.sizes-list\",\"isComponent\":true,\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"stock\":{\"edit\":{\"label\":\"Stock\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Stock\",\"searchable\":true,\"sortable\":true}},\"infinite\":{\"edit\":{\"label\":\"Infinite\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Infinite\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"stock\",\"infinite\"],\"edit\":[[{\"name\":\"name\",\"size\":6},{\"name\":\"stock\",\"size\":4}],[{\"name\":\"infinite\",\"size\":4}]],\"editRelations\":[]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.811Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:45.593Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf1"
+    },
+    "key": "plugin_content_manager_configuration_components::adress.order-adress",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"adress.order-adress\",\"isComponent\":true,\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"city\":{\"edit\":{\"label\":\"City\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"City\",\"searchable\":true,\"sortable\":true}},\"country\":{\"edit\":{\"label\":\"Country\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Country\",\"searchable\":true,\"sortable\":true}},\"line1\":{\"edit\":{\"label\":\"Line1\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Line1\",\"searchable\":true,\"sortable\":true}},\"line2\":{\"edit\":{\"label\":\"Line2\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Line2\",\"searchable\":true,\"sortable\":true}},\"postalCode\":{\"edit\":{\"label\":\"PostalCode\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"PostalCode\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"city\",\"country\",\"line1\"],\"edit\":[[{\"name\":\"city\",\"size\":6},{\"name\":\"country\",\"size\":6}],[{\"name\":\"line1\",\"size\":6},{\"name\":\"line2\",\"size\":6}],[{\"name\":\"postalCode\",\"size\":6}]],\"editRelations\":[]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.813Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:45.598Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf2"
+    },
+    "key": "plugin_content_manager_configuration_components::shop-order.item",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"shop-order.item\",\"isComponent\":true,\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"quantity\":{\"edit\":{\"label\":\"Quantity\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Quantity\",\"searchable\":true,\"sortable\":true}},\"size\":{\"edit\":{\"label\":\"Size\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Size\",\"searchable\":true,\"sortable\":true}},\"product\":{\"edit\":{\"label\":\"Product\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Product\",\"searchable\":false,\"sortable\":false}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"quantity\",\"size\",\"createdAt\"],\"edit\":[[{\"name\":\"quantity\",\"size\":4},{\"name\":\"size\",\"size\":6}],[{\"name\":\"product\",\"size\":12}]],\"editRelations\":[]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.820Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:45.591Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf3"
+    },
+    "key": "plugin_content_manager_configuration_components::shop.tags",
+    "environment": "",
+    "tag": "",
+    "value": "{\"uid\":\"shop.tags\",\"isComponent\":true,\"settings\":{\"bulkable\":true,\"filterable\":true,\"searchable\":true,\"pageSize\":10,\"mainField\":\"id\",\"defaultSortBy\":\"id\",\"defaultSortOrder\":\"ASC\"},\"metadatas\":{\"id\":{\"edit\":{},\"list\":{\"label\":\"Id\",\"searchable\":false,\"sortable\":false}},\"name\":{\"edit\":{\"label\":\"Name\",\"description\":\"\",\"placeholder\":\"\",\"visible\":true,\"editable\":true},\"list\":{\"label\":\"Name\",\"searchable\":true,\"sortable\":true}},\"createdAt\":{\"edit\":{\"label\":\"CreatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"CreatedAt\",\"searchable\":true,\"sortable\":true}},\"updatedAt\":{\"edit\":{\"label\":\"UpdatedAt\",\"description\":\"\",\"placeholder\":\"\",\"visible\":false,\"editable\":true},\"list\":{\"label\":\"UpdatedAt\",\"searchable\":true,\"sortable\":true}}},\"layouts\":{\"list\":[\"id\",\"name\",\"createdAt\",\"updatedAt\"],\"edit\":[[{\"name\":\"name\",\"size\":6}]],\"editRelations\":[]}}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.825Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:45.606Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf4"
+    },
+    "key": "plugin_users-permissions_advanced",
+    "environment": "",
+    "tag": "",
+    "value": "{\"unique_email\":true,\"allow_register\":true,\"email_confirmation\":false,\"email_confirmation_redirection\":\"/admin/admin\",\"email_reset_password\":\"/admin/admin\",\"default_role\":\"authenticated\"}",
+    "type": "object",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.835Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-22T14:31:41.835Z"
+    },
+    "__v": 0
+  }
+]

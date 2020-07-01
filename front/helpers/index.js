@@ -1,5 +1,5 @@
 export const cleanUser = (user) => {
-  if (user !== null) {
+  if (user !== null && user !== undefined) {
     return {
       username: user.username,
       firstname: user.firstname,
@@ -11,9 +11,10 @@ export const cleanUser = (user) => {
 }
 
 export const cleanPicture = (picture) => {
-  if (picture !== null) {
+  console.log(picture)
+  if (picture !== null && picture !== undefined) {
     return {
-      url: picture.url,
+      url: picture.url || null,
       name: picture.name || null,
     }
   }
@@ -24,7 +25,7 @@ export const cleanProductArray = (array) => {
 }
 
 export const cleanProduct = (product) => {
-  if (product !== null) {
+  if (product !== null && product !== undefined) {
     return {
       id: product.id,
       name: product.name,
@@ -50,7 +51,7 @@ export const cleanCategory = (category) => {
 }
 
 export const cleanShop = (shop) => {
-  if (shop !== null) {
+  if (shop !== null && shop !== undefined) {
     return {
       id: shop.id,
       name: shop.name,

@@ -1,0 +1,87 @@
+[
+  {
+    "_id": {
+      "$oid": "5efc86d0158958004384890c"
+    },
+    "city": "example1 city",
+    "country": "FR",
+    "line1": "example1 address",
+    "line2": "example1 complementary address",
+    "postalCode": "01000",
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.646Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.646Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86d01589580043848916"
+    },
+    "city": "example1 city",
+    "country": "FR",
+    "line1": "example1 address",
+    "line2": "example1 complementary address",
+    "postalCode": "01000",
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.744Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.744Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc86d01589580043848917"
+    },
+    "city": "example1 city",
+    "country": "FR",
+    "line1": "example1 address",
+    "line2": "example1 complementary address",
+    "postalCode": "01000",
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.748Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.748Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8db1158958004384892c"
+    },
+    "city": "example2 city",
+    "country": "BE",
+    "line1": "example2 address",
+    "line2": "example2 complementary address",
+    "postalCode": "02000",
+    "createdAt": {
+      "$date": "2020-07-01T13:20:49.411Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:49.411Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efc8db11589580043848935"
+    },
+    "city": "example2 city",
+    "country": "BE",
+    "line1": "example2 address",
+    "line2": "example2 complementary address",
+    "postalCode": "02000",
+    "createdAt": {
+      "$date": "2020-07-01T13:20:49.513Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:49.513Z"
+    },
+    "__v": 0
+  }
+]

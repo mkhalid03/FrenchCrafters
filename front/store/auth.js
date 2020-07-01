@@ -12,6 +12,7 @@ export const mutations = {
     state.user = null
     Cookies.remove("user")
     Cookies.remove("jwt")
+    this.app.router.push('/')
   },
 }
 

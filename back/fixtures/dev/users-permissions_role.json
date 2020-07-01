@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf5"
+    },
+    "name": "Authenticated",
+    "description": "Default role given to authenticated user.",
+    "type": "authenticated",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.846Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:12.683Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5ef0c0cdc8e3470313deabf6"
+    },
+    "name": "Public",
+    "description": "Default role given to unauthenticated user.",
+    "type": "public",
+    "createdAt": {
+      "$date": "2020-06-22T14:31:41.867Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-25T08:49:56.802Z"
+    },
+    "__v": 0
+  }
+]

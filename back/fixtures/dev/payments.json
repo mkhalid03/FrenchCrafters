@@ -1,0 +1,192 @@
+[
+  {
+    "_id": {
+      "$oid": "5efc86d01589580043848910"
+    },
+    "amount": 11700,
+    "billing_details": {
+      "address": {
+        "city": "example1 city",
+        "country": "FR",
+        "line1": "example1 address",
+        "line2": "example1 complementary address",
+        "postal_code": "01000",
+        "state": null
+      },
+      "email": null,
+      "name": null,
+      "phone": null
+    },
+    "currency": "eur",
+    "description": "Order 2020-07-01 12:51:26 by example1@example.com (5efb4c3f2f61290092ba4256)",
+    "outcome": {
+      "network_status": "approved_by_network",
+      "reason": null,
+      "risk_level": "normal",
+      "risk_score": 63,
+      "seller_message": "Payment complete.",
+      "type": "authorized"
+    },
+    "refunds": {
+      "object": "list",
+      "data": [],
+      "has_more": false,
+      "total_count": 0,
+      "url": "/v1/charges/ch_1H05PPFifTGKYEEMr5hWBGUP/refunds"
+    },
+    "source": {
+      "id": "card_1H05POFifTGKYEEMynLNGvDF",
+      "object": "card",
+      "address_city": "example1 city",
+      "address_country": "FR",
+      "address_line1": "example1 address",
+      "address_line1_check": "pass",
+      "address_line2": "example1 complementary address",
+      "address_state": null,
+      "address_zip": "01000",
+      "address_zip_check": "pass",
+      "brand": "Visa",
+      "country": "US",
+      "customer": null,
+      "cvc_check": "pass",
+      "dynamic_last4": null,
+      "exp_month": 4,
+      "exp_year": 2024,
+      "fingerprint": "ohT4ePJ9P45aBaGg",
+      "funding": "credit",
+      "last4": "4242",
+      "metadata": {},
+      "name": null,
+      "tokenization_method": null
+    },
+    "status": "succeeded",
+    "details": {
+      "card": {
+        "brand": "visa",
+        "checks": {
+          "address_line1_check": "pass",
+          "address_postal_code_check": "pass",
+          "cvc_check": "pass"
+        },
+        "country": "US",
+        "exp_month": 4,
+        "exp_year": 2024,
+        "fingerprint": "ohT4ePJ9P45aBaGg",
+        "funding": "credit",
+        "installments": null,
+        "last4": "4242",
+        "network": "visa",
+        "three_d_secure": null,
+        "wallet": null
+      },
+      "type": "card"
+    },
+    "receipt": "https://pay.stripe.com/receipts/acct_1EA1A5FifTGKYEEM/ch_1H05PPFifTGKYEEMr5hWBGUP/rcpt_HZDrFWI7YWQP8ZE6jvHLKvEHKrNNZum",
+    "transactionId": "ch_1H05PPFifTGKYEEMr5hWBGUP",
+    "createdAt": {
+      "$date": "2020-07-01T12:51:28.689Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T12:51:28.709Z"
+    },
+    "__v": 0,
+    "order": {
+      "$oid": "5efc86d0158958004384890b"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "5efc8db1158958004384892f"
+    },
+    "amount": 11700,
+    "billing_details": {
+      "address": {
+        "city": "example2 city",
+        "country": "BE",
+        "line1": "example2 address",
+        "line2": "example2 complementary address",
+        "postal_code": "02000",
+        "state": null
+      },
+      "email": null,
+      "name": null,
+      "phone": null
+    },
+    "currency": "eur",
+    "description": "Order 2020-07-01 13:20:47 by example2@example.com (5efb4d0a2f61290092ba4257)",
+    "outcome": {
+      "network_status": "approved_by_network",
+      "reason": null,
+      "risk_level": "normal",
+      "risk_score": 23,
+      "seller_message": "Payment complete.",
+      "type": "authorized"
+    },
+    "refunds": {
+      "object": "list",
+      "data": [],
+      "has_more": false,
+      "total_count": 0,
+      "url": "/v1/charges/ch_1H05roFifTGKYEEMEx6LLUWv/refunds"
+    },
+    "source": {
+      "id": "card_1H05rnFifTGKYEEMdxuF6iv8",
+      "object": "card",
+      "address_city": "example2 city",
+      "address_country": "BE",
+      "address_line1": "example2 address",
+      "address_line1_check": "pass",
+      "address_line2": "example2 complementary address",
+      "address_state": null,
+      "address_zip": "02000",
+      "address_zip_check": "pass",
+      "brand": "Visa",
+      "country": "US",
+      "customer": null,
+      "cvc_check": "pass",
+      "dynamic_last4": null,
+      "exp_month": 4,
+      "exp_year": 2024,
+      "fingerprint": "ohT4ePJ9P45aBaGg",
+      "funding": "credit",
+      "last4": "4242",
+      "metadata": {},
+      "name": null,
+      "tokenization_method": null
+    },
+    "status": "succeeded",
+    "details": {
+      "card": {
+        "brand": "visa",
+        "checks": {
+          "address_line1_check": "pass",
+          "address_postal_code_check": "pass",
+          "cvc_check": "pass"
+        },
+        "country": "US",
+        "exp_month": 4,
+        "exp_year": 2024,
+        "fingerprint": "ohT4ePJ9P45aBaGg",
+        "funding": "credit",
+        "installments": null,
+        "last4": "4242",
+        "network": "visa",
+        "three_d_secure": null,
+        "wallet": null
+      },
+      "type": "card"
+    },
+    "receipt": "https://pay.stripe.com/receipts/acct_1EA1A5FifTGKYEEM/ch_1H05roFifTGKYEEMEx6LLUWv/rcpt_HZEKp0hzEomF0QrP8vdG7EHMKHogtGj",
+    "transactionId": "ch_1H05roFifTGKYEEMEx6LLUWv",
+    "createdAt": {
+      "$date": "2020-07-01T13:20:49.447Z"
+    },
+    "updatedAt": {
+      "$date": "2020-07-01T13:20:49.500Z"
+    },
+    "__v": 0,
+    "order": {
+      "$oid": "5efc8db1158958004384892b"
+    }
+  }
+]

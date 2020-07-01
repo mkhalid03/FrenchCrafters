@@ -1,0 +1,1176 @@
+[
+  {
+    "_id": {
+      "$oid": "5efb46b73452590024d22045"
+    },
+    "name": "chaussettes",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chaussettes_9959d602ec",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 52.64,
+    "width": 562,
+    "height": 562,
+    "url": "/uploads/chaussettes_9959d602ec.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chaussettes_9959d602ec",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 6.29,
+        "path": null,
+        "url": "/uploads/thumbnail_chaussettes_9959d602ec.jpeg"
+      },
+      "small": {
+        "hash": "small_chaussettes_9959d602ec",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 43.13,
+        "path": null,
+        "url": "/uploads/small_chaussettes_9959d602ec.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [],
+    "createdAt": {
+      "$date": "2020-06-30T14:05:43.267Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:02:06.661Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb4e4a2f61290092ba425f"
+    },
+    "name": "frenchdisorder",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "frenchdisorder_b3d4709136",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 41.31,
+    "width": 982,
+    "height": 416,
+    "url": "/uploads/frenchdisorder_b3d4709136.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_frenchdisorder_b3d4709136",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 245,
+        "height": 104,
+        "size": 12.92,
+        "path": null,
+        "url": "/uploads/thumbnail_frenchdisorder_b3d4709136.png"
+      },
+      "medium": {
+        "hash": "medium_frenchdisorder_b3d4709136",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 750,
+        "height": 318,
+        "size": 47.61,
+        "path": null,
+        "url": "/uploads/medium_frenchdisorder_b3d4709136.png"
+      },
+      "small": {
+        "hash": "small_frenchdisorder_b3d4709136",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 212,
+        "size": 29.2,
+        "path": null,
+        "url": "/uploads/small_frenchdisorder_b3d4709136.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb4e4a2f61290092ba4260"
+        },
+        "ref": {
+          "$oid": "5efb4e4a2f61290092ba4258"
+        },
+        "kind": "Shop",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:38:02.420Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:38:02.424Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb505e2f61290092ba4277"
+    },
+    "name": "chaussettes1",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chaussettes1_b85a9333c8",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 157.62,
+    "width": 800,
+    "height": 800,
+    "url": "/uploads/chaussettes1_b85a9333c8.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chaussettes1_b85a9333c8",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 9.83,
+        "path": null,
+        "url": "/uploads/thumbnail_chaussettes1_b85a9333c8.jpeg"
+      },
+      "medium": {
+        "hash": "medium_chaussettes1_b85a9333c8",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 750,
+        "size": 140.87,
+        "path": null,
+        "url": "/uploads/medium_chaussettes1_b85a9333c8.jpeg"
+      },
+      "small": {
+        "hash": "small_chaussettes1_b85a9333c8",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 76.51,
+        "path": null,
+        "url": "/uploads/small_chaussettes1_b85a9333c8.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb505e2f61290092ba4278"
+        },
+        "ref": {
+          "$oid": "5efb505e2f61290092ba4270"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:46:54.423Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:46:54.426Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb51892f61290092ba4283"
+    },
+    "name": "chaussettes2",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chaussettes2_5715794c98",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 116.28,
+    "width": 800,
+    "height": 800,
+    "url": "/uploads/chaussettes2_5715794c98.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chaussettes2_5715794c98",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 6.7,
+        "path": null,
+        "url": "/uploads/thumbnail_chaussettes2_5715794c98.jpeg"
+      },
+      "medium": {
+        "hash": "medium_chaussettes2_5715794c98",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 750,
+        "size": 99.84,
+        "path": null,
+        "url": "/uploads/medium_chaussettes2_5715794c98.jpeg"
+      },
+      "small": {
+        "hash": "small_chaussettes2_5715794c98",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 48.29,
+        "path": null,
+        "url": "/uploads/small_chaussettes2_5715794c98.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb51892f61290092ba4284"
+        },
+        "ref": {
+          "$oid": "5efb51672f61290092ba4279"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T14:51:53.309Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T14:51:53.312Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb5fb22f61290092ba4288"
+    },
+    "name": "chau2",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chau2_68d3371dcc",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 107.06,
+    "width": 800,
+    "height": 800,
+    "url": "/uploads/chau2_68d3371dcc.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chau2_68d3371dcc",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 8.92,
+        "path": null,
+        "url": "/uploads/thumbnail_chau2_68d3371dcc.jpeg"
+      },
+      "medium": {
+        "hash": "medium_chau2_68d3371dcc",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 750,
+        "size": 95.82,
+        "path": null,
+        "url": "/uploads/medium_chau2_68d3371dcc.jpeg"
+      },
+      "small": {
+        "hash": "small_chau2_68d3371dcc",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 54.02,
+        "path": null,
+        "url": "/uploads/small_chau2_68d3371dcc.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb5fb22f61290092ba4289"
+        },
+        "ref": {
+          "$oid": "5efb505e2f61290092ba4270"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T15:52:18.439Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T15:52:18.441Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb5fbc2f61290092ba428d"
+    },
+    "name": "chau",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chau_8970214c5a",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 59.67,
+    "width": 800,
+    "height": 800,
+    "url": "/uploads/chau_8970214c5a.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chau_8970214c5a",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 4.15,
+        "path": null,
+        "url": "/uploads/thumbnail_chau_8970214c5a.jpeg"
+      },
+      "medium": {
+        "hash": "medium_chau_8970214c5a",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 750,
+        "height": 750,
+        "size": 51.71,
+        "path": null,
+        "url": "/uploads/medium_chau_8970214c5a.jpeg"
+      },
+      "small": {
+        "hash": "small_chau_8970214c5a",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 25.49,
+        "path": null,
+        "url": "/uploads/small_chau_8970214c5a.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb5fbc2f61290092ba428e"
+        },
+        "ref": {
+          "$oid": "5efb51672f61290092ba4279"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T15:52:28.230Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T15:52:28.232Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb61922f61290092ba429c"
+    },
+    "name": "sweat1",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sweat1_ab5d4a7195",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 620.23,
+    "width": 533,
+    "height": 518,
+    "url": "/uploads/sweat1_ab5d4a7195.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sweat1_ab5d4a7195",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 161,
+        "height": 156,
+        "size": 60.58,
+        "path": null,
+        "url": "/uploads/thumbnail_sweat1_ab5d4a7195.png"
+      },
+      "small": {
+        "hash": "small_sweat1_ab5d4a7195",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 486,
+        "size": 556.39,
+        "path": null,
+        "url": "/uploads/small_sweat1_ab5d4a7195.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb61922f61290092ba429d"
+        },
+        "ref": {
+          "$oid": "5efb61832f61290092ba428f"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:00:18.802Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:00:18.805Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb61922f61290092ba429e"
+    },
+    "name": "sweat2",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sweat2_d4dda80ba3",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 998.95,
+    "width": 593,
+    "height": 638,
+    "url": "/uploads/sweat2_d4dda80ba3.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sweat2_d4dda80ba3",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 145,
+        "height": 156,
+        "size": 58.9,
+        "path": null,
+        "url": "/uploads/thumbnail_sweat2_d4dda80ba3.png"
+      },
+      "small": {
+        "hash": "small_sweat2_d4dda80ba3",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 465,
+        "height": 500,
+        "size": 614.56,
+        "path": null,
+        "url": "/uploads/small_sweat2_d4dda80ba3.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb61922f61290092ba429f"
+        },
+        "ref": {
+          "$oid": "5efb61832f61290092ba428f"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:00:18.807Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:00:18.811Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631c2f61290092ba42a9"
+    },
+    "name": "sweat3",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sweat3_092aca6408",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 356.69,
+    "width": 454,
+    "height": 446,
+    "url": "/uploads/sweat3_092aca6408.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sweat3_092aca6408",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 159,
+        "height": 156,
+        "size": 50.28,
+        "path": null,
+        "url": "/uploads/thumbnail_sweat3_092aca6408.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb631c2f61290092ba42aa"
+        },
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a0"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:06:52.012Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:06:52.014Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb631c2f61290092ba42ab"
+    },
+    "name": "sweat4",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sweat4_0d463ce771",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 868.46,
+    "width": 593,
+    "height": 686,
+    "url": "/uploads/sweat4_0d463ce771.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sweat4_0d463ce771",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 135,
+        "height": 156,
+        "size": 49.47,
+        "path": null,
+        "url": "/uploads/thumbnail_sweat4_0d463ce771.png"
+      },
+      "small": {
+        "hash": "small_sweat4_0d463ce771",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 432,
+        "height": 500,
+        "size": 457.39,
+        "path": null,
+        "url": "/uploads/small_sweat4_0d463ce771.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb631c2f61290092ba42ac"
+        },
+        "ref": {
+          "$oid": "5efb631b2f61290092ba42a0"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:06:52.137Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:06:52.139Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb63c42f61290092ba42be"
+    },
+    "name": "teeshirt1",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt1_5a3d826d8a",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 501.07,
+    "width": 573,
+    "height": 510,
+    "url": "/uploads/teeshirt1_5a3d826d8a.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt1_5a3d826d8a",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 175,
+        "height": 156,
+        "size": 49.21,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt1_5a3d826d8a.png"
+      },
+      "small": {
+        "hash": "small_teeshirt1_5a3d826d8a",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 445,
+        "size": 402.24,
+        "path": null,
+        "url": "/uploads/small_teeshirt1_5a3d826d8a.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb63c42f61290092ba42bf"
+        },
+        "ref": {
+          "$oid": "5efb63b92f61290092ba42b1"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:09:40.114Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:09:40.116Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb64992f61290092ba42c8"
+    },
+    "name": "teeshirt2",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt2_1eadd7e344",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 312.9,
+    "width": 563,
+    "height": 519,
+    "url": "/uploads/teeshirt2_1eadd7e344.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt2_1eadd7e344",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 169,
+        "height": 156,
+        "size": 25.35,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt2_1eadd7e344.png"
+      },
+      "small": {
+        "hash": "small_teeshirt2_1eadd7e344",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 461,
+        "size": 245.96,
+        "path": null,
+        "url": "/uploads/small_teeshirt2_1eadd7e344.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb64992f61290092ba42c9"
+        },
+        "ref": {
+          "$oid": "5efb63b92f61290092ba42b1"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:13:13.574Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:13:13.577Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb69082f61290092ba42d7"
+    },
+    "name": "teeshirt3",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt3_7b36b9c4f5",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 396.73,
+    "width": 535,
+    "height": 498,
+    "url": "/uploads/teeshirt3_7b36b9c4f5.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt3_7b36b9c4f5",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 168,
+        "height": 156,
+        "size": 45.77,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt3_7b36b9c4f5.png"
+      },
+      "small": {
+        "hash": "small_teeshirt3_7b36b9c4f5",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 465,
+        "size": 384.62,
+        "path": null,
+        "url": "/uploads/small_teeshirt3_7b36b9c4f5.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb69082f61290092ba42d8"
+        },
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42ca"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:32:08.968Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:32:08.971Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb69082f61290092ba42d9"
+    },
+    "name": "teeshirt4",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt4_0d4f3fcc15",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 130.07,
+    "width": 551,
+    "height": 578,
+    "url": "/uploads/teeshirt4_0d4f3fcc15.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt4_0d4f3fcc15",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 149,
+        "height": 156,
+        "size": 13.73,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt4_0d4f3fcc15.png"
+      },
+      "small": {
+        "hash": "small_teeshirt4_0d4f3fcc15",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 477,
+        "height": 500,
+        "size": 116.47,
+        "path": null,
+        "url": "/uploads/small_teeshirt4_0d4f3fcc15.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb69082f61290092ba42da"
+        },
+        "ref": {
+          "$oid": "5efb68fb2f61290092ba42ca"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:32:08.996Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:32:08.998Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6b2c2f61290092ba42e8"
+    },
+    "name": "teeshirt7",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt7_b1c571585c",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 493.06,
+    "width": 557,
+    "height": 546,
+    "url": "/uploads/teeshirt7_b1c571585c.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt7_b1c571585c",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 159,
+        "height": 156,
+        "size": 43.11,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt7_b1c571585c.png"
+      },
+      "small": {
+        "hash": "small_teeshirt7_b1c571585c",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 490,
+        "size": 409.2,
+        "path": null,
+        "url": "/uploads/small_teeshirt7_b1c571585c.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb6b2c2f61290092ba42e9"
+        },
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42db"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:41:16.629Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:41:16.632Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6b2c2f61290092ba42ea"
+    },
+    "name": "teeshirt8",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt8_e5ce8285fb",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 286.6,
+    "width": 557,
+    "height": 574,
+    "url": "/uploads/teeshirt8_e5ce8285fb.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt8_e5ce8285fb",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 151,
+        "height": 156,
+        "size": 22.17,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt8_e5ce8285fb.png"
+      },
+      "small": {
+        "hash": "small_teeshirt8_e5ce8285fb",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 485,
+        "height": 500,
+        "size": 209.61,
+        "path": null,
+        "url": "/uploads/small_teeshirt8_e5ce8285fb.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb6b2c2f61290092ba42eb"
+        },
+        "ref": {
+          "$oid": "5efb698a2f61290092ba42db"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:41:16.659Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:41:16.661Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d602f61290092ba42f5"
+    },
+    "name": "teeshirt5",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt5_5a3bf8be52",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 363.54,
+    "width": 408,
+    "height": 399,
+    "url": "/uploads/teeshirt5_5a3bf8be52.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt5_5a3bf8be52",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 160,
+        "height": 156,
+        "size": 59.57,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt5_5a3bf8be52.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f6"
+        },
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42ec"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:50:40.200Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:40.201Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb6d602f61290092ba42f7"
+    },
+    "name": "teeshirt6",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "teeshirt6_d08f359779",
+    "ext": ".png",
+    "mime": "image/png",
+    "size": 315.91,
+    "width": 593,
+    "height": 539,
+    "url": "/uploads/teeshirt6_d08f359779.png",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_teeshirt6_d08f359779",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 172,
+        "height": 156,
+        "size": 27.52,
+        "path": null,
+        "url": "/uploads/thumbnail_teeshirt6_d08f359779.png"
+      },
+      "small": {
+        "hash": "small_teeshirt6_d08f359779",
+        "ext": ".png",
+        "mime": "image/png",
+        "width": 500,
+        "height": 454,
+        "size": 212.76,
+        "path": null,
+        "url": "/uploads/small_teeshirt6_d08f359779.png"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb6d602f61290092ba42f8"
+        },
+        "ref": {
+          "$oid": "5efb6d5f2f61290092ba42ec"
+        },
+        "kind": "Product",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T16:50:40.355Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T16:50:40.357Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efb70062f61290092ba4304"
+    },
+    "name": "chaussettes",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "chaussettes_0f3526d10b",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 52.64,
+    "width": 562,
+    "height": 562,
+    "url": "/uploads/chaussettes_0f3526d10b.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_chaussettes_0f3526d10b",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 6.29,
+        "path": null,
+        "url": "/uploads/thumbnail_chaussettes_0f3526d10b.jpeg"
+      },
+      "small": {
+        "hash": "small_chaussettes_0f3526d10b",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 500,
+        "height": 500,
+        "size": 43.13,
+        "path": null,
+        "url": "/uploads/small_chaussettes_0f3526d10b.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [
+      {
+        "_id": {
+          "$oid": "5efb70062f61290092ba4305"
+        },
+        "ref": {
+          "$oid": "5efb453c3452590024d2203b"
+        },
+        "kind": "Shop",
+        "field": "image"
+      }
+    ],
+    "createdAt": {
+      "$date": "2020-06-30T17:01:58.950Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T17:01:58.953Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efba9075309650073493a63"
+    },
+    "name": "sardoche",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sardoche_ebb97b8374",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 4.94,
+    "width": 225,
+    "height": 225,
+    "url": "/uploads/sardoche_ebb97b8374.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sardoche_ebb97b8374",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 3.8,
+        "path": null,
+        "url": "/uploads/thumbnail_sardoche_ebb97b8374.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [],
+    "createdAt": {
+      "$date": "2020-06-30T21:05:11.304Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T21:05:11.304Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "5efba92e5309650073493a64"
+    },
+    "name": "sardoche",
+    "alternativeText": null,
+    "caption": null,
+    "hash": "sardoche_e2457d963e",
+    "ext": ".jpeg",
+    "mime": "image/jpeg",
+    "size": 4.94,
+    "width": 225,
+    "height": 225,
+    "url": "/uploads/sardoche_e2457d963e.jpeg",
+    "formats": {
+      "thumbnail": {
+        "hash": "thumbnail_sardoche_e2457d963e",
+        "ext": ".jpeg",
+        "mime": "image/jpeg",
+        "width": 156,
+        "height": 156,
+        "size": 3.8,
+        "path": null,
+        "url": "/uploads/thumbnail_sardoche_e2457d963e.jpeg"
+      }
+    },
+    "provider": "local",
+    "related": [],
+    "createdAt": {
+      "$date": "2020-06-30T21:05:50.945Z"
+    },
+    "updatedAt": {
+      "$date": "2020-06-30T21:05:50.945Z"
+    },
+    "__v": 0
+  }
+]

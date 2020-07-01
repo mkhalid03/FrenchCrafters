@@ -30,8 +30,6 @@ export const mutations = {
     } else {
       record.quantity++
     }
-    console.log(state.items)
-    console.log(cleanProductArray(state.items))
     Cookies.set("cart", cleanProductArray(state.items))
   },
   remove(state, item) {
