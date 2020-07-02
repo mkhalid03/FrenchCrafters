@@ -4,7 +4,7 @@ const { loadFixtures } = require('../fixtures');
 describe('User Model Test', () => {
   beforeAll(async (done) => {
     await setupStrapi()
-    await loadFixtures('test', 'test')
+    await loadFixtures('test', 'dev')
     done()
   });
 
