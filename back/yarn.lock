@@ -3001,6 +3001,11 @@ bson@^1.1.1, bson@^1.1.4, bson@~1.1.1:
   resolved "https://registry.yarnpkg.com/bson/-/bson-1.1.4.tgz#f76870d799f15b854dffb7ee32f0a874797f7e89"
   integrity sha512-S/yKGU1syOMzO86+dGpg2qGoDL0zvzcb262G+gqEy6TgP6rt6z6qxSFX/8X6vLC91P7G7C3nLs0+bvDzmvBA3Q==
 
+bson@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/bson/-/bson-3.0.2.tgz#2467a76507a98c63ce34072f9965f4024e753dfc"
+  integrity sha512-HrDzr7y/ZkgyEVancPVDmfbaD8j81GzSNr6h6yUd/yZfavkrlrqI8aUZMCHrhyMoCW2/I+vEJDat1xDWRwVR6A==
+
 buffer-crc32@~0.2.3:
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
@@ -7839,6 +7844,13 @@ moment-timezone@^0.5.21, moment-timezone@^0.5.25:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+
+mongodb-extjson@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/mongodb-extjson/-/mongodb-extjson-3.0.3.tgz#5ef19bb997cbaf3eabc2fd91171d8598db4abdc5"
+  integrity sha512-Fg81iDs3Lxtx6zvOZtAUWPf3OO4KJ1+DecvRrQHJ8Y0/qS9QQ0F6HDZ4RaN6E4Me7uN4l+SFm6RKh4L/K8vcUw==
+  dependencies:
+    bson "^3.0.2"
 
 mongodb-memory-server-core@6.4.1:
   version "6.4.1"
