@@ -1,9 +1,9 @@
 <template>
-  <div class="uk-card uk-card-default uk-card-large uk-card-body">
-    <form @submit.stop.prevent="handleSubmit">
+  <div>
+    <form>
       <div>
         <label for="email">Email</label>
-        <el-input
+        <ElInput
           id="email"
           v-model="form.email"
           type="email"
@@ -15,31 +15,37 @@
 
       <div>
         <label for="siret">Siret</label>
-        <el-input
+        <ElInput
           id="siret"
           v-model="form.siret"
           type="text"
           placeholder="XXXXXXXXXXXXXX"
         />
-        <el-button @click="checkCompany">Check my company</el-button>
+        <ElButton @click="checkCompany">Check my company</ElButton>
       </div>
 
       <div v-if="company">
         Is this your Company ?
         <CompanyInfo :company="company"/>
-        <el-checkbox v-model="form.checked">Yes, this is my company !</el-checkbox>
+        <ElCheckbox v-model="form.checked">Yes, this is my company !</ElCheckbox>
       </div>
 
       <div>
-        <button :disabled="loading" type="submit">
+        <ElButton :disabled="loading" @click="handleSubmit">
           Submit
-        </button>
+        </ElButton>
       </div>
 
       <div>
         Want to login?
         <router-link :to="{ name: 'login' }">
-          Redirect to Shop Panel
+          Log In
+        </router-link>
+      </div>
+      <div>
+        You want to create a customer account ?
+        <router-link :to="{ name: 'user-register' }">
+          Register as a customer
         </router-link>
       </div>
     </form>
@@ -52,7 +58,7 @@ import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySe
 import CompanyInfo from "../../components/company/CompanyInfo";
 
 export default {
-  components: {CompanyInfo, PasswordVerifySecurity },
+  components: { CompanyInfo, PasswordVerifySecurity },
   data() {
     return {
       form: {
@@ -89,6 +95,7 @@ export default {
       try {
         this.loading = true
         //TODO: call to back to create shop and user
+        this.loading = false
       } catch (err) {
         this.loading = false
         alert(err.message || "An error occurred.")

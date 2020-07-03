@@ -33,6 +33,7 @@
 import Password from "vue-password-strength-meter"
 
 export default {
+  name: "PasswordVerifySecurity",
   components: { Password },
   data: () => ({
     password1: null,

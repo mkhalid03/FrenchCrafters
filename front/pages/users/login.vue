@@ -1,32 +1,37 @@
 <template>
   <div>
-    <div class="uk-child-width-1-2@m uk-grid">
+    <div>
       <form @submit.stop.prevent="handleSubmit">
-        <legend class="uk-legend">
+        <ElButton>
           Sign in
-        </legend>
+        </ElButton>
 
-        <div class="uk-margin">
+        <div>
           <label>Email</label>
-          <input
+          <ElInput
             v-model="email"
             type="email"
             placeholder="my-email@gmail.com"
           />
         </div>
 
-        <div class="uk-margin">
+        <div>
           <label>Password</label>
-          <input v-model="password" type="password" />
+          <ElInput
+            v-model="password"
+            type="password"
+            show-password
+            placeholder="••••••••"
+          />
         </div>
 
         <div>
-          <button :disabled="loading" type="submit">
+          <ElButton :disabled="loading" type="submit">
             Submit
-          </button>
+          </ElButton>
         </div>
 
-        <div class="uk-margin">
+        <div>
           <p>
             No account yet?
             <router-link :to="{ name: 'user-register' }">

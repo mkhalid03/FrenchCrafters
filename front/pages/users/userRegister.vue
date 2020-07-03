@@ -1,9 +1,9 @@
 <template>
-  <div class="uk-card uk-card-default uk-card-large uk-card-body">
-    <form @submit.stop.prevent="handleSubmit">
-      <div class="uk-margin">
+  <div>
+    <form>
+      <div>
         <label for="username">Username</label>
-        <input
+        <ElInput
           id="username"
           v-model="username"
           type="text"
@@ -11,9 +11,9 @@
         />
       </div>
 
-      <div class="uk-margin">
+      <div>
         <label for="email">Email</label>
-        <input
+        <ElInput
           id="email"
           v-model="email"
           type="email"
@@ -24,15 +24,21 @@
       <PasswordVerifySecurity @passwordChange="setPassword" />
 
       <div>
-        <button :disabled="loading" type="submit">
+        <ElButton @click="handleSubmit">
           Submit
-        </button>
+        </ElButton>
       </div>
 
       <div>
         Already have an account?
         <router-link :to="{ name: 'login' }">
           Login
+        </router-link>
+      </div>
+      <div>
+        You are a Company ?
+        <router-link :to="{ name: 'shop-register' }">
+          Register as a merchant
         </router-link>
       </div>
     </form>
@@ -60,22 +66,22 @@ export default {
       this.password = pass
     },
     async handleSubmit() {
-      try {
-        this.loading = true
-        const response = await strapi.register(
-          this.username,
-          this.email,
-          this.password
-        )
-        this.loading = false
-        this.setUser(response.user)
-        this.$router.go(-1)
-      } catch (err) {
-        this.loading = false
-        alert(err.message || "An error occurred.")
+      if(this.password !== "" && this.password !== "" && this.password !== "") {
+        try {
+          this.loading = true
+          await strapi.register(
+            this.username,
+            this.email,
+            this.password
+          )
+          this.loading = false
+          this.$router.push('/login')
+        } catch (err) {
+          this.loading = false
+          alert(err.message || "An error occurred.")
+        }
       }
     },
-    // Define all your needed mutations, here: auth/setUser
     ...mapMutations({
       setUser: "auth/setUser",
     }),
