@@ -6,11 +6,6 @@ const customRoutes = (path, resolve) => {
       component: resolve(path, "pages/users/login.vue"),
     },
     {
-      name: "shop-register",
-      path: "/register/shop",
-      component: resolve(path, "pages/users/shopRegister.vue"),
-    },
-    {
       name: "user-register",
       path: "/register",
       component: resolve(path, "pages/users/userRegister.vue"),
@@ -24,6 +19,16 @@ const customRoutes = (path, resolve) => {
       name: "profile",
       path: "/profile",
       component: resolve(path, "pages/users/profile.vue"),
+    },
+    {
+      name: "shop-register",
+      path: "/register/shop",
+      component: resolve(path, "pages/users/shops/register.vue"),
+    },
+    {
+      name: "shop-onboarding",
+      path: "/register/onboarding",
+      component: resolve(path, "pages/users/shops/onboarding.vue"),
     },
   ]
 }

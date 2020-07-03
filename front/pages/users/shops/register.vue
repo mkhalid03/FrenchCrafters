@@ -21,7 +21,12 @@
           type="text"
           placeholder="XXXXXXXXXXXXXX"
         />
-        <ElButton @click="checkCompany">Check my company</ElButton>
+        <ElButton
+          @click="checkCompany"
+          :disabled="loading"
+        >
+          Check my company
+        </ElButton>
       </div>
 
       <div v-if="company">
@@ -55,7 +60,7 @@
 <script>
 import axios from "axios"
 import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
-import CompanyInfo from "../../components/company/CompanyInfo";
+import CompanyInfo from "~/components/company/CompanyInfo";
 
 export default {
   components: { CompanyInfo, PasswordVerifySecurity },
@@ -74,31 +79,39 @@ export default {
   middleware: "logged",
   methods: {
     setPassword: function (pass) {
-      this.password = pass
+      this.form.password = pass
     },
     checkCompany: async function () {
       if(this.form.siret){
-        try {
-          axios({
-            method:'get',
-            url:`${process.env.siretApiUrl}/${this.form.siret}`,
-            baseURL: null,
-          }).then(res => {
-            this.company = res.data.etablissement
-          })
-        } catch {
-          console.log('Oops')
-        }
+        this.loading = true
+        //GET Company info from SIRET
+        axios({
+          method:'get',
+          url:`${process.env.siretApiUrl}/${this.form.siret}`,
+          baseURL: null,
+        }).then(res => {
+          this.company = res.data.etablissement
+          this.loading = false
+        }).catch(e => {
+          this.loading = false
+          console.log('Oops', e)
+        })
       }
     },
     async handleSubmit() {
-      try {
+      console.log(this.form)
+      if(this.form.email !== "" && this.form.checked && this.form.password !== "") {
         this.loading = true
-        //TODO: call to back to create shop and user
-        this.loading = false
-      } catch (err) {
-        this.loading = false
-        alert(err.message || "An error occurred.")
+        await axios.post(`${process.env.backendUrl}/accounts`, {
+          email: this.form.email,
+          password: this.form.password
+        }).then(res => {
+          this.loading = false
+          console.log(res)
+        }).catch(e => {
+          this.loading = false
+          alert(e.message || "An error occurred.")
+        })
       }
     }
   },

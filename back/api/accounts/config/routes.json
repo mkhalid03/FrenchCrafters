@@ -2,8 +2,8 @@
   "routes": [
     {
       "method": "POST",
-      "path": "/admin",
-      "handler": "administrator.create",
+      "path": "/accounts",
+      "handler": "accounts.create",
       "config": {
         "policies": []
       }
