@@ -37,6 +37,8 @@ services:
       - ./back:/home/node/app
     environment:
       - STRIPE_API_KEY=${STRIPE_SECRET_API_KEY}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
     ports:
       - "1337:1337"
     command: "yarn dev"
