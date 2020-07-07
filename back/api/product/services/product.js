@@ -34,29 +34,15 @@ const allProductAvailable = async products => {
 
 const actualizeStock = async products => {
   for (const product of products) {
-    const newStock = product.sizes.map(size => {
+    product.sizes.map(size => {
       if(size.id === product.selectedSize.id){
-        size.stock -= product.quantity
-      }
-      delete size.id
-      delete size._id
-      delete size.createdAt
-      delete size.updatedAt
-      delete size.__v
-      return size
-    })
-    try{
-      await strapi.services['product'].update(
-        {
-          id: product.id
-        },
-        {
-          sizes: newStock
+        try{
+          strapi.components['product.sizes-list'].findByIdAndUpdate(size.id, {stock: size.stock - product.quantity }, () => {})
+        } catch {
+          throw strapi.errors['badRequest']("Can't update stock");
         }
-      )
-    } catch {
-      throw strapi.errors['badRequest']("Can't update stock");
-    }
+      }
+    })
   }
 };
 

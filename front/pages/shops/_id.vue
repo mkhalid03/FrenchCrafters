@@ -5,16 +5,8 @@
     </ElButton>
 
     <client-only>
-      <div v-for="product in shop.products" class="uk-margin">
-        <div>
-          <span>{{ product.name }} {{ product.price }}€</span>
-          <p>{{ product.description }}</p>
-        </div>
-        <div class="uk-card-footer">
-          <ElButton @click="seeProduct(product.id)">
-            See more
-          </ElButton>
-        </div>
+      <div v-for="product in shop.products">
+        <ProductCard :product="product" />
       </div>
       <Cart />
     </client-only>
@@ -24,9 +16,11 @@
 <script>
 import { mapMutations } from "vuex"
 import Cart from "~/components/Cart.vue"
+import ProductCard from "../../components/products/ProductCard";
 
 export default {
   components: {
+    ProductCard,
     Cart,
   },
   async fetch() {

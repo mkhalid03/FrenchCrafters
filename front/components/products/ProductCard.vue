@@ -3,8 +3,8 @@
     <img width="200" :src="getImageUrl()" alt="" />
     <div>{{ product.name }}</div>
     <div>{{ product.description }}</div>
-    <div>Seller : {{ product.shop.name }}</div>
-    <div>Seen in Category : {{ product.category.title }}</div>
+    <div v-if="product.shop.name">Seller : {{ product.shop.name }}</div>
+    <div v-if="product.category.title">Seen in Category : {{ product.category.title }}</div>
     <ElButton @click="seeProduct(product.id)">
       See more
     </ElButton>

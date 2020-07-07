@@ -1,11 +1,7 @@
 <template>
   <div>
     <div>
-      <form @submit.stop.prevent="handleSubmit">
-        <ElButton>
-          Sign in
-        </ElButton>
-
+      <form>
         <div>
           <label>Email</label>
           <ElInput
@@ -25,11 +21,9 @@
           />
         </div>
 
-        <div>
-          <ElButton :disabled="loading" type="submit">
-            Submit
-          </ElButton>
-        </div>
+        <ElButton @click="handleSubmit">
+          Sign In
+        </ElButton>
 
         <div>
           <p>
