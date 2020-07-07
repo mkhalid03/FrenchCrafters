@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-select v-model="selectedCategory" clearable placeholder="Select">
+    <el-select class="w-full" v-model="selectedCategory" clearable placeholder="Catégories">
       <el-option v-if="$fetchState.pending" value="Loading.." />
       <el-option v-else-if="$fetchState.error" value="Error" />
       <div v-else>
@@ -28,10 +28,17 @@
     </el-select>
 
     <el-input
+      class="my-3"
       v-model="searchInput"
       placeholder="Que recherchez-vous ?"
       prefix-icon="el-icon-search"
     />
+
+    <el-checkbox-group v-model="targets" class="mb-3">
+      <el-checkbox label="man" >Homme</el-checkbox>
+      <el-checkbox label="woman">Femme</el-checkbox>
+      <el-checkbox label="kid">Enfant</el-checkbox>
+    </el-checkbox-group>
 
     <el-button type="primary" icon="el-icon-search" @click="submitSearch">
       Recherche
@@ -50,6 +57,7 @@ export default {
       selectedCategory: "",
       searchInput: "",
       categories: [],
+      targets: []
     }
   },
   methods: {
@@ -57,6 +65,7 @@ export default {
       this.$emit("submit", {
         category: this.selectedCategory,
         query: this.searchInput,
+        targets: this.targets,
       })
     },
   },

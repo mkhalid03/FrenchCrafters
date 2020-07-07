@@ -1,6 +1,5 @@
 <template>
   <div>
-    <SearchBar @submit="triggerSearch" />
     <div v-if="$fetchState.pending">
       <SearchResultsLoading />
     </div>
@@ -12,13 +11,27 @@
         <SearchResultsLoading />
       </div>
       <div v-else>
-        Shops :
-        <div v-for="shop in results.shops" :key="shop.id">
-          <ShopCard :shop="shop" />
-        </div>
-        Products :
-        <div v-for="product in results.products" :key="product.id">
-          <ProductCard :product="product" />
+        <div class="flex">
+          <div class="w-1/5">
+            <SearchBar
+              class="fixed w-1/5 px-4"
+              @submit="triggerSearch"
+            />
+          </div>
+          <div class="w-4/5">
+            <div v-if="results.shops">
+              Shops :
+              <div v-for="shop in results.shops" :key="shop.id">
+                <ShopCard :shop="shop" />
+              </div>
+            </div>
+            <div v-if="results.products">
+              Products :
+              <div v-for="product in results.products" :key="product.id">
+                <ProductCard :product="product" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,6 +65,7 @@ export default {
         this.$axios
           .$post(`/search/all`, {
             query: opt.query,
+            targets: opt.targets,
           })
           .then((res) => {
             this.results = res
@@ -61,6 +75,7 @@ export default {
         this.$axios
           .$post(`/search/products`, {
             query: opt.query,
+            targets: opt.targets,targets: opt.targets,
           })
           .then((res) => {
             this.results = res
@@ -70,6 +85,7 @@ export default {
         this.$axios
           .$post(`/search/shops`, {
             query: opt.query,
+            targets: opt.targets,
           })
           .then((res) => {
             this.results = res
@@ -79,6 +95,7 @@ export default {
         this.$axios
           .$post(`/search/products`, {
             query: opt.query,
+            targets: opt.targets,
             categories: [opt.category],
           })
           .then((res) => {
@@ -89,6 +106,7 @@ export default {
         this.$axios
           .$post(`/search/all`, {
             query: opt.query,
+            targets: opt.targets,
             categories: [opt.category],
           })
           .then((res) => {

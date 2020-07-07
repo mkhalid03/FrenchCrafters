@@ -1,16 +1,8 @@
 'use strict';
-const i18n = require('i18n'), path = require('path'), genders = require('../../../config/translations/fr_fr.json');
 
-i18n.configure({
-  locales:['genders'],
-  register: global,
-  updateFiles: false,
-  directory: path.join(__dirname + '../../../../config/translations')
-});
-
-const entityWithQuery = async (query, entity, columns, categories, limit, skip) => {
+const entityWithQuery = async (query, entity, columns, categories, targets, limit, skip) => {
   return strapi.query(entity).model
-    .find( await getParamsFromQuery(query, columns, categories) )
+    .find( await getParamsFromQuery(query, columns, categories, targets) )
     .limit(parseInt(limit))
     .skip(parseInt(skip))
     .populate(entity === 'product' ? 'category' : null)
@@ -50,7 +42,7 @@ const randomQueryOutput = async (entity, size) => {
     });
 };
 
-const getParamsFromQuery = async (query, columns, categories = []) => {
+const getParamsFromQuery = async (query, columns, categories = [], targets = []) => {
 
   const queryArray = query ? query.split(' ') : [];
   const contentFilter = [];
@@ -60,11 +52,9 @@ const getParamsFromQuery = async (query, columns, categories = []) => {
   for (const column of columns) {
     switch (column) {
       case 'target':
-        queryArray.forEach(q => {
-          if (q in genders) {
-            targetFilter.push({target: {'$regex': __({phrase: q, locale: 'fr_fr'}), '$options': 'i'}});
-          }
-        });
+        for (const target of targets) {
+          targetFilter.push({'target': target});
+        }
         break;
       case 'category':
         if(categories !== null){
