@@ -1,4 +1,6 @@
 import customRoutes from "./router"
+import { getElementUiStylesFiles } from './helpers/css'
+
 
 export default {
   mode: "universal",
@@ -18,25 +20,30 @@ export default {
   head: {
     title: process.env.npm_package_name || "",
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {charset: "utf-8"},
+      {name: "viewport", content: "width=device-width, initial-scale=1"},
       {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || "",
       },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{rel: "icon", type: "image/x-icon", href: "/favicon.ico"}],
     script: [],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: {color: "#fff"},
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    'element-ui/lib/theme-chalk/reset.css',
+    'element-ui/lib/theme-chalk/select-dropdown.css',
+    'element-ui/lib/theme-chalk/select.css',
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -65,13 +72,14 @@ export default {
     },
   },
   styleResources: {
-    scss: ["@storefront-ui/vue/styles.scss"],
+    scss: ["@storefront-ui/vue/styles.scss", "@/assets/sass/app.sass"],
   },
   /*
    ** Build configuration
    */
   build: {
     transpile: [/^@storefront-ui/],
-    extend(config, ctx) {},
+    extend(config, ctx) {
+    },
   },
 }
