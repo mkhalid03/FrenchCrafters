@@ -4,8 +4,8 @@ export default {
   mode: "universal",
 
   server: {
-    port: process.env.FRONT_HOST_PORT,
-    host: process.env.FRONT_HOST_URL,
+    port: process.env.FRONT_HOST_PORT ? process.env.FRONT_HOST_PORT : process.env.PORT,
+    host: process.env.FRONT_HOST_URL ? process.env.FRONT_HOST_URL : '0.0.0.0',
   },
   env: {
     stripeApiKey: process.env.STRIPE_API_KEY,
