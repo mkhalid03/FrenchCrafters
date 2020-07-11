@@ -29,7 +29,7 @@ export default {
     },
     getImageUrl: function () {
       try {
-        return process.env.backendUrl + this.product.image[0].url
+        return this.product.image[0].url
       } catch {
         return "https://designshack.net/wp-content/uploads/placeholder-image.png"
       }
