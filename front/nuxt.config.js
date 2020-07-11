@@ -1,5 +1,4 @@
 import customRoutes from "./router"
-import { getElementUiStylesFiles } from './helpers/css'
 
 
 export default {
@@ -38,12 +37,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [
-    'element-ui/lib/theme-chalk/index.css',
-    'element-ui/lib/theme-chalk/reset.css',
-    'element-ui/lib/theme-chalk/select-dropdown.css',
-    'element-ui/lib/theme-chalk/select.css',
-  ],
+  css: [],
   /*
    ** Plugins to load before mounting the App
    */
