@@ -52,6 +52,14 @@ import Cart from "~/components/Cart.vue"
 import SeeProductLoading from "~/components/loading/SeeProductLoading"
 
 export default {
+  head () {
+    return {
+      title: `${this.product.name} | FrenchCrafters`,
+      meta: [
+        { hid: 'checkout', name: 'description', content: `FrenchCrafters product page for ${this.product.name}` }
+      ]
+    }
+  },
   components: {
     SeeProductLoading,
     Cart,

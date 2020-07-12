@@ -19,6 +19,14 @@ import Cart from "~/components/Cart.vue"
 import ProductCard from "../../components/products/ProductCard";
 
 export default {
+  head () {
+    return {
+      title: `${this.shop.name} | FrenchCrafters`,
+      meta: [
+        { hid: 'checkout', name: 'description', content: `FrenchCrafters shop page for ${this.shop.name}` }
+      ]
+    }
+  },
   components: {
     ProductCard,
     Cart,

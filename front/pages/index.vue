@@ -5,5 +5,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'Accueil | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters home page.' }
+      ]
+    }
+  },
+}
 </script>

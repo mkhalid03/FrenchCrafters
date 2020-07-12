@@ -29,7 +29,16 @@
 
 <script>
 import OrdersList from "~/components/orders/OrdersList"
+
 export default {
+  head () {
+    return {
+      title: `${this.user.username} Profile | FrenchCrafters`,
+      meta: [
+        { hid: 'checkout', name: 'description', content: `FrenchCrafters profile page for ${this.user.name}` }
+      ]
+    }
+  },
   components: { OrdersList },
   data: function () {
     return {

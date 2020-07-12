@@ -16,6 +16,14 @@
 <script>
 
 export default {
+  head () {
+    return {
+      title: 'Et Maintenant ? | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters onboarding and tips page.' }
+      ]
+    }
+  },
   methods: {
     redirectToBack: function(){
       window.open('http://localhost:1337/admin', '_blank');

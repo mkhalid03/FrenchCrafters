@@ -51,6 +51,14 @@ import strapi from "~/utils/strapi"
 import ForgotPassword from "~/components/forms/ForgotPassword"
 
 export default {
+  head () {
+    return {
+      title: 'Connexion | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters login page.' }
+      ]
+    }
+  },
   components: { ForgotPassword },
   middleware: "logged",
   data() {

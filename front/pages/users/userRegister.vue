@@ -51,6 +51,14 @@ import strapi from "~/utils/strapi"
 import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
 
 export default {
+  head () {
+    return {
+      title: 'Inscription | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters register page.' }
+      ]
+    }
+  },
   components: { PasswordVerifySecurity },
   data() {
     return {

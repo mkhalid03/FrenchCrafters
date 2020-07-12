@@ -14,7 +14,7 @@ export default {
   name: "ShopsDisplay",
   components: { ShopCard },
   props: {
-    shops: []
+    shops: null
   },
 }
 </script>

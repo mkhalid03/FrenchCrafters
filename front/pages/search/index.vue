@@ -35,6 +35,14 @@
   import ShopsDisplay from "~/components/shops/ShopsDisplay";
 
   export default {
+    head () {
+      return {
+        title: 'Recherche | FrenchCrafters',
+        meta: [
+          { hid: 'checkout', name: 'description', content: 'FrenchCrafters search page' }
+        ]
+      }
+    },
     components: {ProductsDisplay, SearchResultsLoading, SearchBar, ShopsDisplay},
     async fetch() {
       this.results = await this.$axios.$get(`/search/all`)

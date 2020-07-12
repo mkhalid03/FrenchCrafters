@@ -23,6 +23,14 @@ import axios from "axios"
 import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySecurity"
 
 export default {
+  head () {
+    return {
+      title: 'Changement de mot de passe | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters reset password page.' }
+      ]
+    }
+  },
   components: { PasswordVerifySecurity },
   data() {
     return {

@@ -63,6 +63,14 @@ import PasswordVerifySecurity from "~/components/forms/elements/PasswordVerifySe
 import CompanyInfo from "~/components/company/CompanyInfo";
 
 export default {
+  head () {
+    return {
+      title: 'Inscription Magasin | FrenchCrafters',
+      meta: [
+        { hid: 'checkout', name: 'description', content: 'FrenchCrafters shop register page.' }
+      ]
+    }
+  },
   components: { CompanyInfo, PasswordVerifySecurity },
   data() {
     return {
