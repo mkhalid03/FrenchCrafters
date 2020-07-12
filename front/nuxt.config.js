@@ -1,6 +1,5 @@
 import customRoutes from "./router"
 
-
 export default {
   mode: "universal",
 
@@ -21,11 +20,6 @@ export default {
     meta: [
       {charset: "utf-8"},
       {name: "viewport", content: "width=device-width, initial-scale=1"},
-      {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || "",
-      },
     ],
     link: [{rel: "icon", type: "image/x-icon", href: "/favicon.ico"}],
     script: [],
@@ -37,7 +31,9 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    'element-ui/lib/theme-chalk/index.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -46,13 +42,14 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
-    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     "@nuxtjs/tailwindcss",
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ["@nuxtjs/axios", "@nuxtjs/style-resources"],
+  modules: [
+    "@nuxtjs/axios",
+  ],
   axios: {
     baseURL: process.env.BACKEND_SERVER_ENDPOINT,
     browserBaseURL: process.env.BACKEND_API_ENDPOINT,
@@ -66,14 +63,13 @@ export default {
     },
   },
   styleResources: {
-    scss: ["@storefront-ui/vue/styles.scss", "@/assets/sass/app.sass"],
+    scss: ["@storefront-ui/vue/styles.scss"],
   },
   /*
    ** Build configuration
    */
   build: {
-    transpile: [/^@storefront-ui/],
-    extend(config, ctx) {
-    },
+    transpile: [/^@storefront-ui/, /^element-ui/],
+    extractCSS: true
   },
 }
