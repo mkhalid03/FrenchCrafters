@@ -1,21 +1,17 @@
-import Cookies from "js-cookie"
-import { cleanProductArray } from "~/helpers"
+import {verifyCartContent} from "~/helpers/cart";
 
 const defaultState = () => ({
   items: [],
   price: 0,
   numberOfItems: 0,
+  owner: null
 })
 
 export const state = () => defaultState()
 
 export const mutations = {
-  setItems(state, items) {
-    state.items = items
-  },
   reset(state) {
     state.items = []
-    Cookies.remove("cart")
   },
   add(state, item) {
     const record = state.items.find(
@@ -30,7 +26,6 @@ export const mutations = {
     } else {
       record.quantity++
     }
-    Cookies.set("cart", cleanProductArray(state.items))
   },
   remove(state, item) {
     const record = state.items.find((i) => i.id === item.id)
@@ -41,19 +36,33 @@ export const mutations = {
       const index = state.items.findIndex((i) => i.id === item.id)
       state.items.splice(index, 1)
     }
-    Cookies.set("cart", cleanProductArray(state.items))
   },
+  setOwner(state, item){
+    state.owner = item
+  }
+}
+
+export const actions = {
+  setOwner({ commit }, payload) {
+    commit('setOwner', payload)
+  },
+  resetCart({ commit }) {
+    commit('reset')
+  }
 }
 
 export const getters = {
   items: (state) => {
     return state.items
   },
+  validatedContent: (state) => {
+    return getters => verifyCartContent(state.items, getters)
+  },
   price: (state) => {
     return (
       Math.round(
         state.items.reduce(
-          (accumulator, item) => accumulator + item.price * item.quantity,
+          (acc, item) => acc + item.price * item.quantity,
           0
         ) * 100
       ) / 100
@@ -61,8 +70,11 @@ export const getters = {
   },
   numberOfItems: (state) => {
     return state.items.reduce(
-      (accumulator, item) => accumulator + item.quantity,
+      (acc, item) => acc + item.quantity,
       0
     )
   },
+  getOwner: (state) => {
+    return state.owner
+  }
 }

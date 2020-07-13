@@ -6,6 +6,7 @@ export const cleanUser = (user) => {
       lastname: user.lastname,
       picture: cleanPicture(user.picture),
       title: user.title,
+      email: user.email
     }
   }
 }
