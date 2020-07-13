@@ -7,7 +7,7 @@
           <tr>
             <th>Name</th>
             <th>Price (unit)</th>
-            <th v-if="selectedProducts.some((e) => e.sizes && e.sizes.length !== 0)">
+            <th>
               Size
             </th>
             <th>Quantity</th>
@@ -47,6 +47,19 @@
   import {mapMutations} from "vuex"
 
   export default {
+    async created() {
+      const products = this.$store.getters["cart/items"]
+      if (products.length > 0) {
+        const email = this.$store.getters['auth/getUserInfo'].email || null
+        const owner = this.$store.getters['cart/getOwner']
+        if (owner !== email) {
+          await this.$store.dispatch('cart/resetCart')
+          await this.$store.dispatch('cart/setOwner', email)
+        }
+
+        this.$store.commit('cart/setItems', await this.$axios.$post('/products/check', {products}))
+      }
+    },
     methods: {
       ...mapMutations({
         addToCart: "cart/add",
@@ -60,14 +73,14 @@
       id() {
         return this.$route.params.id
       },
-      selectedProducts() {
-        return this.$store.getters["cart/validatedContent"](this.$store)
-      },
       price() {
         return this.$store.getters["cart/price"]
       },
       numberOfItems() {
         return this.$store.getters["cart/numberOfItems"]
+      },
+      selectedProducts() {
+        return this.$store.getters["cart/items"]
       },
     },
   }

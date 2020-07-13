@@ -1,16 +1,22 @@
 'use strict';
 
+const getRealProductsWithStockCheck = async productsArray => {
+  const products = await getRealProducts(productsArray)
+  if(products.length !== productsArray.length){
+    throw strapi.errors['resourceGone']('One or many products are no longer available');
+  }
+  return products
+}
+
 const getRealProducts = async productsArray => {
     const res = []
     for (const product of productsArray) {
       const realProduct = await strapi.services['product'].findOne({ id: product.id })
-      product.selectedSize ? realProduct.selectedSize = product.selectedSize : null
-      product.quantity ? realProduct.quantity = product.quantity : null
-
-      res.push(realProduct);
-    }
-    if(res.length !== productsArray.length){
-      throw strapi.errors['resourceGone']('One or many products are no longer available');
+      if(realProduct){
+        product.selectedSize ? realProduct.selectedSize = product.selectedSize : null
+        product.quantity ? realProduct.quantity = product.quantity : null
+        res.push(realProduct);
+      }
     }
     return res
 };
@@ -58,5 +64,6 @@ module.exports = {
   actualizeStock,
   allProductAvailable,
   calculatePrice,
-  getRealProducts
+  getRealProducts,
+  getRealProductsWithStockCheck
 };

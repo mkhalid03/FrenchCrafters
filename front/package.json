@@ -33,6 +33,7 @@
     "nuxt": "^2.12.2",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
+    "secure-ls": "^1.2.6",
     "strapi-provider-email-gmail-oauth2": "^0.1.6",
     "strapi-sdk-javascript": "^0.3.3",
     "vue-password-strength-meter": "^1.7.1",

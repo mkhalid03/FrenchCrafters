@@ -10,7 +10,7 @@ module.exports = {
     const user = await strapi.services.profile.getUserByToken(ctx);
 
     try {
-      const products = await strapi.services['product'].getRealProducts(bodyProducts);
+      const products = await strapi.services['product'].getRealProductsWithStockCheck(bodyProducts);
 
       await strapi.services['product'].allProductAvailable(products)
       await strapi.services['product'].actualizeStock(products)

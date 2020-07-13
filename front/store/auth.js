@@ -28,7 +28,7 @@ export const actions = {
       headers: { Authorization: "Bearer " + jwt },
     })
     commit("setUser", profile)
-  },
+  }
 }
 
 export const getters = {

@@ -10,6 +10,9 @@ const defaultState = () => ({
 export const state = () => defaultState()
 
 export const mutations = {
+  setItems(state, items) {
+    state.items = items
+  },
   reset(state) {
     state.items = []
   },
@@ -48,15 +51,12 @@ export const actions = {
   },
   resetCart({ commit }) {
     commit('reset')
-  }
+  },
 }
 
 export const getters = {
   items: (state) => {
     return state.items
-  },
-  validatedContent: (state) => {
-    return getters => verifyCartContent(state.items, getters)
   },
   price: (state) => {
     return (

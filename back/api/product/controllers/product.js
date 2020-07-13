@@ -5,4 +5,12 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  async check (ctx) {
+    const {
+      products
+    } = ctx.request.body;
+
+    return await strapi.services['product'].getRealProducts(products)
+  }
+};
