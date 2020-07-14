@@ -1,9 +1,9 @@
 <template>
   <nav class="fixed top-0 w-full bg-white shadow-md h-16 flex justify-between">
-    <div class="w-full h-full flex items-center px-4">
+    <router-link class="w-full h-full flex items-center px-4" :to="{ name: 'index' }">
       <img class="h-12" src="~/assets/img/logo.png" alt="logo"/>
-      <span class="ml-2 mt-1 text-xl font-mono">French Crafters</span>
-    </div>
+      <span class="ml-2 mt-1 text-xl text-black font-mono">French Crafters</span>
+    </router-link>
     <div class="hidden md:flex w-full h-full justify-center">
       <router-link class="border-b-4 text-gray-400 outline-none" :to="{ name: 'index' }">
         <button class="menu-button h-full w-32 rounded-none outline-none rounded-md bg-transparent">
@@ -23,12 +23,22 @@
     </div>
     <div class="w-full  h-full flex justify-end space-x-2 items-center px-3">
       <button
-        class="w-8 h-8 lg:h-10 lg:w-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full  flex items-center justify-center">
+        class="w-8 h-8 lg:h-10 lg:w-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full flex items-center justify-center"
+        @click="openCart"
+      >
         <i class="mt-1 text-xl el-icon-shopping-cart-full"></i>
       </button>
+
+      <Cart
+        :isCartSidebarOpen="cartState"
+        @closeCart="closeCart"
+      />
+
       <el-dropdown @command="handleCommand">
-        <button id="profile-button"
-                class="w-8 h-8 lg:h-10 lg:w-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full  flex items-center justify-center">
+        <button
+          id="profile-button"
+          class="w-8 h-8 lg:h-10 lg:w-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full  flex items-center justify-center"
+        >
           <i class="text-xl el-icon-user"></i>
         </button>
         <el-dropdown-menu slot="dropdown">
@@ -43,7 +53,8 @@
                 icon="el-icon-switch-button"
                 command="logout"
                 divided
-              >Se déconnecter
+              >
+                Se déconnecter
               </el-dropdown-item>
             </div>
             <div v-else>
@@ -72,13 +83,14 @@
 
 <script>
   import {mapMutations} from "vuex"
-  import Nav from "~/components/nav/Nav"
+  import Cart from "~/components/Cart"
 
   export default {
-    components: {Nav},
+    components: {Cart},
     data() {
       return {
-        activeIndex: null
+        activeIndex: null,
+        cartState: false
       };
     },
     computed: {
@@ -96,6 +108,12 @@
             this.logout()
             break
         }
+      },
+      openCart: function(){
+        this.cartState = true
+      },
+      closeCart: function(){
+        this.cartState = false
       }
     },
   }

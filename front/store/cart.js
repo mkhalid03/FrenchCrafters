@@ -1,5 +1,3 @@
-import {verifyCartContent} from "~/helpers/cart";
-
 const defaultState = () => ({
   items: [],
   price: 0,
@@ -38,6 +36,22 @@ export const mutations = {
     } else {
       const index = state.items.findIndex((i) => i.id === item.id)
       state.items.splice(index, 1)
+    }
+  },
+  delete(state, item) {
+    const index = state.items.findIndex((i) => i.id === item.id)
+    state.items.splice(index, 1)
+  },
+  setProductQuantity(state, item) {
+    console.log(item)
+    const record = state.items.find(
+      (i) => i.id === item.id && i.selectedSize === item.selectedSize
+    )
+    if(item.qty === 0){
+      const index = state.items.findIndex((i) => i.id === item.id)
+      state.items.splice(index, 1)
+    } else {
+      record.quantity = item.qty
     }
   },
   setOwner(state, item){

@@ -1,24 +1,21 @@
 <template>
-  <div class="">
-    <div v-if="$fetchState.pending">
-      <SearchResultsLoading/>
-    </div>
-    <div v-else-if="$fetchState.error">
-      {{ $fetchState.error.message }}
-    </div>
-    <div v-else>
-      <div v-if="loading">
-        <SearchResultsLoading/>
-      </div>
-      <div v-else>
-        <div class="flex">
-          <div class="w-1/5">
-            <SearchBar
-              class="fixed w-1/5 px-4"
-              @submit="triggerSearch"
-            />
+  <div>
+    <div>
+      <div class="flex">
+        <div class="w-1/5">
+          <SearchBar
+            class="fixed w-1/5 px-4"
+            @submit="triggerSearch"
+          />
+        </div>
+        <div class="w-4/5">
+          <div v-if="$fetchState.pending || loading">
+            <SearchResultsLoading/>
           </div>
-          <div class="w-4/5">
+          <div v-else-if="$fetchState.error">
+            {{ $fetchState.error.message }}
+          </div>
+          <div v-else>
             <ShopsDisplay :shops="results.shops"/>
             <ProductsDisplay :products="results.products"/>
           </div>
@@ -35,11 +32,11 @@
   import ShopsDisplay from "~/components/shops/ShopsDisplay";
 
   export default {
-    head () {
+    head() {
       return {
         title: 'Recherche | FrenchCrafters',
         meta: [
-          { hid: 'checkout', name: 'description', content: 'FrenchCrafters search page' }
+          {hid: 'checkout', name: 'description', content: 'FrenchCrafters search page'}
         ]
       }
     },

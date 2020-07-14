@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="lateral-search">
     <el-select class="w-full" v-model="selectedCategory" clearable placeholder="Catégories">
       <el-option v-if="$fetchState.pending" value="Loading.." />
       <el-option v-else-if="$fetchState.error" value="Error" />
