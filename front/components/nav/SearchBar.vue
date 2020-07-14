@@ -1,5 +1,11 @@
 <template>
-  <div id="lateral-search">
+  <div id="lateral-search" class="border-r-2 h-full border-gray-200">
+    <div class="h-16 flex content-center flex-wrap">
+      <el-breadcrumb separator="/">
+        <el-breadcrumb-item :to="{ path: '/' }">Accueil</el-breadcrumb-item>
+        <el-breadcrumb-item :to="{ path: '/search' }" >Magasins et Produits</el-breadcrumb-item>
+      </el-breadcrumb>
+    </div>
     <el-select class="w-full" v-model="selectedCategory" clearable placeholder="Catégories">
       <el-option v-if="$fetchState.pending" value="Loading.." />
       <el-option v-else-if="$fetchState.error" value="Error" />

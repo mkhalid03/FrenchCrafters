@@ -141,7 +141,6 @@
       },
       selectedProducts() {
         const products = this.$store.getters["cart/items"]
-        console.log(products)
         const formattedProducts = []
 
         products.forEach(product => {

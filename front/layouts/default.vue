@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="mt-20">
+    <div class="mt-16">
       <nuxt />
     </div>
   </div>

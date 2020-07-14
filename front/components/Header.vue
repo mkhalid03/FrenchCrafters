@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 w-full bg-white shadow-md h-16 flex justify-between">
+  <nav class="fixed top-0 w-full bg-white shadow-md h-16 flex justify-between z-50">
     <router-link class="w-full h-full flex items-center px-4" :to="{ name: 'index' }">
       <img class="h-12" src="~/assets/img/logo.png" alt="logo"/>
       <span class="ml-2 mt-1 text-xl text-black font-mono">French Crafters</span>

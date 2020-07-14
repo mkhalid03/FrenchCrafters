@@ -1,8 +1,15 @@
 <template>
     <div v-if="products">
-      Products :
-      <div v-for="product in products" :key="product.id">
-        <ProductCard :product="product" />
+      <h2 class="text-2xl ml-4">Les produits :</h2>
+      <div class="ml-4 text-gray-800 my-6">
+        FrenchCrafters propose à ses partenaires de vendre sur la plateforme leurs produits phares !
+        <br />
+        Retrouvez des produits de très bonne qualité, et toujours Made in France !
+      </div>
+      <div class="h-1"></div>
+      <el-divider content-position="left">Résultats de votre Recherche :</el-divider>
+      <div class="w-full flex flex-wrap">
+        <ProductCard v-for="product in products" :key="product.id" :product="product" />
       </div>
     </div>
 </template>
