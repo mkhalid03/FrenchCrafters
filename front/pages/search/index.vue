@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <div v-if="$fetchState.pending">
       <SearchResultsLoading/>
     </div>

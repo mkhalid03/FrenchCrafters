@@ -32,7 +32,8 @@ export default {
    ** Global CSS
    */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '@storefront-ui/vue/styles.scss'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -72,6 +73,18 @@ export default {
    ** Build configuration
    */
   build: {
+    postcss: {
+      plugins: {
+        'postcss-import': {},
+        'tailwindcss': {},
+        'autoprefixer': {}
+      },
+      preset: {
+        autoprefixer: {
+          grid: true
+        }
+      }
+    },
     transpile: [/^@storefront-ui/, /^element-ui/],
     extractCSS: true
   },
