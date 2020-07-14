@@ -23,10 +23,11 @@
     </div>
     <div class="w-full  h-full flex justify-end space-x-2 items-center px-3">
       <button
-        class="w-8 h-8 lg:h-10 lg:w-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full flex items-center justify-center"
         @click="openCart"
+        class="relative w-10 h-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full flex items-center justify-center"
       >
         <i class="mt-1 text-xl el-icon-shopping-cart-full"></i>
+        <div class="sticker absolute top-0 right-0 w-6 h-6 text-white text-sm -mr-2 rounded-full bg-red-500">{{this.$store.getters["cart/numberOfItems"]}}</div>
       </button>
 
       <Cart
@@ -98,6 +99,11 @@
         return this.$store.getters["auth/getUserInfo"].username
       },
     },
+    watch: {
+      '$route' () {
+        this.cartState = false
+      }
+    },
     methods: {
       ...mapMutations({
         logout: "auth/logout",
@@ -132,5 +138,9 @@
     outline: 0;
     border: none;
     -moz-outline-style: none;
+  }
+
+  .sticker{
+    padding-top: 2px;
   }
 </style>

@@ -72,9 +72,11 @@
                 <SfPrice :regular="price"/>
               </template>
             </SfProperty>
-            <SfButton @¢lick="goToCheckout" class="sf-button--full-width color-secondary">
-              Valider mes achats
-            </SfButton>
+            <router-link :to="{ name: 'checkout' }">
+              <SfButton @¢lick="goToCheckout" class="sf-button--full-width color-secondary">
+                Valider mes achats
+              </SfButton>
+            </router-link>
           </div>
           <div v-else>
             <router-link :to="{ name: 'search' }">
@@ -187,6 +189,10 @@
         --sidebar-content-padding: var(--spacer-base);
       }
     }
+  }
+
+  #cart *{
+    z-index:1000;
   }
 
   .my-cart {

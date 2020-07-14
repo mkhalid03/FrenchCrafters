@@ -30,6 +30,11 @@ const customRoutes = (path, resolve) => {
       path: "/register/onboarding",
       component: resolve(path, "pages/users/shops/onboarding.vue"),
     },
+    {
+      name: "checkout",
+      path: "/checkout",
+      component: resolve(path, "pages/orders/checkout.vue"),
+    },
   ]
 }
 
