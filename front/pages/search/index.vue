@@ -1,27 +1,22 @@
 <template>
   <div>
-    <div v-if="$fetchState.pending">
-      <SearchResultsLoading/>
-    </div>
-    <div v-else-if="$fetchState.error">
-      {{ $fetchState.error.message }}
-    </div>
-    <div v-else>
-      <div v-if="loading">
-        <SearchResultsLoading/>
+    <div class="flex">
+      <div class="w-1/5">
+        <SearchBar
+          class="fixed w-1/5 px-4"
+          @submit="triggerSearch"
+        />
       </div>
-      <div v-else>
-        <div class="flex">
-          <div class="w-1/5">
-            <SearchBar
-              class="fixed w-1/5 px-4"
-              @submit="triggerSearch"
-            />
-          </div>
-          <div class="w-4/5 pl-4">
-            <ShopsDisplay :shops="results.shops"/>
-            <ProductsDisplay :products="results.products"/>
-          </div>
+      <div class="w-4/5 pl-4 mb-16">
+        <div v-if="$fetchState.pending || loading">
+          <SearchResultsLoading/>
+        </div>
+        <div v-else-if="$fetchState.error">
+          {{ $fetchState.error.message }}
+        </div>
+        <div v-else>
+          <ShopsDisplay :shops="results.shops"/>
+          <ProductsDisplay :products="results.products"/>
         </div>
       </div>
     </div>
@@ -33,12 +28,13 @@
   import SearchResultsLoading from "~/components/loading/SearchResultsLoading"
   import ProductsDisplay from "~/components/products/ProductsDisplay";
   import ShopsDisplay from "~/components/shops/ShopsDisplay";
+
   export default {
-    head () {
+    head() {
       return {
         title: 'Recherche | FrenchCrafters',
         meta: [
-          { hid: 'checkout', name: 'description', content: 'FrenchCrafters search page' }
+          {hid: 'checkout', name: 'description', content: 'FrenchCrafters search page'}
         ]
       }
     },
