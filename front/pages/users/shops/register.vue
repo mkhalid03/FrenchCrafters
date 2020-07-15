@@ -84,6 +84,11 @@ export default {
       loading: false,
     }
   },
+  created() {
+    if(this.$store.getters['auth/getUserInfo'].email && process.client){
+      $nuxt.$router.push('/')
+    }
+  },
   middleware: "logged",
   methods: {
     setPassword: function (pass) {

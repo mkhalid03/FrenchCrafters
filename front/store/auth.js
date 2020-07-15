@@ -12,6 +12,7 @@ export const mutations = {
   },
   logout(state) {
     state.user = null
+    localStorage.removeItem("jwt")
     this.app.router.push('/')
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="p-8">
-    <span class="text-bold text-2xl text-gray-800">Espace Utilisateur : </span>
+    <span class="text-bold text-2xl text-gray-800">Espace Utilisateur :</span>
     <el-tabs type="border-card" class="mt-6">
       <el-tab-pane label="Mon profil">
 
