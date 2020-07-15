@@ -4,6 +4,12 @@
     <div class="mt-16">
       <nuxt />
     </div>
+    <div class="fixed bottom-0 left-0 p-4">
+      <div style="font-size:10px" class="bg-white p-1 rounded-sm">
+        <div>Tous les visuels sont utilisés pour une démo crédible.</div>
+        <div>Les visuels seront supprimés si le site est voué à rester en ligne.</div>
+      </div>
+    </div>
   </div>
 </template>
 

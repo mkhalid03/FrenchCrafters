@@ -21,8 +21,8 @@
             <p class="text-gray-600">
             <div @click="seeShop(shop.id)" class="text-gray-900 text-bold text-xl cursor-pointer">{{shop.name}}</div>
             <div class="text-gray-700 mt-2 description">{{shop.description}}</div>
-            <a class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900" href="">
-              <span class="" @click="seeShop(shop.id)">Découvrir {{shop.name}}</span>
+            <a @click="seeShop(shop.id)" class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900">
+              <span class="">Découvrir {{shop.name}}</span>
               <span class="text-xs ml-1">&#x279c;</span>
             </a>
           </div>
