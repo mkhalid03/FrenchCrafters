@@ -22,6 +22,7 @@
       </router-link>-->
     </div>
     <div class="w-full  h-full flex justify-end space-x-2 items-center px-3">
+      <span class="text-bold mx-2 text-gray-700 font-mono">{{username}}</span>
       <button
         @click="openCart"
         class="relative w-10 h-10 bg-gray-300 focus:outline-none hover:bg-gray-400 rounded-full flex items-center justify-center"

@@ -35,6 +35,11 @@ const customRoutes = (path, resolve) => {
       path: "/checkout",
       component: resolve(path, "pages/orders/checkout.vue"),
     },
+    {
+      name: "checkout-confirmation",
+      path: "/checkout/confirmation",
+      component: resolve(path, "pages/orders/confirmation.vue"),
+    },
   ]
 }
 

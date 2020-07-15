@@ -106,16 +106,15 @@ export default {
         name: this.form.fullName,
       }).then(res => {
         this.manageStatus(res);
-        this.emptyCart()
-        $nuxt.$router.push('/')
-        this.loading = false
       }).catch((err) => {
         this.loading = false
         console.error('Error creating payment:', err);
       });
     },
     manageStatus(res) {
-      console.log(res)
+      this.emptyCart()
+      $nuxt.$router.push({name: 'checkout-confirmation', params: {order: res}})
+      this.loading = false
     }
   }
 }
