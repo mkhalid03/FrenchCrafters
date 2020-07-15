@@ -94,7 +94,6 @@
       if(Object.keys(this.$route.params).length === 0 && process.client){
         $nuxt.$router.push('/')
       }
-      console.log(this.$route.params)
     }
   };
 </script>

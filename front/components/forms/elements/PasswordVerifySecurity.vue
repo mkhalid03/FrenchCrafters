@@ -46,11 +46,6 @@ export default {
     },
     passChange: function () {
       if (this.score >= 3) {
-        console.log(
-          this.password1,
-          this.password2,
-          this.password1 === this.password2
-        )
         if (this.password1 === this.password2) {
           this.$emit("passwordChange", this.password1)
         } else {

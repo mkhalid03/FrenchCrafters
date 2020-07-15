@@ -12,7 +12,6 @@ export const cleanUser = (user) => {
 }
 
 export const cleanPicture = (picture) => {
-  console.log(picture)
   if (picture !== null && picture !== undefined) {
     return {
       url: picture.url || null,
