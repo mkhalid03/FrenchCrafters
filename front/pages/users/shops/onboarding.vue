@@ -6,7 +6,7 @@
     </div>
     <div>
         <span>You can connect as an User to see your Shop on this website.</span>
-        <router-link :to="{ name: 'user-register' }">
+        <router-link :to="{ name: 'login' }">
           <ElButton>Login</ElButton>
         </router-link>
       </div>
@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     redirectToBack: function(){
-      window.open('http://localhost:1337/admin', '_blank');
+      window.open('http://api.frenchcrafters.company/admin', '_blank');
     }
   }
 }

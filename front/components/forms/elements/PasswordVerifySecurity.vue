@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="w-full">
     <div>
-      <label>New Password</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2">Mot de passe</label>
       <el-input
         v-model="password1"
         type="password"
@@ -18,7 +18,7 @@
     </div>
 
     <div>
-      <label>Repeat Password</label>
+      <label class="block text-gray-700 text-sm font-bold mb-2">Répéter le Mot de passe</label>
       <el-input
         v-model="password2"
         type="password"
@@ -53,16 +53,13 @@ export default {
         )
         if (this.password1 === this.password2) {
           this.$emit("passwordChange", this.password1)
-          console.log("good")
         } else {
-          // TODO: Return msg not same pass
           this.$emit("passwordChange", null)
-          console.log("not equal!!")
+          this.$message('Les 2 mots de passe ne sont pas identiques')
         }
       } else {
-        // TODO: Return msg better pass
         this.$emit("passwordChange", null)
-        console.log("STRONGER!!")
+        this.$message('Votre mot de passe doit être plus sécurisé ! (couleur verte)')
       }
     },
   },
