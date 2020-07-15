@@ -58,7 +58,7 @@ export default {
       return `${line1 || ""} ${line2 || ""} ${postalCode || ""} ${city || ""}, ${country || ""}`
     },
     formatPrice: function (data) {
-      return `${data.amount} €`
+      return `${data.amount/100} €`
     },
   },
 }
