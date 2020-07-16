@@ -1,6 +1,6 @@
 import Strapi from "strapi-sdk-javascript/build/main"
 
-const apiUrl = process.env.BACKEND_GRAPHQL_ENDPOINT || "http://localhost:1337"
+const apiUrl = process.env.BACKEND_API_ENDPOINT || process.env.backendUrl || "http://api.frenchcrafters.company"
 const strapi = new Strapi(apiUrl)
 
 export default strapi

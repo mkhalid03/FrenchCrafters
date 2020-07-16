@@ -20,18 +20,21 @@
       </el-tab-pane>
 
       <el-tab-pane label="Modifier mon Profil">
-        <label for="updateFirstName">Prénom:</label>
-        <ElInput id="updateFirstName" :placeholder="user.firstName" v-model="firstname" name="firstname"/>
+        <form ref="editProfile">
+          <label for="updateFirstName">Prénom:</label>
+          <ElInput id="updateFirstName" :placeholder="user.firstName" v-model="firstname" name="firstname"/>
 
-        <label for="updateLastName">Nom:</label>
-        <ElInput id="updateLastName" :placeholder="user.lastName" v-model="lastname" name="lastname"/>
+          <label for="updateLastName">Nom:</label>
+          <ElInput id="updateLastName" :placeholder="user.lastName" v-model="lastname" name="lastname"/>
 
-        <label for="updateTitle">Titre d'affichage:</label>
-        <ElInput id="updateTitle" :placeholder="user.title" v-model="title" name="title"/>
+          <label for="updateTitle">Titre d'affichage:</label>
+          <ElInput id="updateTitle" :placeholder="user.title" v-model="title" name="title"/>
 
-        <ElButton type="primary" class="mt-6" @click="updateInfo">
-          Update info
-        </ElButton>
+          <ElButton type="primary" class="mt-6" @click="updateInfo">
+            Update info
+          </ElButton>
+        </form>
+
       </el-tab-pane>
 
       <el-tab-pane label="Mes commandes">
