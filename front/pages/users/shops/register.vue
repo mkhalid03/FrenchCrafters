@@ -128,7 +128,7 @@ export default {
           $nuxt.$router.push('/register/onboarding')
         }).catch(e => {
           this.loading = false
-          alert(e.message || "An error occurred.")
+          this.$message('Ce mail est déjà utilisé ou un champ est un invalide')
         })
       }
     }

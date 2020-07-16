@@ -2,7 +2,7 @@
   <div class="px-4">
     <div class="m-4 pt-8" >
       <ElButton @click="$router.go(-1)">
-        go back
+        Retour
       </ElButton>
     </div>
 

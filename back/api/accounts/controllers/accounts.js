@@ -8,7 +8,7 @@ module.exports = {
       username: email,
       email,
       password,
-      blocked: true
+      blocked: false
     }
 
     try {
